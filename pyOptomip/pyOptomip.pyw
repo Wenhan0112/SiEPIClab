@@ -31,6 +31,7 @@ from hp816x_instrParameters import hp816x_instrParameters
 from QontrolMotorParameters import QontrolMotorParameters
 from dummyCorvusParameters import dummyCorvusParameters
 from BSC203MotorParameters import BSC203MotorParameters
+from TDC001MotorParameters import TDC001MotorParameters
 from dummyLaserParameters import dummyLaserParameters
 
 from SMUParameters import SMUParameters
@@ -45,7 +46,7 @@ from pylablib.devices import Thorlabs
 softwareVersion = "1.1"
 
 devTypes = [CorvusEcoParameters, hp816x_N77Det_instrParameters, hp816x_instrParameters,
-            SMUParameters, BSC203MotorParameters]# N77Det_instrParameters]
+            SMUParameters, BSC203MotorParameters, TDC001MotorParameters]# N77Det_instrParameters]
 
 
 class ConnectCB(wx.Choicebook):
