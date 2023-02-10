@@ -38,10 +38,10 @@ class TDC001MotorParameters(wx.Panel):
         # self.para1tc = wx.TextCtrl(self,value='ASRL5::INSTR')
         self.para1.AddMany([(self.para1name, 1, wx.EXPAND), (self.para1tc, 1, wx.EXPAND)])
 
-        # Second Parameter: Number of Axis
+        # Second Parameter: COM Port
         self.para2 = wx.BoxSizer(wx.HORIZONTAL)
-        self.para2name = wx.StaticText(self, label='Number of Axis')
-        self.para2tc = wx.TextCtrl(self, value='3')
+        self.para2name = wx.StaticText(self, label='COM')
+        self.para2tc = wx.TextCtrl(self, value='5')
         self.para2.AddMany([(self.para2name, 1, wx.EXPAND), (self.para2tc, 1, wx.EXPAND)])
 
         self.disconnectBtn = wx.Button(self, label='Disconnect')

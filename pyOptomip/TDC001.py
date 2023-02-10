@@ -7,7 +7,7 @@ import re
 import math
 
 
-class BSC203Motor:
+class TDC001Motor:
     name = 'TDC001'
     isMotor = True
     isOpt = False
