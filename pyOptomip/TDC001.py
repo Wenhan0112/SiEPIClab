@@ -22,13 +22,10 @@ class TDC001Motor:
         self.minPositionSet = False
         self.minPosition = 0
 
-    def connect(self, SerialPortName, com=None):
+    def connect(self, SerialPortName):
         self.visaName = SerialPortName
-        if com=None:
-            numbers = re.findall('[0-9]+', SerialPortName)
-            COM = "COM" + numbers[0]
-        else:
-            COM = "COM" + str(int(com))
+        numbers = re.findall('[0-9]+', SerialPortName)
+        COM = "COM" + numbers[0]
         self.tdc = TDC001(serial_port=COM, home=False) 
             # Potentially try home=True? Homing is probably needed after initialisation. Or set the initial point as 0?
         self.tdc.identify()

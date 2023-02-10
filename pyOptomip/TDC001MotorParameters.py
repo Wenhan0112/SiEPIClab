@@ -38,12 +38,6 @@ class TDC001MotorParameters(wx.Panel):
         # self.para1tc = wx.TextCtrl(self,value='ASRL5::INSTR')
         self.para1.AddMany([(self.para1name, 1, wx.EXPAND), (self.para1tc, 1, wx.EXPAND)])
 
-        # Second Parameter: COM Port
-        self.para2 = wx.BoxSizer(wx.HORIZONTAL)
-        self.para2name = wx.StaticText(self, label='COM')
-        self.para2tc = wx.TextCtrl(self, value='5')
-        self.para2.AddMany([(self.para2name, 1, wx.EXPAND), (self.para2tc, 1, wx.EXPAND)])
-
         self.disconnectBtn = wx.Button(self, label='Disconnect')
         self.disconnectBtn.Bind(wx.EVT_BUTTON, self.disconnect)
         self.disconnectBtn.Disable()
@@ -58,7 +52,7 @@ class TDC001MotorParameters(wx.Panel):
 
     def connect(self, event):
         self.stage = TDC001.TDC001Motor()
-        self.stage.connect(str(self.para1tc.GetValue()), int(self.para2tc.GetValue()))
+        self.stage.connect(str(self.para1tc.GetValue()))
         self.stage.panelClass = TDC001MotorPanel.topBSC203MotorPanel
         self.connectPanel.instList.append(self.stage)
         print("Connected to Thorlabs Stage.")
