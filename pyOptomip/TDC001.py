@@ -43,6 +43,7 @@ class TDC001Motor:
         else:
             self.tdc.move_relative(distance=int(1000 * x), bay=0, channel=0)
             self.position -= x
+            print("TDC Controlled Moved!")
 
 
     def getPosition(self):
