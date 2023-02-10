@@ -46,7 +46,7 @@ class TDC001MotorParameters(wx.Panel):
         self.connectBtn.Bind(wx.EVT_BUTTON, self.connect)
 
         hbox.AddMany([(self.disconnectBtn, 0), (self.connectBtn, 0)])
-        vbox.AddMany([(self.para1, 0, wx.EXPAND), (self.para2, 0, wx.EXPAND), (hbox, 0)])
+        vbox.AddMany([(self.para1, 0, wx.EXPAND), (hbox, 0)])
 
         self.SetSizer(vbox)
 
