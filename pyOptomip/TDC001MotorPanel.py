@@ -25,7 +25,7 @@ class topTDC001MotorPanel(wx.Panel):
 
 class TDC001Panel(wx.Panel):
 
-    def __init__(self, parent, axis):
+    def __init__(self, parent):
         super(TDC001Panel, self).__init__(parent)
         self.parent = parent
         self.InitUI()
