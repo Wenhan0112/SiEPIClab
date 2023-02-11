@@ -2,7 +2,7 @@ import wx
 
 
 # Panel that appears in the main window which contains the controls for the Thorlabs motors.
-class topBSC203MotorPanel(wx.Panel):
+class topTDC001MotorPanel(wx.Panel):
     def __init__(self, parent, motor):
         super(topBSC203MotorPanel, self).__init__(parent)
         self.tdc = motor
