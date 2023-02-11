@@ -62,7 +62,7 @@ class TDC001MotorParameters(wx.Panel):
 
     def connect(self, event):
         self.stage = TDC001.TDC001Motor()
-        self.stage.connect(str(self.para1tc.GetValue()), str(self.para1tc.GetValue()))
+        self.stage.connect(str(self.para1tc.GetValue()), str(self.para2tc.GetValue()))
         self.stage.panelClass = TDC001MotorPanel.topTDC001MotorPanel
         self.connectPanel.instList.append(self.stage)
         print("Connected to Thorlabs Stage.")
