@@ -5,7 +5,7 @@ import TDC001MotorPanel
 
 # Panel in the Connect Instruments window which contains the connection settings for the Qontrol motors.
 class TDC001MotorParameters(wx.Panel):
-    name = 'Thorlabs Stage: Electrical Probing'
+    name = 'Thorlabs Stage: Electrical Probing TDC001'
 
     def __init__(self, parent, connectPanel, **kwargs):
         """
@@ -28,15 +28,25 @@ class TDC001MotorParameters(wx.Panel):
         vbox = wx.StaticBoxSizer(sb, wx.VERTICAL)
         hbox = wx.BoxSizer(wx.HORIZONTAL)
 
-        # First Parameter: Serial Port
+        # First Parameter: Serial Port 1
         self.para1 = wx.BoxSizer(wx.HORIZONTAL)
-        self.para1name = wx.StaticText(self, label='Serial Port')
+        self.para1name = wx.StaticText(self, label='Serial Port 1')
         self.para1tc = wx.ComboBox(self, choices=self.instList)
         for x in self.instList:
-            if x == 'ASRL10::INSTR':
-                self.para1tc.SetValue('ASRL10::INSTR')
+            if x == 'ASRL5::INSTR':
+                self.para1tc.SetValue('ASRL5::INSTR')
         # self.para1tc = wx.TextCtrl(self,value='ASRL5::INSTR')
         self.para1.AddMany([(self.para1name, 1, wx.EXPAND), (self.para1tc, 1, wx.EXPAND)])
+
+        # First Parameter: Serial Port 2
+        self.para2 = wx.BoxSizer(wx.HORIZONTAL)
+        self.para2name = wx.StaticText(self, label='Serial Port 2')
+        self.para2tc = wx.ComboBox(self, choices=self.instList)
+        for x in self.instList:
+            if x == 'ASRL6::INSTR':
+                self.para2tc.SetValue('ASRL6::INSTR')
+        # self.para2tc = wx.TextCtrl(self,value='ASRL5::INSTR')
+        self.para2.AddMany([(self.para2name, 1, wx.EXPAND), (self.para2tc, 1, wx.EXPAND)])
 
         self.disconnectBtn = wx.Button(self, label='Disconnect')
         self.disconnectBtn.Bind(wx.EVT_BUTTON, self.disconnect)
@@ -46,7 +56,7 @@ class TDC001MotorParameters(wx.Panel):
         self.connectBtn.Bind(wx.EVT_BUTTON, self.connect)
 
         hbox.AddMany([(self.disconnectBtn, 0), (self.connectBtn, 0)])
-        vbox.AddMany([(self.para1, 0, wx.EXPAND), (hbox, 0)])
+        vbox.AddMany([(self.para1, 0, wx.EXPAND), (self.para2, 0, wx.EXPAND), (hbox, 0)])
 
         self.SetSizer(vbox)
 
