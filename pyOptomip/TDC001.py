@@ -45,11 +45,11 @@ class TDC001Motor:
             self.position[0] -= x
             print("TDC Controlled Moved in X Axis!")
     
-    def moveRelativeX(self, y):
+    def moveRelativeY(self, y):
         # if self.minPositionSet is False and x != 0:
         #     print('Please Set Minimum Position in X Axis.')
         if self.position[1] - y < self.minPosition[1]:
-            print("Cannot Move Past Minimum XYPosition.")
+            print("Cannot Move Past Minimum Y Position.")
         else:
             self.tdc[1].move_relative(distance=int(1000 * y), bay=0, channel=0)
             self.position[1] -= y
