@@ -33,7 +33,7 @@ class TDC001Motor:
         print('Connected\n')
 
     def disconnect(self):
-        [t.close for t in self.tdc]
+        [t.close() for t in self.tdc]
 
     def moveRelativeX(self, x):
         # if self.minPositionSet is False and x != 0:
@@ -54,6 +54,7 @@ class TDC001Motor:
             self.tdc[1].move_relative(distance=int(1000 * y), bay=0, channel=0)
             self.position[1] -= y
             print("TDC Controlled Moved in Y Axis!")
+    
     def getPosition(self):
         return self.position
 

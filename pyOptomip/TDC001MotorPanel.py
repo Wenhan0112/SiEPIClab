@@ -2,45 +2,56 @@ import wx
 
 
 # Panel that appears in the main window which contains the controls for the Thorlabs motors.
-class topTDC001MotorPanel(wx.Panel):
+class topBSC203MotorPanel(wx.Panel):
     def __init__(self, parent, motor):
-        super(topTDC001MotorPanel, self).__init__(parent)
+        super(topBSC203MotorPanel, self).__init__(parent)
         self.tdc = motor
+        self.numAxes = 2
         self.InitUI()
 
     def InitUI(self):
         sb = wx.StaticBox(self, label='Wedge Probe Stage')
         vbox = wx.StaticBoxSizer(sb, wx.VERTICAL)
 
-        motorPanel = TDC001Panel(self)
-        motorPanel.motor = self.tdc
-        vbox.Add(motorPanel, flag=wx.LEFT | wx.TOP | wx.ALIGN_LEFT, border=0, proportion=0)
-        vbox.Add((-1, 2))
-        sl = wx.StaticLine(self)
-        vbox.Add(sl, flag=wx.EXPAND, border=0, proportion=0)
-        vbox.Add((-1, 2))
+        for axis in range(0, self.numAxes):
+            motorPanel = TDC001Panel(self, axis+1)
+            motorPanel.motor = self.tdc[axis]
+            vbox.Add(motorPanel, flag=wx.LEFT | wx.TOP | wx.ALIGN_LEFT, border=0, proportion=0)
+            vbox.Add((-1, 2))
+            sl = wx.StaticLine(self)
+            vbox.Add(sl, flag=wx.EXPAND, border=0, proportion=0)
+            vbox.Add((-1, 2))
 
         self.SetSizer(vbox)
 
 
 class TDC001Panel(wx.Panel):
 
-    def __init__(self, parent):
+    def __init__(self, parent, axis):
         super(TDC001Panel, self).__init__(parent)
         self.parent = parent
+        self.axis = axis
         self.InitUI()
 
     def InitUI(self):
 
         hbox = wx.BoxSizer(wx.HORIZONTAL)
-        st1 = wx.StaticText(self, label='X')
-        hbox.Add(st1, flag=wx.ALIGN_LEFT, border=8)
+        if self.axis == 1:
+            st1 = wx.StaticText(self, label='X')
+            hbox.Add(st1, flag=wx.ALIGN_LEFT, border=8)
+        if self.axis == 2:
+            st1 = wx.StaticText(self, label='Y')
+            hbox.Add(st1, flag=wx.ALIGN_LEFT, border=8)
         st1 = wx.StaticText(self, label='')
         hbox.Add(st1, flag=wx.EXPAND, border=8, proportion=1)
         btn1 = wx.Button(self, label='-', size=(50, 20))
         btn2 = wx.Button(self, label='+', size=(50, 20))
 
-        self.initialvalue = 100
+        self.initialvalue = 0
+        if self.axis == 1:
+            self.initialvalue = 100
+        elif self.axis == 2:
+            self.initialvalue = 100
 
         hbox.Add(btn1, flag=wx.EXPAND | wx.RIGHT, proportion=0, border=8)
         btn1.Bind(wx.EVT_BUTTON, self.OnButton_MinusButtonHandler)
@@ -64,12 +75,24 @@ class TDC001Panel(wx.Panel):
         return val
 
     def OnButton_MinusButtonHandler(self, event):
-        self.parent.tdc.moveRelative(int(self.getMoveValue()))
+
+        if self.axis == 1:
+            self.parent.tdc.moveRelativeX(int(self.getMoveValue()))
+            print("Axis 1 Moved Negative")
+
+        if self.axis == 2:
+            self.parent.tdc.moveRelativeY(int(self.getMoveValue()))
+            print("Axis 2 Moved Negative")
 
 
     def OnButton_PlusButtonHandler(self, event):
-        self.parent.tdc.moveRelative(int((-1)*self.getMoveValue()))
+        if self.axis == 1:
+            self.parent.tdc.moveRelativeX(int((-1)*self.getMoveValue()))
+            print("Axis 1 Moved Positive")
 
+        if self.axis == 2:
+            self.parent.tdc.moveRelativeY(int((-1) * self.getMoveValue()))
+            print("Axis 2 Moved Positive")
 
     def movementcheck(self, event):
 
