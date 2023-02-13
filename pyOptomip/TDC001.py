@@ -23,7 +23,6 @@ class TDC001Motor:
         self.minPositionSet = np.zeros(num_axis, dtype=bool)
         self.minPosition = np.zeros(num_axis)
         self.connections = np.zeros(num_axis, dtype=bool)
-        print("Connections:", self.connections)
 
     def connect(self, visa_names):
         self.visaName = visa_names
@@ -37,7 +36,8 @@ class TDC001Motor:
                 # Potentially try home=True? Homing is probably needed after initialisation. Or just set the initial point as 0?
         [t.identify() for t in self.tdc if t is not None]
         self.status = [t.status if t is not None else None for t in self.tdc]
-        print('Connected\n')
+        self.connections = np.array([tdc is not None for tdc in self.tdc], dtype=bool)
+        print(f'Connections: {self.connections}')
 
     def disconnect(self):
         [t.close() for t in self.tdc if t is not None]
