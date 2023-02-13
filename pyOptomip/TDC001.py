@@ -5,7 +5,7 @@ TDC001 in development
 from thorlabs_apt_device import TDC001
 import re
 import math
-
+import numpy as np
 
 class TDC001Motor:
     name = 'TDC001'
@@ -16,52 +16,49 @@ class TDC001Motor:
     isDetect = False
     isSMU = False
 
-    def __init__(self):
+    def __init__(self, num_axis):
         self.tdc = None
-        self.position = [0, 0]
-        self.minPositionSet = [False, False]
-        self.minPosition = [0, 0]
+        self.num_axis = num_axis
+        self.position = np.zeros(num_axis)
+        self.minPositionSet = np.zeros(num_axis, dtype=bool)
+        self.minPosition = np.zeros(num_axis)
+        self.connections = np.zeros(num_axis, dtype=bool)
 
-    def connect(self, SerialPortName1, SerialPortName2):
-        self.visaName = [SerialPortName1, SerialPortName2]
-        numbers = [re.findall('[0-9]+', spn) for spn in self.visaName]
-        COM = ["COM" + n[0] for n in numbers]
-        self.tdc = [TDC001(serial_port=c, home=False) for c in COM]
-            # Potentially try home=True? Homing is probably needed after initialisation. Or just set the initial point as 0?
-        [t.identify() for t in self.tdc]
-        self.status = [t.status for t in self.tdc]
+    def connect(self, visa_names):
+        self.visaName = visa_names
+        self.tdc = []
+        for visa_name in visa_names:
+            if visa_name == "None":
+                self.tdc.append(None)
+            else:
+                serial_port = "COM" + re.findall('[0-9]+', visa_name)[0]
+                self.tdc.append(TDC001(serial_port=serial_port, home=False))
+                # Potentially try home=True? Homing is probably needed after initialisation. Or just set the initial point as 0?
+        [t.identify() for t in self.tdc if t is not None]
+        self.status = [t.status if t is not None else None for t in self.tdc]
         print('Connected\n')
 
     def disconnect(self):
-        [t.close() for t in self.tdc]
+        [t.close() for t in self.tdc if t is not None]
 
-    def moveRelativeX(self, x):
+    def moveRelative(self, axis, x):
         # if self.minPositionSet is False and x != 0:
         #     print('Please Set Minimum Position in X Axis.')
-        if self.position[0] - x < self.minPosition[0]:
-            print("Cannot Move Past Minimum X Position.")
-        else:
-            self.tdc[0].move_relative(distance=int(1000 * x), bay=0, channel=0)
-            self.position[0] -= x
-            print("TDC Controlled Moved in X Axis!")
+        axis_name = int(axis+1)
+        if self.tdc[axis] is None:
+            print(f"No TDC001 connected in Axis {axis_name}.")
+            return
+        if self.position[axis] - x < self.minPosition[axis]:
+            print(f"Cannot Move Past Minimum Position in Axis {axis_name}.")
+            return
+        self.tdc[axis].move_relative(distance=int(1000 * x), bay=0, channel=0)
+        self.position[axis] -= x
+        print(f"TDC001 Controller Moved in Axis {axis_name}!")
     
-    def moveRelativeY(self, y):
-        # if self.minPositionSet is False and x != 0:
-        #     print('Please Set Minimum Position in X Axis.')
-        if self.position[1] - y < self.minPosition[1]:
-            print("Cannot Move Past Minimum Y Position.")
-        else:
-            self.tdc[1].move_relative(distance=int(1000 * y), bay=0, channel=0)
-            self.position[1] -= y
-            print("TDC Controlled Moved in Y Axis!")
     
     def getPosition(self):
         return self.position
 
-    def setMinXPosition(self, minPosition):
-        self.minPosition[0] = minPosition
-        self.minPositionSet[0] = True
-
-    def setMinYPosition(self, minPosition):
-        self.minPosition[1] = minPosition
-        self.minPositionSet[1] = True
+    def setMinPosition(self, axis, minPosition):
+        self.minPosition[axis] = minPosition
+        self.minPositionSet[axis] = True

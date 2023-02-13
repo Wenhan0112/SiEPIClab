@@ -5,7 +5,7 @@ import TDC001MotorPanel
 
 # Panel in the Connect Instruments window which contains the connection settings for the Qontrol motors.
 class TDC001MotorParameters(wx.Panel):
-    name = 'Thorlabs Stage: Electrical Probing TDC001'
+    name = 'Thorlabs TDC001 Controllers'
 
     def __init__(self, parent, connectPanel, **kwargs):
         """
@@ -17,7 +17,8 @@ class TDC001MotorParameters(wx.Panel):
         """
         super(TDC001MotorParameters, self).__init__(parent)
         self.connectPanel = connectPanel
-        self.instList = kwargs['visaAddrLst']
+        self.instList = ["None"] + kwargs['visaAddrLst']
+        self.num_axis = 4
         self.InitUI()
 
     def InitUI(self):
@@ -28,25 +29,15 @@ class TDC001MotorParameters(wx.Panel):
         vbox = wx.StaticBoxSizer(sb, wx.VERTICAL)
         hbox = wx.BoxSizer(wx.HORIZONTAL)
 
-        # First Parameter: Serial Port 1
-        self.para1 = wx.BoxSizer(wx.HORIZONTAL)
-        self.para1name = wx.StaticText(self, label='Serial Port 1')
-        self.para1tc = wx.ComboBox(self, choices=self.instList)
-        for x in self.instList:
-            if x == 'ASRL5::INSTR':
-                self.para1tc.SetValue('ASRL5::INSTR')
-        # self.para1tc = wx.TextCtrl(self,value='ASRL5::INSTR')
-        self.para1.AddMany([(self.para1name, 1, wx.EXPAND), (self.para1tc, 1, wx.EXPAND)])
-
-        # First Parameter: Serial Port 2
-        self.para2 = wx.BoxSizer(wx.HORIZONTAL)
-        self.para2name = wx.StaticText(self, label='Serial Port 2')
-        self.para2tc = wx.ComboBox(self, choices=self.instList)
-        for x in self.instList:
-            if x == 'ASRL6::INSTR':
-                self.para2tc.SetValue('ASRL6::INSTR')
-        # self.para2tc = wx.TextCtrl(self,value='ASRL5::INSTR')
-        self.para2.AddMany([(self.para2name, 1, wx.EXPAND), (self.para2tc, 1, wx.EXPAND)])
+        self.paras = []
+        self.para_tcs = []
+        for i in range(self.num_axis):
+            para = wx.BoxSizer(wx.HORIZONTAL)
+            para_name = wx.StaticText(self, label=f'Serial Port {int(i+1)}')
+            para_tc = wx.ComboBox(self, choices=self.instList)
+            para_tc.SetValue("None")
+            para.AddMany([(para_name, 1, wx.EXPAND), (para_tc, 1, wx.EXPAND)])
+            self.paras.append((para, para_tc))
 
         self.disconnectBtn = wx.Button(self, label='Disconnect')
         self.disconnectBtn.Bind(wx.EVT_BUTTON, self.disconnect)
@@ -56,13 +47,13 @@ class TDC001MotorParameters(wx.Panel):
         self.connectBtn.Bind(wx.EVT_BUTTON, self.connect)
 
         hbox.AddMany([(self.disconnectBtn, 0), (self.connectBtn, 0)])
-        vbox.AddMany([(self.para1, 0, wx.EXPAND), (self.para2, 0, wx.EXPAND), (hbox, 0)])
+        vbox.AddMany([(para, 0, wx.EXPAND) for para, _ in self.paras] + [(hbox, 0)])
 
         self.SetSizer(vbox)
 
     def connect(self, event):
-        self.stage = TDC001.TDC001Motor()
-        self.stage.connect(str(self.para1tc.GetValue()), str(self.para2tc.GetValue()))
+        self.stage = TDC001.TDC001Motor(self.num_axis)
+        self.stage.connect([str(para_tc.GetValue()) for _, para_tc in self.paras])
         self.stage.panelClass = TDC001MotorPanel.topTDC001MotorPanel
         self.connectPanel.instList.append(self.stage)
         print("Connected to Thorlabs Stage.")
