@@ -65,14 +65,10 @@ class TDC001Panel(wx.Panel):
         return val
 
     def OnButton_MinusButtonHandler(self, event):
-
         self.parent.tdc.moveRelative(self.axis, int(self.getMoveValue()))
-        print(f"Axis {self.axis+1} Moved Negative")
-
 
     def OnButton_PlusButtonHandler(self, event):
         self.parent.tdc.moveRelative(self.axis, int((-1)*self.getMoveValue()))
-        print(f"Axis {self.axis+1} Moved Positive")
 
     def movementcheck(self, event):
 
