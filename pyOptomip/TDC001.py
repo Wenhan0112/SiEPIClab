@@ -23,6 +23,7 @@ class TDC001Motor:
         self.minPositionSet = np.zeros(num_axis, dtype=bool)
         self.minPosition = np.zeros(num_axis)
         self.connections = np.zeros(num_axis, dtype=bool)
+        print("Connections:", self.connections)
 
     def connect(self, visa_names):
         self.visaName = visa_names
