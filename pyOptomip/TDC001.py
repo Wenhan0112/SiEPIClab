@@ -35,9 +35,10 @@ class TDC001Motor:
                 self.tdc.append(TDC001(serial_port=serial_port, home=False))
                 # Potentially try home=True? Homing is probably needed after initialisation. Or just set the initial point as 0?
         [t.identify() for t in self.tdc if t is not None]
-        self.status = [t.status if t is not None else None for t in self.tdc]
+        self.status = [t.status if t is not None else "No Connection Directed" for t in self.tdc]
         self.connections = np.array([tdc is not None for tdc in self.tdc], dtype=bool)
         print(f'Connections: {self.visaName}')
+        print(f"Status: {self.status}")
 
     def disconnect(self):
         [t.close() for t in self.tdc if t is not None]
