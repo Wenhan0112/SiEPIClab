@@ -17,7 +17,7 @@ class TDC001MotorParameters(wx.Panel):
         """
         super(TDC001MotorParameters, self).__init__(parent)
         self.connectPanel = connectPanel
-        self.instList = ["None"] + kwargs['visaAddrLst']
+        self.instList = ("None",) + kwargs['visaAddrLst']
         self.num_axis = 4
         self.InitUI()
 
