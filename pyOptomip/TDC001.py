@@ -54,7 +54,7 @@ class TDC001Motor:
             return
         self.tdc[axis].move_relative(distance=int(1000 * x), bay=0, channel=0)
         self.position[axis] -= x
-        print(f"TDC001 Controller Moved in Axis {axis_name} by {x} um!")
+        print(f"TDC001 Controller Moved in Axis {axis_name} by {-x} um!")
     
     
     def getPosition(self):
