@@ -38,7 +38,6 @@ class TDC001Motor:
         self.status = [t.status if t is not None else "No Connection Directed" for t in self.tdc]
         self.connections = np.array([tdc is not None for tdc in self.tdc], dtype=bool)
         print(f'Connections: {self.visaName}')
-        print(f"Status: {self.status}")
 
     def disconnect(self):
         [t.close() for t in self.tdc if t is not None]
