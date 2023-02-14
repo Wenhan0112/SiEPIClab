@@ -22,6 +22,7 @@ To build you own probe station, view instructions [here](https://github.com/SiEP
 	pip install numpy=="1.20.3"
 	pip install keithley2600
 	pip install thorlabs_apt_device
+	pip install opencv-python=="4.4.0.46"
 	```
 	
 	**Make sure the correct versions are downloaded and the previous versions have been uninstalled**
