@@ -216,8 +216,8 @@ class tlsPanel(wx.Panel):
         self.laser.sweepInitialRange = float(self.detectorPanel.initialRangeTc.GetValue());
         self.laser.sweepRangeDecrement = float(self.detectorPanel.sweepRangeDecTc.GetValue());
         activeDetectors = self.detectorPanel.getActiveDetectors()
-        if len(activeDetectors) == 0:
-            raise Exception('Cannot perform sweep. No active detectors selected.');
+        # if len(activeDetectors) == 0:
+        #     raise Exception('Cannot perform sweep. No active detectors selected.');
         self.laser.activeSlotIndex = activeDetectors
 
     def drawGraph(self, wavelength, power):

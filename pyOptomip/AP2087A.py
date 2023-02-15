@@ -7,13 +7,14 @@ Created on Tue Feb 14 15:48:16 2023
 """
 
 from ctypes import *
-import numpy as np;
-import numpy.ctypeslib as npct;
-from itertools import repeat;
+import numpy as np
+import numpy.ctypeslib as npct
+from itertools import repeat
 import math;
 import string
 from PyApex import AP2XXX
 import time
+import matplotlib.pyplot as plt
 
 class AP2087A(object):
     # Constants
@@ -44,11 +45,11 @@ class AP2087A(object):
             return
         self.MyAP2087A = AP2XXX(IPAddr) #169.254.226.27
         self.OSA = self.MyAP2087A.OSA()
-        self.MyPowerMeter = self.MyAP2087A.Powermeter()
-        self.MyTLS = self.MyAP2087A.TLS()
+        self.PowerMeter = self.MyAP2087A.Powermeter()
+        self.TLS = self.MyAP2087A.TLS()
         
         self.pwmSlotIndex = [1]
-        self.pwmSlotMap = [(0,0)]
+        self.pwmSlotMap = [(1,1)]
         print('Connected to the laser')
         self.connected = True
 
@@ -60,12 +61,16 @@ class AP2087A(object):
         bASCII_data = True
         if Trace > 0:
         	if bASCII_data == True:
-        		 Data = MyOSA.GetData("nm","log",1)
+        		 Data = self.OSA.GetData("nm","log",1)
         	else:
-        		Data = MyOSA.GetDataBin("nm","log",1)
+        		Data = self.OSA.GetDataBin("nm","log",1)
         # Convert values from string representation to integers for the driver
-        wavelengthArrPWM = Data[1]
-        powerArrPWM = Data[0]
+        wavelengthArrPWM = np.asarray(Data[1])
+        powerArrPWM = np.asarray(Data[0])
+        plt.plot(wavelengthArrPWM, powerArrPWM)
+        print(len(wavelengthArrPWM))
+        print(len(powerArrPWM))
+
         return (wavelengthArrPWM, powerArrPWM)
 
     # def getLambdaScanResult(self, chan, useClipping, clipLimit, numPts):
@@ -106,7 +111,7 @@ class AP2087A(object):
     
     def readPWM(self, slot, chan):
         """ read a single wavelength """
-        return float(MyPowerMeter.GetPower());
+        return float(self.PowerMeter.GetPower());
     
     def getNumPWMChannels(self):
         """ Returns the number of registered PWM channels """
@@ -120,19 +125,19 @@ class AP2087A(object):
     #     res = self.hp816x_set_PWM_powerRange(self.hDriver, slot, chan, self.rangeModeDict[rangeMode], range);
     #     self.checkError(res);
     
-    # MyTLS.SetStartWL(1545.000)
-    # start_wl = MyTLS.GetStartWL()
+    # TLS.SetStartWL(1545.000)
+    # start_wl = TLS.GetStartWL()
     # print("start WL =", start_wl)
     
-    # MyTLS.SetStopWL(1650.000)
-    # stop_wl = MyTLS.GetStopWL()
+    # TLS.SetStopWL(1650.000)
+    # stop_wl = TLS.GetStopWL()
     # print("stop WL =", stop_wl)
 
     def setPWMPowerUnit(self, slot, chan, unit):
         # Set Power Unit 
-        self.MyTLS.SetUnit(unit)    # dBm 
-        # MyTLS.SetPRWUnit(1)  # mW
-        print("Power Unit =", self.MyTLS.GetUnit())
+        self.TLS.SetUnit(unit)    # dBm 
+        # TLS.SetPRWUnit(1)  # mW
+        print("Power Unit =", self.TLS.GetUnit())
 
     # def setPWMPowerRange(self, slot, chan, rangeMode='auto', range=0):
     #     res = self.hp816x_set_PWM_powerRange(self.hDriver, slot, chan, self.rangeModeDict[rangeMode], range);
@@ -141,27 +146,27 @@ class AP2087A(object):
     def setTLSState(self, state, slot='auto'):
         """ turn on or off"""
         if state == 'on':
-            self.MyTLS.On()
+            self.TLS.On()
         elif state == 'off':
-            self.MyTLS.Off()
+            self.TLS.Off()
         else:
             print("Invalid input for laser status!")
 
-        status = self.MyTLS.GetStatus()
+        status = self.TLS.GetStatus()
         print("Laser status =", status)
         
         
     def setTLSWavelength(self, wavelength, selMode='manual', slot='auto'):
-        self.MyTLS.SetWavelength(wavelength)
+        self.TLS.SetWavelength(wavelength)
         time.sleep(0.150)
-        dWL = self.MyTLS.GetWavelength()
+        dWL = self.TLS.GetWavelength()
         time.sleep(0.150)
         print("Get Static WL =", dWL)
         
     def setTLSPower(self, power, slot='auto', selMode='manual', unit='dBm'):
-        self.MyTLS.SetPower(power)
+        self.TLS.SetPower(power)
         time.sleep(0.150)
-        dPow = self.MyTLS.GetPower()
+        dPow = self.TLS.GetPower()
         time.sleep(0.150)
         print("Get Static Power =", dPow)
         elf.checkError(res);
