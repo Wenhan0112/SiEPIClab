@@ -217,6 +217,7 @@ class instrumentFrame_withtabs(wx.Frame):
             if opticalStage:
                 opticalStagePanel = opticalStage.panelClass(self, opticalStage)
                 homeVbox.Add(opticalStagePanel, proportion=0, border=0, flag=wx.EXPAND)
+                print('laserwithdetector:'+str(laserWithDetector))
                 if laserWithDetector:
                     self.fineAlign = fineAlign(laserWithDetector, opticalStage)
                     try:

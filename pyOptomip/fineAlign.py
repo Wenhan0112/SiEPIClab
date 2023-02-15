@@ -25,7 +25,7 @@
 
 import math
 import numpy as np
-import hp816x_instr
+# import hp816x_instr
 
 
 class fineAlign(object):

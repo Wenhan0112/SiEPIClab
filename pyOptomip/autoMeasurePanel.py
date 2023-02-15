@@ -669,7 +669,7 @@ class autoMeasurePanel(wx.Panel):
                            (startBox, 0, wx.EXPAND)])
         matPlotBox.Add(vboxOuter, flag=wx.LEFT | wx.TOP | wx.ALIGN_LEFT, border=0, proportion=0)
 
-        self.SetSizer(matPlotBox)
+        # self.SetSizer(matPlotBox)
 
     def calibrationcheck(self, event):
         if self.caldone == True:

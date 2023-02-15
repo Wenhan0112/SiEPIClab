@@ -10,8 +10,8 @@ import numpy as np
 class TDC001Motor:
     name = 'TDC001'
     isMotor = True
-    isOpt = False
-    isElec = True
+    isOpt = True
+    isElec = False
     isLaser = False
     isDetect = False
     isSMU = False
