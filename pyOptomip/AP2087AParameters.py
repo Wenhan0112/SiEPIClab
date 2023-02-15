@@ -48,7 +48,7 @@ class AP2087AParameters(wx.Panel):
         self.para1tc = wx.TextCtrl(self,value='160.254.88.3')
         self.para1.AddMany([(self.para1name, 1, wx.EXPAND), (self.para1tc, 1, wx.EXPAND)])
 
-        # self.para2 = wx.BoxSizer(wx.HORIZONTAL)
+        self.para2 = wx.BoxSizer(wx.HORIZONTAL)
         # self.para2name = wx.StaticText(self, label='Detector Address')
         # self.para2tc = wx.ComboBox(self, choices=self.visaAddrLst)
         # for x in self.visaAddrLst:

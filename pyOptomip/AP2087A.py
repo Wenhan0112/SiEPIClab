@@ -22,6 +22,7 @@ class AP2087A(object):
     maxPWMPoints = 100000
     isDetect = True
     isLaser = True
+    isMotor = False
     isSMU = False
     isElec = False
     hasDetector = True
@@ -46,6 +47,8 @@ class AP2087A(object):
         self.MyPowerMeter = self.MyAP2087A.Powermeter()
         self.MyTLS = self.MyAP2087A.TLS()
         
+        self.pwmSlotIndex = [1]
+        self.pwmSlotMap = [(0,0)]
         print('Connected to the laser')
         self.connected = True
 
@@ -88,19 +91,26 @@ class AP2087A(object):
     # def setRangeParams(self, chan, initialRange, rangeDecrement, reset=0):
     #     return;
 
-    def setAutorangeAll(self):
+    def setAutorangeAll(self): #TODO
         """ Turns on autorange for all detectors and sets units to dBm """
         for slotinfo in self.pwmSlotMap:
             detslot = slotinfo[0];
             detchan = slotinfo[1]
 
             self.setPWMPowerUnit(detslot, detchan, 'dBm')
-            self.setPWMPowerRange(detslot, detchan, rangeMode='auto')
+            # self.setPWMPowerRange(detslot, detchan, rangeMode='auto')
+    def findTLSSlots(self):
+        """ Returns a list of all tunable lasers in the mainframe """
 
+        return [0]
+    
     def readPWM(self, slot, chan):
         """ read a single wavelength """
         return float(MyPowerMeter.GetPower());
-
+    
+    def getNumPWMChannels(self):
+        """ Returns the number of registered PWM channels """
+        return 1;
     # def setPWMAveragingTime(self, slot, chan, avgTime):
     #     res = self.hp816x_set_PWM_averagingTime(self.hDriver, slot, chan, avgTime);
     #     self.checkError(res);
@@ -120,9 +130,9 @@ class AP2087A(object):
 
     def setPWMPowerUnit(self, slot, chan, unit):
         # Set Power Unit 
-        MyTLS.SetPRWUnit(0)    # dBm 
+        self.MyTLS.SetUnit(unit)    # dBm 
         # MyTLS.SetPRWUnit(1)  # mW
-        print("Power Unit =", MyTLS.GetPRWUnit())
+        print("Power Unit =", self.MyTLS.GetUnit())
 
     # def setPWMPowerRange(self, slot, chan, rangeMode='auto', range=0):
     #     res = self.hp816x_set_PWM_powerRange(self.hDriver, slot, chan, self.rangeModeDict[rangeMode], range);
