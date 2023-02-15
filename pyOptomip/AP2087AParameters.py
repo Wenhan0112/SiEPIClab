@@ -42,7 +42,7 @@ class AP2087AParameters(wx.Panel):
         hbox = wx.BoxSizer(wx.HORIZONTAL)
 
         self.para1 = wx.BoxSizer(wx.HORIZONTAL)
-        self.para1name = wx.StaticText(self, label='Mainframe Address')
+        self.para1name = wx.StaticText(self, label='OSA IP Address')
         # self.para1tc = wx.ComboBox(self, choices=self.visaAddrLst)
   
         self.para1tc = wx.TextCtrl(self,value='160.254.88.3')

@@ -13,7 +13,7 @@ from itertools import repeat;
 import math;
 import string
 from PyApex import AP2XXX
-
+import time
 
 class AP2087A(object):
     # Constants
@@ -105,9 +105,24 @@ class AP2087A(object):
     #     res = self.hp816x_set_PWM_averagingTime(self.hDriver, slot, chan, avgTime);
     #     self.checkError(res);
 
-    # def setPWMPowerUnit(self, slot, chan, unit):
-    #     res = self.hp816x_set_PWM_powerUnit(self.hDriver, slot, chan, self.sweepUnitDict[unit]);
+
+    # def setPWMPowerRange(self, slot, chan, rangeMode='auto', range=0):
+    #     res = self.hp816x_set_PWM_powerRange(self.hDriver, slot, chan, self.rangeModeDict[rangeMode], range);
     #     self.checkError(res);
+    
+    # MyTLS.SetStartWL(1545.000)
+    # start_wl = MyTLS.GetStartWL()
+    # print("start WL =", start_wl)
+    
+    # MyTLS.SetStopWL(1650.000)
+    # stop_wl = MyTLS.GetStopWL()
+    # print("stop WL =", stop_wl)
+
+    def setPWMPowerUnit(self, slot, chan, unit):
+        # Set Power Unit 
+        MyTLS.SetPRWUnit(0)    # dBm 
+        # MyTLS.SetPRWUnit(1)  # mW
+        print("Power Unit =", MyTLS.GetPRWUnit())
 
     # def setPWMPowerRange(self, slot, chan, rangeMode='auto', range=0):
     #     res = self.hp816x_set_PWM_powerRange(self.hDriver, slot, chan, self.rangeModeDict[rangeMode], range);
@@ -115,25 +130,33 @@ class AP2087A(object):
 
     def setTLSState(self, state, slot='auto'):
         """ turn on or off"""
-        if slot == 'auto':
-            slot = self.getAutoTLSSlot();
+        if state == 'on':
+            self.MyTLS.On()
+        elif state == 'off':
+            self.MyTLS.Off()
+        else:
+            print("Invalid input for laser status!")
 
-        res = self.hp816x_set_TLS_laserState(self.hDriver, int(slot), self.laserStateDict[state]);
-        self.checkError(res);
-
+        status = self.MyTLS.GetStatus()
+        print("Laser status =", status)
+        
+        
     def setTLSWavelength(self, wavelength, selMode='manual', slot='auto'):
+        self.MyTLS.SetWavelength(wavelength)
+        time.sleep(0.150)
+        dWL = self.MyTLS.GetWavelength()
+        time.sleep(0.150)
+        print("Get Static WL =", dWL)
+        
+    def setTLSPower(self, power, slot='auto', selMode='manual', unit='dBm'):
+        self.MyTLS.SetPower(power)
+        time.sleep(0.150)
+        dPow = self.MyTLS.GetPower()
+        time.sleep(0.150)
+        print("Get Static Power =", dPow)
+        elf.checkError(res);
 
-        res = self.hp816x_set_TLS_wavelength(self.hDriver, int(slot), self.laserSelModeDict[selMode], wavelength);
-        self.checkError(res);
 
-    # def setTLSPower(self, power, slot='auto', selMode='manual', unit='dBm'):
-    #     if slot == 'auto':
-    #         slot = self.getAutoTLSSlot();
-
-    #     res = self.hp816x_set_TLS_power(self.hDriver, int(slot), self.sweepUnitDict[unit],
-    #                                     self.laserSelModeDict[selMode], \
-    #                                     power);
-    #     self.checkError(res);
 
 
     # def getSlotInstruments(self):
