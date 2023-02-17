@@ -40,6 +40,10 @@ class TDC001Motor:
         self.connections = np.array([tdc is not None for tdc in self.tdc], dtype=bool)
         print(f'Connections: {self.visaName}')
 
+        for tdc in self.tdc:
+            # increase the acceleration for faster tuning.
+            tdc.set_velocity_params(acceleration = 10000, max_velocity = 1777830, bay=0, channel=0)
+
     def disconnect(self):
         [t.close() for t in self.tdc if t is not None]
 
@@ -52,18 +56,21 @@ class TDC001Motor:
         if self.tdc[axis] is None:
             print(f"No TDC001 connected in Axis {axis_name}.")
             return
-        if self.position[axis] - x < self.minPosition[axis]:
-            print(f"Cannot Move Past Minimum Position in Axis {axis_name}.")
-            return
-        self.tdc[axis].move_relative(distance=int(x*1000), bay=0, channel=0)
+        # if self.position[axis] - x < self.minPosition[axis]:
+        #     print(f"Cannot Move Past Minimum Position in Axis {axis_name}.")
+        #     return
+        
+        # Z812b motor: 29nm/step
+        self.tdc[axis].move_relative(distance=int(x*1000/29), bay=0, channel=0)
         self.position[axis] -= x
         print(f"TDC001 Controller Moved in Axis {axis_name} by {-x} um!")
     
     # temp function for fineAlign, need to fix the unit
     def moveRelativeXY(self, x, y):
-        self.moveRelative(0, x/1000)
-        self.moveRelative(1, y/1000)
-        time.sleep(0.15)
+        # unit: um
+        self.moveRelative(0, x)
+        self.moveRelative(1, y)
+        time.sleep(0.5)
         
     def getPosition(self):
         return self.position
