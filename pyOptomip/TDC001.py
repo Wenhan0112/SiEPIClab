@@ -43,6 +43,8 @@ class TDC001Motor:
         [t.close() for t in self.tdc if t is not None]
 
     def moveRelative(self, axis, x):
+        # TODO: make the inputs consistent with optical stage control.
+        
         # if self.minPositionSet is False and x != 0:
         #     print('Please Set Minimum Position in X Axis.')
         axis_name = int(axis+1)

@@ -25,7 +25,7 @@
 
 import math
 import numpy as np
-# import hp816x_instr
+import hp816x_instr
 
 
 class fineAlign(object):
@@ -57,28 +57,39 @@ class fineAlign(object):
         self.laser = laser
         self.stage = stage
 
+
     def doFineAlign(self):
         xStartPos = self.stage.getPosition()[0]
         yStartPos = self.stage.getPosition()[1]
+        print('Doing finealign')
+        print(self.detectorPriority)
 
-        for det in self.detectorPriority:
+        print('laser connected:')
+        print(self.laser)
+        print('stage connected:')
+        print(self.stage)
+        
+        for det in [0]:#self.detectorPriority:
+
             maxSteps = math.ceil(self.scanWindowSize / float(self.stepSize))
             # Get the detector slot number and channel for the chosen detector index
             detSlot = self.laser.pwmSlotMap[det][0]
             detChan = self.laser.pwmSlotMap[det][1]
 
             self.laser.setPWMPowerUnit(detSlot, detChan, 'dBm')
-            self.laser.setPWMPowerRange(detSlot, detChan, 'auto', 0)
+            # self.laser.setPWMPowerRange(detSlot, detChan, 'auto', 0)
+            
             # Try to set laser output. If the laser only has one output, an error is thrown
             # which will be ignored here
-            try:
-                self.laser.setTLSOutput(self.laserOutput, slot=self.laserSlot)
-            except hp816x_instr.InstrumentError:
-                pass
-            self.laser.setTLSWavelength(self.wavelength, slot=self.laserSlot)
-            self.laser.setTLSPower(self.laserPower, slot=self.laserSlot)
+            # try:
+            #     self.laser.setTLSOutput(self.laserOutput, slot=self.laserSlot)
+            # except hp816x_instr.InstrumentError:
+            #     pass
+        
+            # self.laser.setTLSWavelength(self.wavelength, slot=self.laserSlot)
+            # self.laser.setTLSPower(self.laserPower, slot=self.laserSlot)
             self.laser.setTLSState('on', slot=self.laserSlot)
-
+            print('laser set')
             # Spiral search method
             res = self.spiralSearch(maxSteps, detSlot, detChan)
             if res == self.DEVICE_NOT_FOUND:
@@ -112,7 +123,7 @@ class fineAlign(object):
 
     def spiralSearch(self, maxSteps, detSlot, detChan):
         numSteps = 1
-
+        print('spiral search started')
         power = self.laser.readPWM(detSlot, detChan)
 
         direction = 1
@@ -123,11 +134,17 @@ class fineAlign(object):
 
         # Spiral search stage
         while power <= self.threshold and numSteps < maxSteps:
-
+            print('sprial step')
+            
             # X movement
             for ii in range(1, numSteps + 1):
+                print('stage move x')
+                print(self.stepSize * direction)
+
                 self.stage.moveRelative(self.stepSize * direction, 0)
                 power = self.laser.readPWM(detSlot, detChan)
+                print(power)
+
                 if self.abort:
                     return self.FINE_ALIGN_ABORTED
                 elif power > self.threshold:

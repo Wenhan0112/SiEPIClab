@@ -43,19 +43,11 @@ class AP2087AParameters(wx.Panel):
 
         self.para1 = wx.BoxSizer(wx.HORIZONTAL)
         self.para1name = wx.StaticText(self, label='OSA IP Address')
-        # self.para1tc = wx.ComboBox(self, choices=self.visaAddrLst)
   
         self.para1tc = wx.TextCtrl(self,value='160.254.88.3')
         self.para1.AddMany([(self.para1name, 1, wx.EXPAND), (self.para1tc, 1, wx.EXPAND)])
 
         self.para2 = wx.BoxSizer(wx.HORIZONTAL)
-        # self.para2name = wx.StaticText(self, label='Detector Address')
-        # self.para2tc = wx.ComboBox(self, choices=self.visaAddrLst)
-        # for x in self.visaAddrLst:
-        #     if x == 'USB0::0x0957::0x3718::MY48102149::0::INSTR':
-        #         self.para2tc.SetValue('USB0::0x0957::0x3718::MY48102149::0::INSTR') #fill in when we have access to lab pc
-        # # self.para2tc = wx.TextCtrl(self,value='GPIB0::20::INSTR')
-        # self.para2.AddMany([(self.para2name, 1, wx.EXPAND), (self.para2tc, 1, wx.EXPAND)])
 
         self.disconnectBtn = wx.Button(self, label='Disconnect')
         self.disconnectBtn.Bind(wx.EVT_BUTTON, self.disconnect)
