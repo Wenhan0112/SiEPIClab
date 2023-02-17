@@ -6,6 +6,7 @@ from thorlabs_apt_device import TDC001
 import re
 import math
 import numpy as np
+import time
 
 class TDC001Motor:
     name = 'TDC001'
@@ -54,11 +55,16 @@ class TDC001Motor:
         if self.position[axis] - x < self.minPosition[axis]:
             print(f"Cannot Move Past Minimum Position in Axis {axis_name}.")
             return
-        self.tdc[axis].move_relative(distance=int(1000 * x), bay=0, channel=0)
+        self.tdc[axis].move_relative(distance=int(x*1000), bay=0, channel=0)
         self.position[axis] -= x
         print(f"TDC001 Controller Moved in Axis {axis_name} by {-x} um!")
     
-    
+    # temp function for fineAlign, need to fix the unit
+    def moveRelativeXY(self, x, y):
+        self.moveRelative(0, x/1000)
+        self.moveRelative(1, y/1000)
+        time.sleep(0.15)
+        
     def getPosition(self):
         return self.position
 
