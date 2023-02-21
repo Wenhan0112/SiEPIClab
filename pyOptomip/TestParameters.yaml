@@ -1,687 +1,740 @@
 Devices:
-  EB0001:
-    DeviceID: EB0001
-    Electrical Coordinates:
-    - 63.0
-    - 3560.0
-    - G
-    Optical Coordinates:
-    - 131.0
-    - 479.0
-    Polarization: TE
-    RoutineCheck: false
-    Routines: []
-    Type: device
-    Wavelength: '1550'
-  EB0002:
-    DeviceID: EB0002
-    Electrical Coordinates:
-    - 408.0
-    - 3560.0
-    - G
-    Optical Coordinates:
-    - 385.0
-    - 359.0
-    Polarization: TE
-    RoutineCheck: false
-    Routines: []
-    Type: device
-    Wavelength: '1550'
-  EB0004:
-    DeviceID: EB0004
-    Electrical Coordinates:
-    - 753.0
-    - 3560.0
-    - G
-    Optical Coordinates:
-    - 639.0
-    - 239.0
-    Polarization: TE
-    RoutineCheck: false
-    Routines: []
-    Type: device
-    Wavelength: '1550'
-  EB0005:
-    DeviceID: EB0005
-    Electrical Coordinates:
-    - 1098.0
-    - 3560.0
-    - G
-    Optical Coordinates:
-    - 1084.0
-    - 419.0
-    Polarization: TE
-    RoutineCheck: false
-    Routines: []
-    Type: device
-    Wavelength: '1550'
-  EB0007:
-    DeviceID: EB0007
-    Electrical Coordinates:
-    - 53.0
-    - 3420.0
-    - G
-    Optical Coordinates:
-    - 68.0
-    - 419.0
-    Polarization: TE
-    RoutineCheck: false
-    Routines: []
-    Type: device
-    Wavelength: '1550'
-  EB0008:
-    DeviceID: EB0008
-    Electrical Coordinates:
-    - 398.0
-    - 3420.0
-    - G
-    Optical Coordinates:
-    - 322.0
-    - 299.0
-    Polarization: TE
-    RoutineCheck: false
-    Routines: []
-    Type: device
-    Wavelength: '1550'
-  EB0009:
-    DeviceID: EB0009
-    Electrical Coordinates:
-    - 743.0
-    - 3420.0
-    - G
-    Optical Coordinates:
-    - 576.0
-    - 179.0
-    Polarization: TE
-    RoutineCheck: false
-    Routines: []
-    Type: device
-    Wavelength: '1550'
-  EB0012:
-    DeviceID: EB0012
-    Electrical Coordinates:
-    - 743.0
-    - 2578.0
-    - G
-    Optical Coordinates:
-    - 893.0
-    - 239.0
-    Polarization: TE
-    RoutineCheck: false
-    Routines: []
-    Type: device
-    Wavelength: '1550'
-  EB0014:
-    DeviceID: EB0014
-    Electrical Coordinates:
-    - 1533.0
-    - 2320.0
-    - G
-    Optical Coordinates:
-    - 1655.0
-    - 479.0
-    Polarization: TE
-    RoutineCheck: false
-    Routines: []
-    Type: device
-    Wavelength: '1550'
-  EB0018:
-    DeviceID: EB0018
-    Electrical Coordinates:
-    - 1088.0
-    - 3420.0
-    - G
-    Optical Coordinates:
-    - 1147.0
-    - 359.0
-    Polarization: TE
-    RoutineCheck: false
-    Routines: []
-    Type: device
-    Wavelength: '1550'
-  EB0020:
-    DeviceID: EB0020
-    Electrical Coordinates:
-    - 1680.0
-    - 3560.0
-    - G
-    Optical Coordinates:
-    - 1401.0
-    - 239.0
-    Polarization: TE
-    RoutineCheck: false
-    Routines: []
-    Type: device
-    Wavelength: '1550'
-  EB0021:
-    DeviceID: EB0021
-    Electrical Coordinates:
-    - 1455.0
-    - 3560.0
-    - G
-    Optical Coordinates:
-    - 1338.0
-    - 299.0
-    Polarization: TE
-    RoutineCheck: false
-    Routines: []
-    Type: device
-    Wavelength: '1550'
-  EB0022:
-    DeviceID: EB0022
-    Electrical Coordinates:
-    - 1677.0
-    - 3140.0
-    - G
-    Optical Coordinates:
-    - 1655.0
-    - 359.0
-    Polarization: TE
-    RoutineCheck: false
-    Routines: []
-    Type: device
-    Wavelength: '1550'
-  EB0024:
-    DeviceID: EB0024
-    Electrical Coordinates:
-    - 1087.0
-    - 2578.0
-    - G
-    Optical Coordinates:
-    - 893.0
-    - 119.0
-    Polarization: TE
-    RoutineCheck: false
-    Routines: []
-    Type: device
-    Wavelength: '1550'
-  EB0025:
-    DeviceID: EB0025
-    Electrical Coordinates:
-    - 745.0
-    - 3140.0
-    - G
-    Optical Coordinates:
-    - 893.0
-    - 479.0
-    Polarization: TE
-    RoutineCheck: false
-    Routines: []
-    Type: device
-    Wavelength: '1550'
-  EB0036:
-    DeviceID: EB0036
-    Electrical Coordinates:
-    - 1658.0
-    - 2578.0
-    - G
-    Optical Coordinates:
-    - 1592.0
-    - 419.0
-    Polarization: TE
-    RoutineCheck: false
-    Routines: []
-    Type: device
-    Wavelength: '1550'
-  EB0037:
-    DeviceID: EB0037
-    Electrical Coordinates:
-    - 408.0
-    - 3280.0
-    - G
-    Optical Coordinates:
-    - 385.0
-    - 239.0
-    Polarization: TE
-    RoutineCheck: false
-    Routines: []
-    Type: device
-    Wavelength: '1550'
-  EB0040:
-    DeviceID: EB0040
-    Electrical Coordinates:
-    - 63.0
-    - 3280.0
-    - G
-    Optical Coordinates:
-    - 131.0
-    - 359.0
-    Polarization: TE
-    RoutineCheck: false
-    Routines: []
-    Type: device
-    Wavelength: '1550'
-  EB0043:
-    DeviceID: EB0043
-    Electrical Coordinates:
-    - 1098.0
-    - 3280.0
-    - G
-    Optical Coordinates:
-    - 1084.0
-    - 299.0
-    Polarization: TE
-    RoutineCheck: false
-    Routines: []
-    Type: device
-    Wavelength: '1550'
-  EB0046:
-    DeviceID: EB0046
-    Electrical Coordinates:
-    - 398.0
-    - 3140.0
-    - G
-    Optical Coordinates:
-    - 322.0
-    - 179.0
-    Polarization: TE
-    RoutineCheck: false
-    Routines: []
-    Type: device
-    Wavelength: '1550'
-  EB0049:
-    DeviceID: EB0049
-    Electrical Coordinates:
-    - 398.0
-    - 2578.0
-    - G
-    Optical Coordinates:
-    - 639.0
-    - 359.0
-    Polarization: TE
-    RoutineCheck: false
-    Routines: []
-    Type: device
-    Wavelength: '1550'
-  EB0051:
-    DeviceID: EB0051
-    Electrical Coordinates:
-    - 1308.0
-    - 2578.0
-    - G
-    Optical Coordinates:
-    - 1401.0
-    - 359.0
-    Polarization: TE
-    RoutineCheck: false
-    Routines: []
-    Type: device
-    Wavelength: '1550'
-  EB0056:
-    DeviceID: EB0056
-    Electrical Coordinates:
-    - 968.0
-    - 3140.0
-    - G
-    Optical Coordinates:
-    - 1147.0
-    - 479.0
-    Polarization: TE
-    RoutineCheck: false
-    Routines: []
-    Type: device
-    Wavelength: '1550'
-  EB0060:
-    DeviceID: EB0060
-    Electrical Coordinates:
-    - 408.0
-    - 3000.0
-    - G
-    Optical Coordinates:
-    - 385.0
-    - 119.0
-    Polarization: TE
-    RoutineCheck: true
-    Routines:
-    - Wavelength Sweep:hellotest
-    Type: device
-    Wavelength: '1550'
-  EB0062:
-    DeviceID: EB0062
-    Electrical Coordinates:
-    - 753.0
-    - 3000.0
-    - G
-    Optical Coordinates:
-    - 830.0
-    - 419.0
-    Polarization: TE
-    RoutineCheck: false
-    Routines: []
-    Type: device
-    Wavelength: '1550'
-  EB0063:
-    DeviceID: EB0063
-    Electrical Coordinates:
-    - 1098.0
-    - 3000.0
-    - G
-    Optical Coordinates:
-    - 1147.0
-    - 239.0
-    Polarization: TE
-    RoutineCheck: false
-    Routines: []
-    Type: device
-    Wavelength: '1550'
-  EB0064:
-    DeviceID: EB0064
-    Electrical Coordinates:
-    - 63.0
-    - 3000.0
-    - G
-    Optical Coordinates:
-    - 131.0
-    - 239.0
-    Polarization: TE
-    RoutineCheck: false
-    Routines: []
-    Type: device
-    Wavelength: '1550'
-  EB0068:
-    DeviceID: EB0068
-    Electrical Coordinates:
-    - 53.0
-    - 2578.0
-    - G
-    Optical Coordinates:
-    - 385.0
-    - 479.0
-    Polarization: TE
-    RoutineCheck: true
-    Routines:
-    - Wavelength Sweep:hellotest
-    Type: device
-    Wavelength: '1550'
-  EB0070:
-    DeviceID: EB0070
-    Electrical Coordinates:
-    - 753.0
-    - 3280.0
-    - G
-    Optical Coordinates:
-    - 639.0
-    - 119.0
-    Polarization: TE
-    RoutineCheck: false
-    Routines: []
-    Type: device
-    Wavelength: '1550'
-  EB0072:
-    DeviceID: EB0072
-    Electrical Coordinates:
-    - 53.0
-    - 3140.0
-    - G
-    Optical Coordinates:
-    - 68.0
-    - 299.0
-    Polarization: TE
-    RoutineCheck: false
-    Routines: []
-    Type: device
-    Wavelength: '1550'
-  EB0074:
-    DeviceID: EB0074
-    Electrical Coordinates:
-    - 803.0
-    - 2860.0
-    - G
-    Optical Coordinates:
-    - 893.0
-    - 359.0
-    Polarization: TE
-    RoutineCheck: false
-    Routines: []
-    Type: device
-    Wavelength: '1550'
-  EB0075:
-    DeviceID: EB0075
-    Electrical Coordinates:
-    - 1178.0
-    - 2860.0
-    - G
-    Optical Coordinates:
-    - 1084.0
-    - 179.0
-    Polarization: TE
-    RoutineCheck: false
-    Routines: []
-    Type: device
-    Wavelength: '1550'
-  EB0076:
-    DeviceID: EB0076
-    Electrical Coordinates:
-    - 428.0
-    - 2860.0
-    - G
-    Optical Coordinates:
-    - 639.0
-    - 479.0
-    Polarization: TE
-    RoutineCheck: false
-    Routines: []
-    Type: device
-    Wavelength: '1550'
-  EB0078:
-    DeviceID: EB0078
-    Electrical Coordinates:
-    - 1543.0
-    - 2720.0
-    - G
-    Optical Coordinates:
-    - 1592.0
-    - 299.0
-    Polarization: TE
-    RoutineCheck: false
-    Routines: []
-    Type: device
-    Wavelength: '1550'
-  EB0079:
-    DeviceID: EB0079
-    Electrical Coordinates:
-    - 1178.0
-    - 2320.0
-    - G
-    Optical Coordinates:
-    - 131.0
-    - 119.0
-    Polarization: TE
-    RoutineCheck: false
-    Routines: []
-    Type: device
-    Wavelength: '1550'
-  EB0080:
-    DeviceID: EB0080
-    Electrical Coordinates:
-    - 438.0
-    - 2720.0
-    - G
-    Optical Coordinates:
-    - 576.0
-    - 419.0
-    Polarization: TE
-    RoutineCheck: false
-    Routines: []
-    Type: device
-    Wavelength: '1550'
-  EB0081:
-    DeviceID: EB0081
-    Electrical Coordinates:
-    - 813.0
-    - 2720.0
-    - G
-    Optical Coordinates:
-    - 830.0
-    - 299.0
-    Polarization: TE
-    RoutineCheck: false
-    Routines: []
-    Type: device
-    Wavelength: '1550'
-  EB0083:
-    DeviceID: EB0083
-    Electrical Coordinates:
-    - 803.0
-    - 2320.0
-    - G
-    Optical Coordinates:
-    - 830.0
-    - 179.0
-    Polarization: TE
-    RoutineCheck: true
-    Routines:
-    - Wavelength Sweep:hellotest
-    Type: device
-    Wavelength: '1550'
-  EB0085:
-    DeviceID: EB0085
-    Electrical Coordinates:
-    - 1178.0
-    - 2320.0
-    - G
-    Optical Coordinates:
-    - 1401.0
-    - 479.0
-    Polarization: TE
-    RoutineCheck: false
-    Routines: []
-    Type: device
-    Wavelength: '1550'
-  EB0086:
-    DeviceID: EB0086
-    Electrical Coordinates:
-    - 1463.0
-    - 3420.0
-    - G
-    Optical Coordinates:
-    - 1338.0
-    - 179.0
-    Polarization: TE
-    RoutineCheck: false
-    Routines: []
-    Type: device
-    Wavelength: '1550'
-  EB0089:
-    DeviceID: EB0089
-    Electrical Coordinates:
-    - 1533.0
-    - 2860.0
-    - G
-    Optical Coordinates:
-    - 1655.0
-    - 239.0
-    Polarization: TE
-    RoutineCheck: false
-    Routines: []
-    Type: device
-    Wavelength: '1550'
-  EB0091:
-    DeviceID: EB0091
-    Electrical Coordinates:
-    - 1188.0
-    - 2720.0
-    - G
-    Optical Coordinates:
-    - 1147.0
-    - 119.0
-    Polarization: TE
-    RoutineCheck: false
-    Routines: []
-    Type: device
-    Wavelength: '1550'
-  EB0092:
-    DeviceID: EB0092
+  9ring0_0:
+    DeviceID: 9ring0_0
     Electrical Coordinates: []
     Optical Coordinates:
-    - 1338.0
-    - 419.0
+    - -410.0
+    - -1030.0
     Polarization: TE
     RoutineCheck: false
     Routines: []
-    Type: device
+    Type: 9ring
     Wavelength: '1550'
-  EB0093:
-    DeviceID: EB0093
-    Electrical Coordinates:
-    - 1473.0
-    - 3000.0
-    - G
-    Optical Coordinates:
-    - 1592.0
-    - 179.0
-    Polarization: TE
-    RoutineCheck: false
-    Routines: []
-    Type: device
-    Wavelength: '1550'
-  EB0094:
-    DeviceID: EB0094
-    Electrical Coordinates:
-    - 53.0
-    - 2860.0
-    - G
-    Optical Coordinates:
-    - 68.0
-    - 179.0
-    Polarization: TE
-    RoutineCheck: false
-    Routines: []
-    Type: device
-    Wavelength: '1550'
-  EB0096:
-    DeviceID: EB0096
-    Electrical Coordinates:
-    - 428.0
-    - 2320.0
-    - G
-    Optical Coordinates:
-    - 576.0
-    - 299.0
-    Polarization: TE
-    RoutineCheck: false
-    Routines: []
-    Type: device
-    Wavelength: '1550'
-  EB0098:
-    DeviceID: EB0098
-    Electrical Coordinates:
-    - 53.0
-    - 2320.0
-    - G
-    Optical Coordinates:
-    - 322.0
-    - 419.0
-    Polarization: TE
-    RoutineCheck: true
-    Routines:
-    - Wavelength Sweep:hellotest
-    Type: device
-    Wavelength: '1550'
-  EB0101:
-    DeviceID: EB0101
-    Electrical Coordinates:
-    - 1473.0
-    - 3280.0
-    - G
-    Optical Coordinates:
-    - 1401.0
-    - 119.0
-    Polarization: TE
-    RoutineCheck: false
-    Routines: []
-    Type: device
-    Wavelength: '1550'
-  alignment:
-    DeviceID: alignment
+  9ring0_1:
+    DeviceID: 9ring0_1
     Electrical Coordinates: []
     Optical Coordinates:
-    - 1655.0
-    - 119.0
+    - -1410.0
+    - -1030.0
     Polarization: TE
     RoutineCheck: false
     Routines: []
-    Type: device
+    Type: 9ring
+    Wavelength: '1550'
+  9ring0_2:
+    DeviceID: 9ring0_2
+    Electrical Coordinates: []
+    Optical Coordinates:
+    - -2410.0
+    - -1030.0
+    Polarization: TE
+    RoutineCheck: false
+    Routines: []
+    Type: 9ring
+    Wavelength: '1550'
+  9ring0_3:
+    DeviceID: 9ring0_3
+    Electrical Coordinates: []
+    Optical Coordinates:
+    - -3410.0
+    - -1030.0
+    Polarization: TE
+    RoutineCheck: false
+    Routines: []
+    Type: 9ring
+    Wavelength: '1550'
+  9ring0_4:
+    DeviceID: 9ring0_4
+    Electrical Coordinates: []
+    Optical Coordinates:
+    - -4410.0
+    - -1030.0
+    Polarization: TE
+    RoutineCheck: false
+    Routines: []
+    Type: 9ring
+    Wavelength: '1550'
+  9ring1_0:
+    DeviceID: 9ring1_0
+    Electrical Coordinates: []
+    Optical Coordinates:
+    - -410.0
+    - -2630.0
+    Polarization: TE
+    RoutineCheck: false
+    Routines: []
+    Type: 9ring
+    Wavelength: '1550'
+  9ring1_1:
+    DeviceID: 9ring1_1
+    Electrical Coordinates: []
+    Optical Coordinates:
+    - -1410.0
+    - -2630.0
+    Polarization: TE
+    RoutineCheck: false
+    Routines: []
+    Type: 9ring
+    Wavelength: '1550'
+  9ring1_2:
+    DeviceID: 9ring1_2
+    Electrical Coordinates: []
+    Optical Coordinates:
+    - -2410.0
+    - -2630.0
+    Polarization: TE
+    RoutineCheck: false
+    Routines: []
+    Type: 9ring
+    Wavelength: '1550'
+  9ring1_3:
+    DeviceID: 9ring1_3
+    Electrical Coordinates: []
+    Optical Coordinates:
+    - -3410.0
+    - -2630.0
+    Polarization: TE
+    RoutineCheck: false
+    Routines: []
+    Type: 9ring
+    Wavelength: '1550'
+  9ring1_4:
+    DeviceID: 9ring1_4
+    Electrical Coordinates: []
+    Optical Coordinates:
+    - -4410.0
+    - -2630.0
+    Polarization: TE
+    RoutineCheck: false
+    Routines: []
+    Type: 9ring
+    Wavelength: '1550'
+  9ring2_0:
+    DeviceID: 9ring2_0
+    Electrical Coordinates: []
+    Optical Coordinates:
+    - -410.0
+    - -4230.0
+    Polarization: TE
+    RoutineCheck: false
+    Routines: []
+    Type: 9ring
+    Wavelength: '1550'
+  9ring2_1:
+    DeviceID: 9ring2_1
+    Electrical Coordinates: []
+    Optical Coordinates:
+    - -1410.0
+    - -4230.0
+    Polarization: TE
+    RoutineCheck: false
+    Routines: []
+    Type: 9ring
+    Wavelength: '1550'
+  9ring2_2:
+    DeviceID: 9ring2_2
+    Electrical Coordinates: []
+    Optical Coordinates:
+    - -2410.0
+    - -4230.0
+    Polarization: TE
+    RoutineCheck: false
+    Routines: []
+    Type: 9ring
+    Wavelength: '1550'
+  9ring2_3:
+    DeviceID: 9ring2_3
+    Electrical Coordinates: []
+    Optical Coordinates:
+    - -3410.0
+    - -4230.0
+    Polarization: TE
+    RoutineCheck: false
+    Routines: []
+    Type: 9ring
+    Wavelength: '1550'
+  9ring2_4:
+    DeviceID: 9ring2_4
+    Electrical Coordinates: []
+    Optical Coordinates:
+    - -4410.0
+    - -4230.0
+    Polarization: TE
+    RoutineCheck: false
+    Routines: []
+    Type: 9ring
+    Wavelength: '1550'
+  9ring3_0:
+    DeviceID: 9ring3_0
+    Electrical Coordinates: []
+    Optical Coordinates:
+    - -410.0
+    - -5830.0
+    Polarization: TE
+    RoutineCheck: false
+    Routines: []
+    Type: 9ring
+    Wavelength: '1550'
+  9ring3_1:
+    DeviceID: 9ring3_1
+    Electrical Coordinates: []
+    Optical Coordinates:
+    - -1410.0
+    - -5830.0
+    Polarization: TE
+    RoutineCheck: false
+    Routines: []
+    Type: 9ring
+    Wavelength: '1550'
+  9ring3_2:
+    DeviceID: 9ring3_2
+    Electrical Coordinates: []
+    Optical Coordinates:
+    - -2410.0
+    - -5830.0
+    Polarization: TE
+    RoutineCheck: false
+    Routines: []
+    Type: 9ring
+    Wavelength: '1550'
+  9ring3_3:
+    DeviceID: 9ring3_3
+    Electrical Coordinates: []
+    Optical Coordinates:
+    - -3410.0
+    - -5830.0
+    Polarization: TE
+    RoutineCheck: false
+    Routines: []
+    Type: 9ring
+    Wavelength: '1550'
+  9ring3_4:
+    DeviceID: 9ring3_4
+    Electrical Coordinates: []
+    Optical Coordinates:
+    - -4410.0
+    - -5830.0
+    Polarization: TE
+    RoutineCheck: false
+    Routines: []
+    Type: 9ring
+    Wavelength: '1550'
+  InvFWM0_0:
+    DeviceID: InvFWM0_0
+    Electrical Coordinates: []
+    Optical Coordinates:
+    - -410.0
+    - -850.0
+    Polarization: TE
+    RoutineCheck: false
+    Routines: []
+    Type: InvFWM
+    Wavelength: '1550'
+  InvFWM0_1:
+    DeviceID: InvFWM0_1
+    Electrical Coordinates: []
+    Optical Coordinates:
+    - -1410.0
+    - -850.0
+    Polarization: TE
+    RoutineCheck: false
+    Routines: []
+    Type: InvFWM
+    Wavelength: '1550'
+  InvFWM0_2:
+    DeviceID: InvFWM0_2
+    Electrical Coordinates: []
+    Optical Coordinates:
+    - -2410.0
+    - -850.0
+    Polarization: TE
+    RoutineCheck: false
+    Routines: []
+    Type: InvFWM
+    Wavelength: '1550'
+  InvFWM0_3:
+    DeviceID: InvFWM0_3
+    Electrical Coordinates: []
+    Optical Coordinates:
+    - -3410.0
+    - -850.0
+    Polarization: TE
+    RoutineCheck: false
+    Routines: []
+    Type: InvFWM
+    Wavelength: '1550'
+  InvFWM0_4:
+    DeviceID: InvFWM0_4
+    Electrical Coordinates: []
+    Optical Coordinates:
+    - -4410.0
+    - -850.0
+    Polarization: TE
+    RoutineCheck: false
+    Routines: []
+    Type: InvFWM
+    Wavelength: '1550'
+  InvFWM1_0:
+    DeviceID: InvFWM1_0
+    Electrical Coordinates: []
+    Optical Coordinates:
+    - -410.0
+    - -2450.0
+    Polarization: TE
+    RoutineCheck: false
+    Routines: []
+    Type: InvFWM
+    Wavelength: '1550'
+  InvFWM1_1:
+    DeviceID: InvFWM1_1
+    Electrical Coordinates: []
+    Optical Coordinates:
+    - -1410.0
+    - -2450.0
+    Polarization: TE
+    RoutineCheck: false
+    Routines: []
+    Type: InvFWM
+    Wavelength: '1550'
+  InvFWM1_2:
+    DeviceID: InvFWM1_2
+    Electrical Coordinates: []
+    Optical Coordinates:
+    - -2410.0
+    - -2450.0
+    Polarization: TE
+    RoutineCheck: false
+    Routines: []
+    Type: InvFWM
+    Wavelength: '1550'
+  InvFWM1_3:
+    DeviceID: InvFWM1_3
+    Electrical Coordinates: []
+    Optical Coordinates:
+    - -3410.0
+    - -2450.0
+    Polarization: TE
+    RoutineCheck: false
+    Routines: []
+    Type: InvFWM
+    Wavelength: '1550'
+  InvFWM1_4:
+    DeviceID: InvFWM1_4
+    Electrical Coordinates: []
+    Optical Coordinates:
+    - -4410.0
+    - -2450.0
+    Polarization: TE
+    RoutineCheck: false
+    Routines: []
+    Type: InvFWM
+    Wavelength: '1550'
+  InvFWM2_0:
+    DeviceID: InvFWM2_0
+    Electrical Coordinates: []
+    Optical Coordinates:
+    - -410.0
+    - -4050.0
+    Polarization: TE
+    RoutineCheck: false
+    Routines: []
+    Type: InvFWM
+    Wavelength: '1550'
+  InvFWM2_1:
+    DeviceID: InvFWM2_1
+    Electrical Coordinates: []
+    Optical Coordinates:
+    - -1410.0
+    - -4050.0
+    Polarization: TE
+    RoutineCheck: false
+    Routines: []
+    Type: InvFWM
+    Wavelength: '1550'
+  InvFWM2_2:
+    DeviceID: InvFWM2_2
+    Electrical Coordinates: []
+    Optical Coordinates:
+    - -2410.0
+    - -4050.0
+    Polarization: TE
+    RoutineCheck: false
+    Routines: []
+    Type: InvFWM
+    Wavelength: '1550'
+  InvFWM2_3:
+    DeviceID: InvFWM2_3
+    Electrical Coordinates: []
+    Optical Coordinates:
+    - -3410.0
+    - -4050.0
+    Polarization: TE
+    RoutineCheck: false
+    Routines: []
+    Type: InvFWM
+    Wavelength: '1550'
+  InvFWM2_4:
+    DeviceID: InvFWM2_4
+    Electrical Coordinates: []
+    Optical Coordinates:
+    - -4410.0
+    - -4050.0
+    Polarization: TE
+    RoutineCheck: false
+    Routines: []
+    Type: InvFWM
+    Wavelength: '1550'
+  InvFWM3_0:
+    DeviceID: InvFWM3_0
+    Electrical Coordinates: []
+    Optical Coordinates:
+    - -410.0
+    - -5650.0
+    Polarization: TE
+    RoutineCheck: false
+    Routines: []
+    Type: InvFWM
+    Wavelength: '1550'
+  InvFWM3_1:
+    DeviceID: InvFWM3_1
+    Electrical Coordinates: []
+    Optical Coordinates:
+    - -1410.0
+    - -5650.0
+    Polarization: TE
+    RoutineCheck: false
+    Routines: []
+    Type: InvFWM
+    Wavelength: '1550'
+  InvFWM3_2:
+    DeviceID: InvFWM3_2
+    Electrical Coordinates: []
+    Optical Coordinates:
+    - -2410.0
+    - -5650.0
+    Polarization: TE
+    RoutineCheck: false
+    Routines: []
+    Type: InvFWM
+    Wavelength: '1550'
+  InvFWM3_3:
+    DeviceID: InvFWM3_3
+    Electrical Coordinates: []
+    Optical Coordinates:
+    - -3410.0
+    - -5650.0
+    Polarization: TE
+    RoutineCheck: false
+    Routines: []
+    Type: InvFWM
+    Wavelength: '1550'
+  InvFWM3_4:
+    DeviceID: InvFWM3_4
+    Electrical Coordinates: []
+    Optical Coordinates:
+    - -4410.0
+    - -5650.0
+    Polarization: TE
+    RoutineCheck: false
+    Routines: []
+    Type: InvFWM
+    Wavelength: '1550'
+  SingleRing0:
+    DeviceID: SingleRing0
+    Electrical Coordinates: []
+    Optical Coordinates:
+    - -5220.0
+    - -1125.0
+    Polarization: TE
+    RoutineCheck: false
+    Routines: []
+    Type: SingleRing
+    Wavelength: '1550'
+  SingleRing1:
+    DeviceID: SingleRing1
+    Electrical Coordinates: []
+    Optical Coordinates:
+    - -5220.0
+    - -525.0
+    Polarization: TE
+    RoutineCheck: false
+    Routines: []
+    Type: SingleRing
+    Wavelength: '1550'
+  amo0_0:
+    DeviceID: amo0_0
+    Electrical Coordinates: []
+    Optical Coordinates:
+    - -440.0
+    - -250.0
+    Polarization: TE
+    RoutineCheck: false
+    Routines: []
+    Type: amo
+    Wavelength: '1550'
+  amo0_1:
+    DeviceID: amo0_1
+    Electrical Coordinates: []
+    Optical Coordinates:
+    - -1440.0
+    - -250.0
+    Polarization: TE
+    RoutineCheck: false
+    Routines: []
+    Type: amo
+    Wavelength: '1550'
+  amo1_0:
+    DeviceID: amo1_0
+    Electrical Coordinates: []
+    Optical Coordinates:
+    - -440.0
+    - -1850.0
+    Polarization: TE
+    RoutineCheck: false
+    Routines: []
+    Type: amo
+    Wavelength: '1550'
+  amo1_1:
+    DeviceID: amo1_1
+    Electrical Coordinates: []
+    Optical Coordinates:
+    - -1440.0
+    - -1850.0
+    Polarization: TE
+    RoutineCheck: false
+    Routines: []
+    Type: amo
+    Wavelength: '1550'
+  amo2_0:
+    DeviceID: amo2_0
+    Electrical Coordinates: []
+    Optical Coordinates:
+    - -440.0
+    - -3450.0
+    Polarization: TE
+    RoutineCheck: false
+    Routines: []
+    Type: amo
+    Wavelength: '1550'
+  amo2_1:
+    DeviceID: amo2_1
+    Electrical Coordinates: []
+    Optical Coordinates:
+    - -1440.0
+    - -3450.0
+    Polarization: TE
+    RoutineCheck: false
+    Routines: []
+    Type: amo
+    Wavelength: '1550'
+  amo3_0:
+    DeviceID: amo3_0
+    Electrical Coordinates: []
+    Optical Coordinates:
+    - -440.0
+    - -5050.0
+    Polarization: TE
+    RoutineCheck: false
+    Routines: []
+    Type: amo
+    Wavelength: '1550'
+  amo3_1:
+    DeviceID: amo3_1
+    Electrical Coordinates: []
+    Optical Coordinates:
+    - -1440.0
+    - -5050.0
+    Polarization: TE
+    RoutineCheck: false
+    Routines: []
+    Type: amo
+    Wavelength: '1550'
+  caliboffset=-4nm:
+    DeviceID: caliboffset=-4nm
+    Electrical Coordinates: []
+    Optical Coordinates:
+    - -5220.0
+    - -2180.0
+    Polarization: TE
+    RoutineCheck: false
+    Routines: []
+    Type: calib
+    Wavelength: '1550'
+  caliboffset=-8nm:
+    DeviceID: caliboffset=-8nm
+    Electrical Coordinates: []
+    Optical Coordinates:
+    - -5220.0
+    - -2380.0
+    Polarization: TE
+    RoutineCheck: false
+    Routines: []
+    Type: calib
+    Wavelength: '1550'
+  caliboffset=0nm:
+    DeviceID: caliboffset=0nm
+    Electrical Coordinates: []
+    Optical Coordinates:
+    - -5220.0
+    - -1980.0
+    Polarization: TE
+    RoutineCheck: false
+    Routines: []
+    Type: calib
+    Wavelength: '1550'
+  caliboffset=4nm:
+    DeviceID: caliboffset=4nm
+    Electrical Coordinates: []
+    Optical Coordinates:
+    - -5220.0
+    - -1780.0
+    Polarization: TE
+    RoutineCheck: false
+    Routines: []
+    Type: calib
+    Wavelength: '1550'
+  caliboffset=8nm:
+    DeviceID: caliboffset=8nm
+    Electrical Coordinates: []
+    Optical Coordinates:
+    - -5220.0
+    - -1580.0
+    Polarization: TE
+    RoutineCheck: false
+    Routines: []
+    Type: calib
+    Wavelength: '1550'
+  prd0_2:
+    DeviceID: prd0_2
+    Electrical Coordinates: []
+    Optical Coordinates:
+    - -2440.0
+    - -250.0
+    Polarization: TE
+    RoutineCheck: false
+    Routines: []
+    Type: prd
+    Wavelength: '1550'
+  prd0_3:
+    DeviceID: prd0_3
+    Electrical Coordinates: []
+    Optical Coordinates:
+    - -3440.0
+    - -250.0
+    Polarization: TE
+    RoutineCheck: false
+    Routines: []
+    Type: prd
+    Wavelength: '1550'
+  prd0_4:
+    DeviceID: prd0_4
+    Electrical Coordinates: []
+    Optical Coordinates:
+    - -4440.0
+    - -250.0
+    Polarization: TE
+    RoutineCheck: false
+    Routines: []
+    Type: prd
+    Wavelength: '1550'
+  prd1_2:
+    DeviceID: prd1_2
+    Electrical Coordinates: []
+    Optical Coordinates:
+    - -2440.0
+    - -1850.0
+    Polarization: TE
+    RoutineCheck: false
+    Routines: []
+    Type: prd
+    Wavelength: '1550'
+  prd1_3:
+    DeviceID: prd1_3
+    Electrical Coordinates: []
+    Optical Coordinates:
+    - -3440.0
+    - -1850.0
+    Polarization: TE
+    RoutineCheck: false
+    Routines: []
+    Type: prd
+    Wavelength: '1550'
+  prd1_4:
+    DeviceID: prd1_4
+    Electrical Coordinates: []
+    Optical Coordinates:
+    - -4440.0
+    - -1850.0
+    Polarization: TE
+    RoutineCheck: false
+    Routines: []
+    Type: prd
+    Wavelength: '1550'
+  prd2_2:
+    DeviceID: prd2_2
+    Electrical Coordinates: []
+    Optical Coordinates:
+    - -2440.0
+    - -3450.0
+    Polarization: TE
+    RoutineCheck: false
+    Routines: []
+    Type: prd
+    Wavelength: '1550'
+  prd2_3:
+    DeviceID: prd2_3
+    Electrical Coordinates: []
+    Optical Coordinates:
+    - -3440.0
+    - -3450.0
+    Polarization: TE
+    RoutineCheck: false
+    Routines: []
+    Type: prd
+    Wavelength: '1550'
+  prd2_4:
+    DeviceID: prd2_4
+    Electrical Coordinates: []
+    Optical Coordinates:
+    - -4440.0
+    - -3450.0
+    Polarization: TE
+    RoutineCheck: false
+    Routines: []
+    Type: prd
+    Wavelength: '1550'
+  prd3_2:
+    DeviceID: prd3_2
+    Electrical Coordinates: []
+    Optical Coordinates:
+    - -2440.0
+    - -5050.0
+    Polarization: TE
+    RoutineCheck: false
+    Routines: []
+    Type: prd
+    Wavelength: '1550'
+  prd3_3:
+    DeviceID: prd3_3
+    Electrical Coordinates: []
+    Optical Coordinates:
+    - -3440.0
+    - -5050.0
+    Polarization: TE
+    RoutineCheck: false
+    Routines: []
+    Type: prd
+    Wavelength: '1550'
+  prd3_4:
+    DeviceID: prd3_4
+    Electrical Coordinates: []
+    Optical Coordinates:
+    - -4440.0
+    - -5050.0
+    Polarization: TE
+    RoutineCheck: false
+    Routines: []
+    Type: prd
     Wavelength: '1550'
 Routines:
   Current Sweep:
@@ -834,23 +887,3 @@ Routines:
       Wavelengths: ''
       setvflag: false
       setwflag: false
-    hellotest:
-      Channel A: false
-      Channel B: false
-      IV: false
-      Initialrange: '-20'
-      Laseroutput: High power
-      Max: ''
-      Min: ''
-      Numscans: '1'
-      PV: false
-      RV: false
-      RangeDec: '20'
-      Res: ''
-      Start: '1480'
-      Stepsize: '1'
-      Stop: '1550'
-      Sweeppower: '0'
-      Sweepspeed: auto
-      Voltages: ''
-      Wavelengths: ''

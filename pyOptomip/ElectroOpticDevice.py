@@ -42,7 +42,8 @@ class ElectroOpticDevice:
     def getReferenceBondPad(self):
         """Returns the name and coordinates of the left-most bond pad within
         an electro-optic device in the form of a list [bond pad name, x coordinates, y coordinates]"""
-        if self.electricalCoordinates:
+        if False: 
+        # if self.electricalCoordinates:
             reference = self.electricalCoordinates[0]
             for bondPad in self.electricalCoordinates:
                 if bondPad[1] < reference[1]:

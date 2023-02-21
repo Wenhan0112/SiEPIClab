@@ -111,7 +111,7 @@ class AP2087A(object):
         # Set Power Unit 
         self.TLS.SetUnit(unit)    # dBm / mW
         print("Power Unit =", self.TLS.GetUnit())
-            
+        
     def setTLSPower(self, power, slot='auto', selMode='manual', unit='dBm'):
         self.TLS.SetPower(power)
         time.sleep(0.150)

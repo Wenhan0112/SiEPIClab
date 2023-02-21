@@ -64,13 +64,36 @@ class TDC001Motor:
         self.tdc[axis].move_relative(distance=int(x*1000/29), bay=0, channel=0)
         self.position[axis] -= x
         print(f"TDC001 Controller Moved in Axis {axis_name} by {-x} um!")
-    
+        time.sleep(0.5)
+
+    def moveAbsolute(self, axis, x):
+        axis_name = int(axis+1)
+        if self.tdc[axis] is None:
+            print(f"No TDC001 connected in Axis {axis_name}.")
+            return
+
+        self.tdc[axis].move_absolute(int(x*1000*29))
+        self.position[axis] = x
+        print(f"TDC001 Controller Moved to {x} um!")
+        time.sleep(0.5)
+        
     # temp function for fineAlign, need to fix the unit
     def moveRelativeXY(self, x, y):
         # unit: um
         self.moveRelative(0, x)
         self.moveRelative(1, y)
-        time.sleep(0.5)
+        
+    def moveRelativeXYZ(self, x, y, z):
+        # unit: um
+        self.moveRelative(0, x)
+        self.moveRelative(1, y)
+        # self.moveRelative(2, z)
+        
+    def moveAbsoluteXYZ(self, x, y, z):
+        # unit: um
+        self.moveAbsolute(0, x)
+        self.moveAbsolute(1, y)
+        # self.moveRelative(2, z)
         
     def getPosition(self):
         return self.position

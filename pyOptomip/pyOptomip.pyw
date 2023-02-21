@@ -47,8 +47,9 @@ from pylablib.devices import Thorlabs
 
 softwareVersion = "1.1"
 
-devTypes = [CorvusEcoParameters, hp816x_N77Det_instrParameters, hp816x_instrParameters,
-            SMUParameters, BSC203MotorParameters, TDC001MotorParameters, AP2087AParameters]# N77Det_instrParameters]
+devTypes = [TDC001MotorParameters, AP2087AParameters]
+# N77Det_instrParameters, CorvusEcoParameters, hp816x_N77Det_instrParameters, hp816x_instrParameters, SMUParameters, BSC203MotorParameters, 
+
 
 
 class ConnectCB(wx.Choicebook):
