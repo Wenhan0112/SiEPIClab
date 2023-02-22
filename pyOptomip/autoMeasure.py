@@ -1231,6 +1231,7 @@ class autoMeasure(object):
         # print('iselecmotorconnected = ' + self.motorElec)
 
         if self.laser and self.motorElec:
+            print('Both laser and electric motor')
             # lift wedge probe
             self.motorElec.moveRelativeZ(1000)
             time.sleep(2)
@@ -1315,7 +1316,7 @@ class autoMeasure(object):
                         for ii in range(self.checkList.GetItemCount()):
                             if self.checkList.GetItemText(ii) == device.getDeviceID():
                                 self.checkList.SetItemTextColour(ii, wx.Colour(0, 255, 0))
-
+                    break
         # if probe is connected but laser isn't
         elif not self.laser and self.motorElec:
             selectedDevice = deviceName

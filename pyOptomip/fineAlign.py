@@ -40,11 +40,11 @@ class fineAlign(object):
 
     stepSize = 2  # Stage step size in microns
 
-    scanWindowSize = 3#50  # Size of square window which will be searched by fine align
+    scanWindowSize = 50#50  # Size of square window which will be searched by fine align
 
-    threshold = -66#-50  # Spiral search will stop once power is greater than the threshold
+    threshold = -54#-50  # Spiral search will stop once power is greater than the threshold
 
-    numGradientIter = 2#50
+    numGradientIter = 50#50
 
     useCrosshair = 0  # Set to 1 to use crosshair search after gradient. Doesn't work very well.
 
@@ -89,7 +89,7 @@ class fineAlign(object):
             # self.laser.setTLSWavelength(self.wavelength, slot=self.laserSlot)
             # self.laser.setTLSPower(self.laserPower, slot=self.laserSlot)
             self.laser.setTLSState('on', slot=self.laserSlot)
-            print('laser set')
+
             # Spiral search method
             res = self.spiralSearch(maxSteps, detSlot, detChan)
             if res == self.DEVICE_NOT_FOUND:

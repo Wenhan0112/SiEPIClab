@@ -58,14 +58,14 @@ class AP2087A(object):
     def sweep(self):
         """ Performs a wavelength sweep """
         Trace = self.OSA.Run()
-        
+        time.sleep(15)
         # If the single measurement is good (Trace > 0), we get the data in a list Data = [[Power Data], [Wavelength Data]]
         bASCII_data = True #TODO: [ZJ] not sure what it means
         if Trace > 0:
         	if bASCII_data == True:
-        		 Data = self.OSA.GetData("nm","log",1)
+        		 Data = self.OSA.GetData(ScaleX = "nm", ScaleY = "log", TraceNumber = 2)
         	else:
-        		Data = self.OSA.GetDataBin("nm","log",1)
+        		Data = self.OSA.GetDataBin(ScaleX = "nm", ScaleY = "log", TraceNumber = 2)
                 
         # Convert values from string representation to integers for the driver
         wavelengthArrPWM = np.asarray(Data[1])
@@ -85,7 +85,7 @@ class AP2087A(object):
 
     def readPWM(self, slot, chan):
         """ read a single wavelength """
-        return float(self.PowerMeter.GetPower());
+        return float(self.PowerMeter.GetPower(Polar=chan));
     
     def setTLSState(self, state, slot='auto'):
         """ turn on or off"""
@@ -142,7 +142,7 @@ class AP2087A(object):
 
     def getNumPWMChannels(self):
         """ Returns the number of registered PWM channels """
-        return 2;
+        return 1;
     
     # def setPWMAveragingTime(self, slot, chan, avgTime):
     #     res = self.hp816x_set_PWM_averagingTime(self.hDriver, slot, chan, avgTime);
