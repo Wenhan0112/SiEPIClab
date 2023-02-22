@@ -36,13 +36,17 @@ class TDC001Motor:
                 self.tdc.append(TDC001(serial_port=serial_port, home=False))
                 # Potentially try home=True? Homing is probably needed after initialisation. Or just set the initial point as 0?
         [t.identify() for t in self.tdc if t is not None]
+        time.sleep(2)
         self.status = [t.status if t is not None else "No Connection Directed" for t in self.tdc]
         self.connections = np.array([tdc is not None for tdc in self.tdc], dtype=bool)
+        self.position =  [(t.status['position']) if t is not None else "No Connection Directed" for t in self.tdc]
+        print(self.status)
         print(f'Connections: {self.visaName}')
-
-        for tdc in self.tdc:
-            # increase the acceleration for faster tuning.
-            tdc.set_velocity_params(acceleration = 10000, max_velocity = 1777830, bay=0, channel=0)
+        print(self.position)
+        for t in self.tdc:
+            if t is not None:
+                # increase the acceleration for faster tuning.
+                t.set_velocity_params(acceleration = 10000, max_velocity = 1777830, bay=0, channel=0)
 
     def disconnect(self):
         [t.close() for t in self.tdc if t is not None]
@@ -62,20 +66,25 @@ class TDC001Motor:
         
         # Z812b motor: 29nm/step
         self.tdc[axis].move_relative(distance=int(x*1000/29), bay=0, channel=0)
-        self.position[axis] -= x
-        print(f"TDC001 Controller Moved in Axis {axis_name} by {-x} um!")
         time.sleep(0.5)
+
+        self.position[axis] = self.tdc[axis].status['position']
+        # self.position[axis] -= int(x*1000/29)
+        
+        # print(f"TDC001 Controller Moved in Axis {axis_name} by {-x} um!")
 
     def moveAbsolute(self, axis, x):
         axis_name = int(axis+1)
         if self.tdc[axis] is None:
-            print(f"No TDC001 connected in Axis {axis_name}.")
+            # print(f"No TDC001 connected in Axis {axis_name}.")
             return
 
-        self.tdc[axis].move_absolute(int(x*1000*29))
-        self.position[axis] = x
-        print(f"TDC001 Controller Moved to {x} um!")
+        self.tdc[axis].move_absolute(int(x*1000/29))
         time.sleep(0.5)
+
+        self.position[axis] = int(x*1000/29)
+        print(f"TDC001 Controller Moved to {x} um!")
+        
         
     # temp function for fineAlign, need to fix the unit
     def moveRelativeXY(self, x, y):
@@ -93,10 +102,12 @@ class TDC001Motor:
         # unit: um
         self.moveAbsolute(0, x)
         self.moveAbsolute(1, y)
+        time.sleep(10)
         # self.moveRelative(2, z)
         
-    def getPosition(self):
-        return self.position
+    def getPosition(self): # in um
+        positions_um = [pos*29/1000 for pos in self.position]
+        return positions_um
 
     def setMinPosition(self, axis, minPosition):
         self.minPosition[axis] = minPosition

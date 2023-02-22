@@ -3,8 +3,8 @@ Devices:
     DeviceID: 9ring0_0
     Electrical Coordinates: []
     Optical Coordinates:
-    - -410.0
-    - -1030.0
+    - 410.0
+    - 1030.0
     Polarization: TE
     RoutineCheck: false
     Routines: []
@@ -14,8 +14,8 @@ Devices:
     DeviceID: 9ring0_1
     Electrical Coordinates: []
     Optical Coordinates:
-    - -1410.0
-    - -1030.0
+    - 1410.0
+    - 1030.0
     Polarization: TE
     RoutineCheck: false
     Routines: []
@@ -25,8 +25,8 @@ Devices:
     DeviceID: 9ring0_2
     Electrical Coordinates: []
     Optical Coordinates:
-    - -2410.0
-    - -1030.0
+    - 2410.0
+    - 1030.0
     Polarization: TE
     RoutineCheck: false
     Routines: []
@@ -36,8 +36,8 @@ Devices:
     DeviceID: 9ring0_3
     Electrical Coordinates: []
     Optical Coordinates:
-    - -3410.0
-    - -1030.0
+    - 3410.0
+    - 1030.0
     Polarization: TE
     RoutineCheck: false
     Routines: []
@@ -47,8 +47,8 @@ Devices:
     DeviceID: 9ring0_4
     Electrical Coordinates: []
     Optical Coordinates:
-    - -4410.0
-    - -1030.0
+    - 4410.0
+    - 1030.0
     Polarization: TE
     RoutineCheck: false
     Routines: []
@@ -58,8 +58,8 @@ Devices:
     DeviceID: 9ring1_0
     Electrical Coordinates: []
     Optical Coordinates:
-    - -410.0
-    - -2630.0
+    - 410.0
+    - 2630.0
     Polarization: TE
     RoutineCheck: false
     Routines: []
@@ -69,8 +69,8 @@ Devices:
     DeviceID: 9ring1_1
     Electrical Coordinates: []
     Optical Coordinates:
-    - -1410.0
-    - -2630.0
+    - 1410.0
+    - 2630.0
     Polarization: TE
     RoutineCheck: false
     Routines: []
@@ -80,8 +80,8 @@ Devices:
     DeviceID: 9ring1_2
     Electrical Coordinates: []
     Optical Coordinates:
-    - -2410.0
-    - -2630.0
+    - 2410.0
+    - 2630.0
     Polarization: TE
     RoutineCheck: false
     Routines: []
@@ -91,8 +91,8 @@ Devices:
     DeviceID: 9ring1_3
     Electrical Coordinates: []
     Optical Coordinates:
-    - -3410.0
-    - -2630.0
+    - 3410.0
+    - 2630.0
     Polarization: TE
     RoutineCheck: false
     Routines: []
@@ -102,8 +102,8 @@ Devices:
     DeviceID: 9ring1_4
     Electrical Coordinates: []
     Optical Coordinates:
-    - -4410.0
-    - -2630.0
+    - 4410.0
+    - 2630.0
     Polarization: TE
     RoutineCheck: false
     Routines: []
@@ -113,8 +113,8 @@ Devices:
     DeviceID: 9ring2_0
     Electrical Coordinates: []
     Optical Coordinates:
-    - -410.0
-    - -4230.0
+    - 410.0
+    - 4230.0
     Polarization: TE
     RoutineCheck: false
     Routines: []
@@ -124,8 +124,8 @@ Devices:
     DeviceID: 9ring2_1
     Electrical Coordinates: []
     Optical Coordinates:
-    - -1410.0
-    - -4230.0
+    - 1410.0
+    - 4230.0
     Polarization: TE
     RoutineCheck: false
     Routines: []
@@ -135,8 +135,8 @@ Devices:
     DeviceID: 9ring2_2
     Electrical Coordinates: []
     Optical Coordinates:
-    - -2410.0
-    - -4230.0
+    - 2410.0
+    - 4230.0
     Polarization: TE
     RoutineCheck: false
     Routines: []
@@ -146,8 +146,8 @@ Devices:
     DeviceID: 9ring2_3
     Electrical Coordinates: []
     Optical Coordinates:
-    - -3410.0
-    - -4230.0
+    - 3410.0
+    - 4230.0
     Polarization: TE
     RoutineCheck: false
     Routines: []
@@ -157,8 +157,8 @@ Devices:
     DeviceID: 9ring2_4
     Electrical Coordinates: []
     Optical Coordinates:
-    - -4410.0
-    - -4230.0
+    - 4410.0
+    - 4230.0
     Polarization: TE
     RoutineCheck: false
     Routines: []
@@ -168,8 +168,8 @@ Devices:
     DeviceID: 9ring3_0
     Electrical Coordinates: []
     Optical Coordinates:
-    - -410.0
-    - -5830.0
+    - 410.0
+    - 5830.0
     Polarization: TE
     RoutineCheck: false
     Routines: []
@@ -179,8 +179,8 @@ Devices:
     DeviceID: 9ring3_1
     Electrical Coordinates: []
     Optical Coordinates:
-    - -1410.0
-    - -5830.0
+    - 1410.0
+    - 5830.0
     Polarization: TE
     RoutineCheck: false
     Routines: []
@@ -190,8 +190,8 @@ Devices:
     DeviceID: 9ring3_2
     Electrical Coordinates: []
     Optical Coordinates:
-    - -2410.0
-    - -5830.0
+    - 2410.0
+    - 5830.0
     Polarization: TE
     RoutineCheck: false
     Routines: []
@@ -201,8 +201,8 @@ Devices:
     DeviceID: 9ring3_3
     Electrical Coordinates: []
     Optical Coordinates:
-    - -3410.0
-    - -5830.0
+    - 3410.0
+    - 5830.0
     Polarization: TE
     RoutineCheck: false
     Routines: []
@@ -212,8 +212,8 @@ Devices:
     DeviceID: 9ring3_4
     Electrical Coordinates: []
     Optical Coordinates:
-    - -4410.0
-    - -5830.0
+    - 4410.0
+    - 5830.0
     Polarization: TE
     RoutineCheck: false
     Routines: []
@@ -223,8 +223,8 @@ Devices:
     DeviceID: InvFWM0_0
     Electrical Coordinates: []
     Optical Coordinates:
-    - -410.0
-    - -850.0
+    - 410.0
+    - 850.0
     Polarization: TE
     RoutineCheck: false
     Routines: []
@@ -234,8 +234,8 @@ Devices:
     DeviceID: InvFWM0_1
     Electrical Coordinates: []
     Optical Coordinates:
-    - -1410.0
-    - -850.0
+    - 1410.0
+    - 850.0
     Polarization: TE
     RoutineCheck: false
     Routines: []
@@ -245,8 +245,8 @@ Devices:
     DeviceID: InvFWM0_2
     Electrical Coordinates: []
     Optical Coordinates:
-    - -2410.0
-    - -850.0
+    - 2410.0
+    - 850.0
     Polarization: TE
     RoutineCheck: false
     Routines: []
@@ -256,8 +256,8 @@ Devices:
     DeviceID: InvFWM0_3
     Electrical Coordinates: []
     Optical Coordinates:
-    - -3410.0
-    - -850.0
+    - 3410.0
+    - 850.0
     Polarization: TE
     RoutineCheck: false
     Routines: []
@@ -267,8 +267,8 @@ Devices:
     DeviceID: InvFWM0_4
     Electrical Coordinates: []
     Optical Coordinates:
-    - -4410.0
-    - -850.0
+    - 4410.0
+    - 850.0
     Polarization: TE
     RoutineCheck: false
     Routines: []
@@ -278,8 +278,8 @@ Devices:
     DeviceID: InvFWM1_0
     Electrical Coordinates: []
     Optical Coordinates:
-    - -410.0
-    - -2450.0
+    - 410.0
+    - 2450.0
     Polarization: TE
     RoutineCheck: false
     Routines: []
@@ -289,8 +289,8 @@ Devices:
     DeviceID: InvFWM1_1
     Electrical Coordinates: []
     Optical Coordinates:
-    - -1410.0
-    - -2450.0
+    - 1410.0
+    - 2450.0
     Polarization: TE
     RoutineCheck: false
     Routines: []
@@ -300,8 +300,8 @@ Devices:
     DeviceID: InvFWM1_2
     Electrical Coordinates: []
     Optical Coordinates:
-    - -2410.0
-    - -2450.0
+    - 2410.0
+    - 2450.0
     Polarization: TE
     RoutineCheck: false
     Routines: []
@@ -311,8 +311,8 @@ Devices:
     DeviceID: InvFWM1_3
     Electrical Coordinates: []
     Optical Coordinates:
-    - -3410.0
-    - -2450.0
+    - 3410.0
+    - 2450.0
     Polarization: TE
     RoutineCheck: false
     Routines: []
@@ -322,8 +322,8 @@ Devices:
     DeviceID: InvFWM1_4
     Electrical Coordinates: []
     Optical Coordinates:
-    - -4410.0
-    - -2450.0
+    - 4410.0
+    - 2450.0
     Polarization: TE
     RoutineCheck: false
     Routines: []
@@ -333,8 +333,8 @@ Devices:
     DeviceID: InvFWM2_0
     Electrical Coordinates: []
     Optical Coordinates:
-    - -410.0
-    - -4050.0
+    - 410.0
+    - 4050.0
     Polarization: TE
     RoutineCheck: false
     Routines: []
@@ -344,8 +344,8 @@ Devices:
     DeviceID: InvFWM2_1
     Electrical Coordinates: []
     Optical Coordinates:
-    - -1410.0
-    - -4050.0
+    - 1410.0
+    - 4050.0
     Polarization: TE
     RoutineCheck: false
     Routines: []
@@ -355,8 +355,8 @@ Devices:
     DeviceID: InvFWM2_2
     Electrical Coordinates: []
     Optical Coordinates:
-    - -2410.0
-    - -4050.0
+    - 2410.0
+    - 4050.0
     Polarization: TE
     RoutineCheck: false
     Routines: []
@@ -366,8 +366,8 @@ Devices:
     DeviceID: InvFWM2_3
     Electrical Coordinates: []
     Optical Coordinates:
-    - -3410.0
-    - -4050.0
+    - 3410.0
+    - 4050.0
     Polarization: TE
     RoutineCheck: false
     Routines: []
@@ -377,8 +377,8 @@ Devices:
     DeviceID: InvFWM2_4
     Electrical Coordinates: []
     Optical Coordinates:
-    - -4410.0
-    - -4050.0
+    - 4410.0
+    - 4050.0
     Polarization: TE
     RoutineCheck: false
     Routines: []
@@ -388,8 +388,8 @@ Devices:
     DeviceID: InvFWM3_0
     Electrical Coordinates: []
     Optical Coordinates:
-    - -410.0
-    - -5650.0
+    - 410.0
+    - 5650.0
     Polarization: TE
     RoutineCheck: false
     Routines: []
@@ -399,8 +399,8 @@ Devices:
     DeviceID: InvFWM3_1
     Electrical Coordinates: []
     Optical Coordinates:
-    - -1410.0
-    - -5650.0
+    - 1410.0
+    - 5650.0
     Polarization: TE
     RoutineCheck: false
     Routines: []
@@ -410,8 +410,8 @@ Devices:
     DeviceID: InvFWM3_2
     Electrical Coordinates: []
     Optical Coordinates:
-    - -2410.0
-    - -5650.0
+    - 2410.0
+    - 5650.0
     Polarization: TE
     RoutineCheck: false
     Routines: []
@@ -421,8 +421,8 @@ Devices:
     DeviceID: InvFWM3_3
     Electrical Coordinates: []
     Optical Coordinates:
-    - -3410.0
-    - -5650.0
+    - 3410.0
+    - 5650.0
     Polarization: TE
     RoutineCheck: false
     Routines: []
@@ -432,8 +432,8 @@ Devices:
     DeviceID: InvFWM3_4
     Electrical Coordinates: []
     Optical Coordinates:
-    - -4410.0
-    - -5650.0
+    - 4410.0
+    - 5650.0
     Polarization: TE
     RoutineCheck: false
     Routines: []
@@ -443,8 +443,8 @@ Devices:
     DeviceID: SingleRing0
     Electrical Coordinates: []
     Optical Coordinates:
-    - -5220.0
-    - -1125.0
+    - 5220.0
+    - 1125.0
     Polarization: TE
     RoutineCheck: false
     Routines: []
@@ -454,8 +454,8 @@ Devices:
     DeviceID: SingleRing1
     Electrical Coordinates: []
     Optical Coordinates:
-    - -5220.0
-    - -525.0
+    - 5220.0
+    - 525.0
     Polarization: TE
     RoutineCheck: false
     Routines: []
@@ -465,8 +465,8 @@ Devices:
     DeviceID: amo0_0
     Electrical Coordinates: []
     Optical Coordinates:
-    - -440.0
-    - -250.0
+    - 440.0
+    - 250.0
     Polarization: TE
     RoutineCheck: false
     Routines: []
@@ -476,8 +476,8 @@ Devices:
     DeviceID: amo0_1
     Electrical Coordinates: []
     Optical Coordinates:
-    - -1440.0
-    - -250.0
+    - 1440.0
+    - 250.0
     Polarization: TE
     RoutineCheck: false
     Routines: []
@@ -487,8 +487,8 @@ Devices:
     DeviceID: amo1_0
     Electrical Coordinates: []
     Optical Coordinates:
-    - -440.0
-    - -1850.0
+    - 440.0
+    - 1850.0
     Polarization: TE
     RoutineCheck: false
     Routines: []
@@ -498,8 +498,8 @@ Devices:
     DeviceID: amo1_1
     Electrical Coordinates: []
     Optical Coordinates:
-    - -1440.0
-    - -1850.0
+    - 1440.0
+    - 1850.0
     Polarization: TE
     RoutineCheck: false
     Routines: []
@@ -509,8 +509,8 @@ Devices:
     DeviceID: amo2_0
     Electrical Coordinates: []
     Optical Coordinates:
-    - -440.0
-    - -3450.0
+    - 440.0
+    - 3450.0
     Polarization: TE
     RoutineCheck: false
     Routines: []
@@ -520,8 +520,8 @@ Devices:
     DeviceID: amo2_1
     Electrical Coordinates: []
     Optical Coordinates:
-    - -1440.0
-    - -3450.0
+    - 1440.0
+    - 3450.0
     Polarization: TE
     RoutineCheck: false
     Routines: []
@@ -531,8 +531,8 @@ Devices:
     DeviceID: amo3_0
     Electrical Coordinates: []
     Optical Coordinates:
-    - -440.0
-    - -5050.0
+    - 440.0
+    - 5050.0
     Polarization: TE
     RoutineCheck: false
     Routines: []
@@ -542,8 +542,8 @@ Devices:
     DeviceID: amo3_1
     Electrical Coordinates: []
     Optical Coordinates:
-    - -1440.0
-    - -5050.0
+    - 1440.0
+    - 5050.0
     Polarization: TE
     RoutineCheck: false
     Routines: []
@@ -553,8 +553,8 @@ Devices:
     DeviceID: caliboffset=-4nm
     Electrical Coordinates: []
     Optical Coordinates:
-    - -5220.0
-    - -2180.0
+    - 5220.0
+    - 2180.0
     Polarization: TE
     RoutineCheck: false
     Routines: []
@@ -564,8 +564,8 @@ Devices:
     DeviceID: caliboffset=-8nm
     Electrical Coordinates: []
     Optical Coordinates:
-    - -5220.0
-    - -2380.0
+    - 5220.0
+    - 2380.0
     Polarization: TE
     RoutineCheck: false
     Routines: []
@@ -575,8 +575,8 @@ Devices:
     DeviceID: caliboffset=0nm
     Electrical Coordinates: []
     Optical Coordinates:
-    - -5220.0
-    - -1980.0
+    - 5220.0
+    - 1980.0
     Polarization: TE
     RoutineCheck: false
     Routines: []
@@ -586,8 +586,8 @@ Devices:
     DeviceID: caliboffset=4nm
     Electrical Coordinates: []
     Optical Coordinates:
-    - -5220.0
-    - -1780.0
+    - 5220.0
+    - 1780.0
     Polarization: TE
     RoutineCheck: false
     Routines: []
@@ -597,8 +597,8 @@ Devices:
     DeviceID: caliboffset=8nm
     Electrical Coordinates: []
     Optical Coordinates:
-    - -5220.0
-    - -1580.0
+    - 5220.0
+    - 1580.0
     Polarization: TE
     RoutineCheck: false
     Routines: []
@@ -608,8 +608,8 @@ Devices:
     DeviceID: prd0_2
     Electrical Coordinates: []
     Optical Coordinates:
-    - -2440.0
-    - -250.0
+    - 2440.0
+    - 250.0
     Polarization: TE
     RoutineCheck: false
     Routines: []
@@ -619,8 +619,8 @@ Devices:
     DeviceID: prd0_3
     Electrical Coordinates: []
     Optical Coordinates:
-    - -3440.0
-    - -250.0
+    - 3440.0
+    - 250.0
     Polarization: TE
     RoutineCheck: false
     Routines: []
@@ -630,8 +630,8 @@ Devices:
     DeviceID: prd0_4
     Electrical Coordinates: []
     Optical Coordinates:
-    - -4440.0
-    - -250.0
+    - 4440.0
+    - 250.0
     Polarization: TE
     RoutineCheck: false
     Routines: []
@@ -641,8 +641,8 @@ Devices:
     DeviceID: prd1_2
     Electrical Coordinates: []
     Optical Coordinates:
-    - -2440.0
-    - -1850.0
+    - 2440.0
+    - 1850.0
     Polarization: TE
     RoutineCheck: false
     Routines: []
@@ -652,8 +652,8 @@ Devices:
     DeviceID: prd1_3
     Electrical Coordinates: []
     Optical Coordinates:
-    - -3440.0
-    - -1850.0
+    - 3440.0
+    - 1850.0
     Polarization: TE
     RoutineCheck: false
     Routines: []
@@ -663,8 +663,8 @@ Devices:
     DeviceID: prd1_4
     Electrical Coordinates: []
     Optical Coordinates:
-    - -4440.0
-    - -1850.0
+    - 4440.0
+    - 1850.0
     Polarization: TE
     RoutineCheck: false
     Routines: []
@@ -674,8 +674,8 @@ Devices:
     DeviceID: prd2_2
     Electrical Coordinates: []
     Optical Coordinates:
-    - -2440.0
-    - -3450.0
+    - 2440.0
+    - 3450.0
     Polarization: TE
     RoutineCheck: false
     Routines: []
@@ -685,8 +685,8 @@ Devices:
     DeviceID: prd2_3
     Electrical Coordinates: []
     Optical Coordinates:
-    - -3440.0
-    - -3450.0
+    - 3440.0
+    - 3450.0
     Polarization: TE
     RoutineCheck: false
     Routines: []
@@ -696,8 +696,8 @@ Devices:
     DeviceID: prd2_4
     Electrical Coordinates: []
     Optical Coordinates:
-    - -4440.0
-    - -3450.0
+    - 4440.0
+    - 3450.0
     Polarization: TE
     RoutineCheck: false
     Routines: []
@@ -707,8 +707,8 @@ Devices:
     DeviceID: prd3_2
     Electrical Coordinates: []
     Optical Coordinates:
-    - -2440.0
-    - -5050.0
+    - 2440.0
+    - 5050.0
     Polarization: TE
     RoutineCheck: false
     Routines: []
@@ -718,8 +718,8 @@ Devices:
     DeviceID: prd3_3
     Electrical Coordinates: []
     Optical Coordinates:
-    - -3440.0
-    - -5050.0
+    - 3440.0
+    - 5050.0
     Polarization: TE
     RoutineCheck: false
     Routines: []
@@ -729,8 +729,8 @@ Devices:
     DeviceID: prd3_4
     Electrical Coordinates: []
     Optical Coordinates:
-    - -4440.0
-    - -5050.0
+    - 4440.0
+    - 5050.0
     Polarization: TE
     RoutineCheck: false
     Routines: []

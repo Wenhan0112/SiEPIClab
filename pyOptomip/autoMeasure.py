@@ -1227,6 +1227,9 @@ class autoMeasure(object):
         """
         # If laser and probe are connected
         print('Moving to device')
+        print('islaserconnected = ' + self.laser)
+        print('iselecmotorconnected = ' + self.motorElec)
+
         if self.laser and self.motorElec:
             # lift wedge probe
             self.motorElec.moveRelativeZ(1000)
@@ -1246,99 +1249,100 @@ class autoMeasure(object):
                     # Move chip stage
                     self.motorOpt.moveAbsoluteXYZ(motorCoordOpt[0], motorCoordOpt[1], motorCoordOpt[2])
                     # Fine align to device
-                    res, completed = self.fineAlign.doFineAlign()
-                    # If fine align fails change text colour of device to red in the checklist
-                    if completed is False:
-                        for ii in range(self.checkList.GetItemCount()):
-                            if self.checkList.GetItemText(ii) == device.getDeviceID():
-                                self.checkList.SetItemTextColour(ii, wx.Colour(255, 0, 0))
-                    else:
-                        # Set text to green if FineAlign Completes
-                        for ii in range(self.checkList.GetItemCount()):
-                            if self.checkList.GetItemText(ii) == device.getDeviceID():
-                                self.checkList.SetItemTextColour(ii, wx.Colour(0, 255, 0))
-                    # Find relative probe position
-                    gdsCoordElec = (float(device.getElectricalCoordinates()[0][0]), float(device.getElectricalCoordinates()[0][1]))
-                    motorCoordElec = self.gdsToMotorCoordsElec(gdsCoordElec)
-                    optPosition = self.motorOpt.getPosition()
-                    elecPosition = self.motorElec.getPosition()
-                    absolutex = motorCoordElec[0] + optPosition[0]*self.xscalevar
-                    absolutey = motorCoordElec[1] + optPosition[1]*self.yscalevar
-                    absolutez = motorCoordElec[2]
-                    relativex = absolutex[0] - elecPosition[0]
-                    relativey = absolutey[0] - elecPosition[1]
-                    relativez = absolutez[0] - elecPosition[2] + 20
-                    # Move probe to device
-                    self.motorElec.moveRelativeX(-relativex)
-                    time.sleep(2)
-                    self.motorElec.moveRelativeY(-relativey)
-                    time.sleep(2)
-                    self.motorElec.moveRelativeZ(-relativez)
+                    # res, completed = self.fineAlign.doFineAlign()
+                    # # If fine align fails change text colour of device to red in the checklist
+                    # if completed is False:
+                    #     for ii in range(self.checkList.GetItemCount()):
+                    #         if self.checkList.GetItemText(ii) == device.getDeviceID():
+                    #             self.checkList.SetItemTextColour(ii, wx.Colour(255, 0, 0))
+                    # else:
+                    #     # Set text to green if FineAlign Completes
+                    #     for ii in range(self.checkList.GetItemCount()):
+                    #         if self.checkList.GetItemText(ii) == device.getDeviceID():
+                    #             self.checkList.SetItemTextColour(ii, wx.Colour(0, 255, 0))
+                    # # Find relative probe position
+                    # gdsCoordElec = (float(device.getElectricalCoordinates()[0][0]), float(device.getElectricalCoordinates()[0][1]))
+                    # motorCoordElec = self.gdsToMotorCoordsElec(gdsCoordElec)
+                    # optPosition = self.motorOpt.getPosition()
+                    # elecPosition = self.motorElec.getPosition()
+                    # absolutex = motorCoordElec[0] + optPosition[0]*self.xscalevar
+                    # absolutey = motorCoordElec[1] + optPosition[1]*self.yscalevar
+                    # absolutez = motorCoordElec[2]
+                    # relativex = absolutex[0] - elecPosition[0]
+                    # relativey = absolutey[0] - elecPosition[1]
+                    # relativez = absolutez[0] - elecPosition[2] + 20
+                    # # Move probe to device
+                    # self.motorElec.moveRelativeX(-relativex)
+                    # time.sleep(2)
+                    # self.motorElec.moveRelativeY(-relativey)
+                    # time.sleep(2)
+                    # self.motorElec.moveRelativeZ(-relativez)
                     # Fine align to device again
-                    res, completed = self.fineAlign.doFineAlign()
-                    # If fine align fails change text colour of device to red in the checklist
-                    if completed is False:
-                        for ii in range(self.checkList.GetItemCount()):
-                            if self.checkList.GetItemText(ii) == device.getDeviceID():
-                                self.checkList.SetItemTextColour(ii, wx.Colour(255, 0, 0))
-                    else:
-                        # Set text to green if FineAlign Completes
-                        for ii in range(self.checkList.GetItemCount()):
-                            if self.checkList.GetItemText(ii) == device.getDeviceID():
-                                self.checkList.SetItemTextColour(ii, wx.Colour(0, 255, 0))
+                    # res, completed = self.fineAlign.doFineAlign()
+                    # # If fine align fails change text colour of device to red in the checklist
+                    # if completed is False:
+                    #     for ii in range(self.checkList.GetItemCount()):
+                    #         if self.checkList.GetItemText(ii) == device.getDeviceID():
+                    #             self.checkList.SetItemTextColour(ii, wx.Colour(255, 0, 0))
+                    # else:
+                    #     # Set text to green if FineAlign Completes
+                    #     for ii in range(self.checkList.GetItemCount()):
+                    #         if self.checkList.GetItemText(ii) == device.getDeviceID():
+                    #             self.checkList.SetItemTextColour(ii, wx.Colour(0, 255, 0))
 
-        # if laser is connected but probe isn't
-        elif self.laser and not self.motorElec:
-            # Calculate optical transform matrix
-            selectedDevice = deviceName
-            # find device object
-            for device in self.devices:
-                if device.getDeviceID() == selectedDevice:
-                    gdsCoordOpt = (device.getOpticalCoordinates()[0], device.getOpticalCoordinates()[1])
-                    motorCoordOpt = self.gdsToMotorCoordsOpt(gdsCoordOpt)
-                    # Move chip stage
-                    self.motorOpt.moveAbsoluteXYZ(motorCoordOpt[0], motorCoordOpt[1], motorCoordOpt[2])
+        # # if laser is connected but probe isn't
+        # elif self.laser and not self.motorElec:
+        #     # Calculate optical transform matrix
+        #     selectedDevice = deviceName
+        #     # find device object
+        #     for device in self.devices:
+        #         if device.getDeviceID() == selectedDevice:
+        #             gdsCoordOpt = (device.getOpticalCoordinates()[0], device.getOpticalCoordinates()[1])
+        #             motorCoordOpt = self.gdsToMotorCoordsOpt(gdsCoordOpt)
+        #             # Move chip stage
+        #             print('moveto%2.2f,%2.2f, %2.2f' %(motorCoordOpt[0],motorCoordOpt[1],motorCoordOpt[2]))
+        #             self.motorOpt.moveAbsoluteXYZ(motorCoordOpt[0], motorCoordOpt[1], motorCoordOpt[2])
 
-                    # Fine align to device
-                    res, completed = self.fineAlign.doFineAlign()
-                    # If fine align fails change text colour of device to red in the checklist
-                    if completed is False:
-                        for ii in range(self.checkList.GetItemCount()):
-                            if self.checkList.GetItemText(ii) == device.getDeviceID():
-                                self.checkList.SetItemTextColour(ii, wx.Colour(255, 0, 0))
-                    else:
-                        # Set text to green if FineAlign Completes
-                        for ii in range(self.checkList.GetItemCount()):
-                            if self.checkList.GetItemText(ii) == device.getDeviceID():
-                                self.checkList.SetItemTextColour(ii, wx.Colour(0, 255, 0))
+        #             # Fine align to device
+        #             # res, completed = self.fineAlign.doFineAlign()
+        #             # # If fine align fails change text colour of device to red in the checklist
+        #             # if completed is False:
+        #             #     for ii in range(self.checkList.GetItemCount()):
+        #             #         if self.checkList.GetItemText(ii) == device.getDeviceID():
+        #             #             self.checkList.SetItemTextColour(ii, wx.Colour(255, 0, 0))
+        #             # else:
+        #             #     # Set text to green if FineAlign Completes
+        #             #     for ii in range(self.checkList.GetItemCount()):
+        #             #         if self.checkList.GetItemText(ii) == device.getDeviceID():
+        #             #             self.checkList.SetItemTextColour(ii, wx.Colour(0, 255, 0))
 
-        # if probe is connected but laser isn't
-        elif not self.laser and self.motorElec:
-            selectedDevice = deviceName
-            for device in self.devices:
-                if device.getDeviceID() == selectedDevice:
-                    gdsCoord = (
-                    float(device.getElectricalCoordinates()[0][0]), float(device.getElectricalCoordinates()[0][1]))
-                    motorCoord = self.gdsToMotorCoordsElec(gdsCoord)
-                    self.motorElec.moveRelativeZ(1000)
-                    time.sleep(2)
-                    if [self.motorOpt] and [self.motorElec]:
-                        optPosition = self.motorOpt.getPosition()
-                        elecPosition = self.motorElec.getPosition()
-                        adjustment = self.motorOpt.getPositionforRelativeMovement()
-                        absolutex = motorCoord[0] + optPosition[0]*self.xscalevar
-                        absolutey = motorCoord[1] + optPosition[1]*self.yscalevar
-                        absolutez = motorCoord[2]
-                        relativex = absolutex[0] - elecPosition[0]
-                        relativey = absolutey[0] - elecPosition[1]
-                        relativez = absolutez[0] - elecPosition[2] + 20
-                        self.motorElec.moveRelativeX(-relativex)
-                        time.sleep(2)
-                        self.motorElec.moveRelativeY(-relativey)
-                        time.sleep(2)
-                        self.motorElec.moveRelativeZ(-relativez)
+        # # if probe is connected but laser isn't
+        # elif not self.laser and self.motorElec:
+        #     selectedDevice = deviceName
+        #     for device in self.devices:
+        #         if device.getDeviceID() == selectedDevice:
+        #             gdsCoord = (
+        #             float(device.getElectricalCoordinates()[0][0]), float(device.getElectricalCoordinates()[0][1]))
+        #             motorCoord = self.gdsToMotorCoordsElec(gdsCoord)
+        #             self.motorElec.moveRelativeZ(1000)
+        #             time.sleep(2)
+        #             if [self.motorOpt] and [self.motorElec]:
+        #                 optPosition = self.motorOpt.getPosition()
+        #                 elecPosition = self.motorElec.getPosition()
+        #                 adjustment = self.motorOpt.getPositionforRelativeMovement()
+        #                 absolutex = motorCoord[0] + optPosition[0]*self.xscalevar
+        #                 absolutey = motorCoord[1] + optPosition[1]*self.yscalevar
+        #                 absolutez = motorCoord[2]
+        #                 relativex = absolutex[0] - elecPosition[0]
+        #                 relativey = absolutey[0] - elecPosition[1]
+        #                 relativez = absolutez[0] - elecPosition[2] + 20
+        #                 self.motorElec.moveRelativeX(-relativex)
+        #                 time.sleep(2)
+        #                 self.motorElec.moveRelativeY(-relativey)
+        #                 time.sleep(2)
+        #                 self.motorElec.moveRelativeZ(-relativez)
 
-        self.graphPanel.canvas.draw()
+        # self.graphPanel.canvas.draw()
 
     def drawGraph(self, x, y, graphPanel, xlabel, ylabel, legend=0):
         graphPanel.axes.cla()

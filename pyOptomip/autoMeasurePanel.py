@@ -1143,6 +1143,7 @@ class autoMeasurePanel(wx.Panel):
         Move laser and or probe to selected device
         """
         # If laser and probe are connected
+        print('GOTO!')
         global xscalevar
         global yscalevar
         if self.calibrationflag == False:
@@ -1174,29 +1175,29 @@ class autoMeasurePanel(wx.Panel):
                     # Move chip stage
                     self.autoMeasure.motorOpt.moveAbsoluteXYZ(motorCoordOpt[0], motorCoordOpt[1], motorCoordOpt[2])
                     # Fine align to device
-                    self.autoMeasure.fineAlign.doFineAlign()
-                    # Find relative probe position
-                    gdsCoordElec = (float(device.getElectricalCoordinates()[0][0]), float(device.getElectricalCoordinates()[0][1]))
-                    motorCoordElec = self.autoMeasure.gdsToMotorCoordsElec(gdsCoordElec)
-                    optPosition = self.autoMeasure.motorOpt.getPosition()
-                    elecPosition = self.autoMeasure.motorElec.getPosition()
-                    adjustment = self.autoMeasure.motorOpt.getPositionforRelativeMovement()
-                    absolutex = motorCoordElec[0] + optPosition[0]*xscalevar
-                    absolutey = motorCoordElec[1] + optPosition[1]*yscalevar
-                    absolutez = motorCoordElec[2]
-                    relativex = absolutex[0] - elecPosition[0]
-                    relativey = absolutey[0] - elecPosition[1]
-                    relativez = absolutez[0] - elecPosition[2] + 15
-                    # Move probe to device
-                    self.autoMeasure.motorElec.moveRelativeX(-relativex)
-                    time.sleep(2)
-                    self.autoMeasure.motorElec.moveRelativeY(-relativey)
-                    time.sleep(2)
-                    self.adjustalignment()
-                    time.sleep(2)
-                    self.autoMeasure.motorElec.moveRelativeZ(-relativez)
-                    # Fine align to device again
-                    self.autoMeasure.fineAlign.doFineAlign()
+                    # self.autoMeasure.fineAlign.doFineAlign()
+                    # # Find relative probe position
+                    # gdsCoordElec = (float(device.getElectricalCoordinates()[0][0]), float(device.getElectricalCoordinates()[0][1]))
+                    # motorCoordElec = self.autoMeasure.gdsToMotorCoordsElec(gdsCoordElec)
+                    # optPosition = self.autoMeasure.motorOpt.getPosition()
+                    # elecPosition = self.autoMeasure.motorElec.getPosition()
+                    # adjustment = self.autoMeasure.motorOpt.getPositionforRelativeMovement()
+                    # absolutex = motorCoordElec[0] + optPosition[0]*xscalevar
+                    # absolutey = motorCoordElec[1] + optPosition[1]*yscalevar
+                    # absolutez = motorCoordElec[2]
+                    # relativex = absolutex[0] - elecPosition[0]
+                    # relativey = absolutey[0] - elecPosition[1]
+                    # relativez = absolutez[0] - elecPosition[2] + 15
+                    # # Move probe to device
+                    # self.autoMeasure.motorElec.moveRelativeX(-relativex)
+                    # time.sleep(2)
+                    # self.autoMeasure.motorElec.moveRelativeY(-relativey)
+                    # time.sleep(2)
+                    # self.adjustalignment()
+                    # time.sleep(2)
+                    # self.autoMeasure.motorElec.moveRelativeZ(-relativez)
+                    # # Fine align to device again
+                    # self.autoMeasure.fineAlign.doFineAlign()
 
         # if laser is connected but probe isn't
         elif self.autoMeasure.laser and not self.autoMeasure.motorElec:
@@ -1213,7 +1214,7 @@ class autoMeasurePanel(wx.Panel):
                     self.autoMeasure.motorOpt.moveAbsoluteXYZ(motorCoordOpt[0], motorCoordOpt[1], motorCoordOpt[2])
 
                     # Fine align to device
-                    self.autoMeasure.fineAlign.doFineAlign()
+                    # self.autoMeasure.fineAlign.doFineAlign()
 
         # if probe is connected but laser isn't
         elif (not self.autoMeasure.laser and self.autoMeasure.motorElec) or (self.autoMeasure.motorElec and self.calibrationflag):
