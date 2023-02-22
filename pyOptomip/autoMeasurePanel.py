@@ -1293,9 +1293,10 @@ class autoMeasurePanel(wx.Panel):
                         return
 
 
-                if self.noElecMatrix is True or self.noOptMatrix is True:
-                    pass
-                else:
+                # if self.noElecMatrix is True or self.noOptMatrix is True:
+                #     pass
+                # else:
+            if True:
                     # Disable detector auto measurement
                     if self.autoMeasure.laser:
                         self.autoMeasure.laser.ctrlPanel.laserPanel.laserPanel.haltDetTimer()
@@ -1331,7 +1332,7 @@ class autoMeasurePanel(wx.Panel):
                     else:
                         q = Queue()
                         data = []
-                        self.autoMeasure.smu.automeasureflag = False
+                        # self.autoMeasure.smu.automeasureflag = False
                         p = Thread(target=self.autoMeasure.beginMeasure, args=(
                         checkedDevicesText, self.checkList, activeDetectors, self.camera, data, None, None, True))
                         p.daemon = True

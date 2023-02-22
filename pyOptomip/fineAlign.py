@@ -40,11 +40,11 @@ class fineAlign(object):
 
     stepSize = 2  # Stage step size in microns
 
-    scanWindowSize = 50  # Size of square window which will be searched by fine align
+    scanWindowSize = 3#50  # Size of square window which will be searched by fine align
 
-    threshold = -50  # Spiral search will stop once power is greater than the threshold
+    threshold = -66#-50  # Spiral search will stop once power is greater than the threshold
 
-    numGradientIter = 50
+    numGradientIter = 2#50
 
     useCrosshair = 0  # Set to 1 to use crosshair search after gradient. Doesn't work very well.
 

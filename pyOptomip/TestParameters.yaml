@@ -6,8 +6,9 @@ Devices:
     - 410.0
     - 1030.0
     Polarization: TE
-    RoutineCheck: false
-    Routines: []
+    RoutineCheck: true
+    Routines:
+    - Wavelength Sweep:Default
     Type: 9ring
     Wavelength: '1550'
   9ring0_1:
@@ -17,8 +18,9 @@ Devices:
     - 1410.0
     - 1030.0
     Polarization: TE
-    RoutineCheck: false
-    Routines: []
+    RoutineCheck: true
+    Routines:
+    - Wavelength Sweep:Default
     Type: 9ring
     Wavelength: '1550'
   9ring0_2:
@@ -28,8 +30,9 @@ Devices:
     - 2410.0
     - 1030.0
     Polarization: TE
-    RoutineCheck: false
-    Routines: []
+    RoutineCheck: true
+    Routines:
+    - Wavelength Sweep:Default
     Type: 9ring
     Wavelength: '1550'
   9ring0_3:
@@ -39,8 +42,9 @@ Devices:
     - 3410.0
     - 1030.0
     Polarization: TE
-    RoutineCheck: false
-    Routines: []
+    RoutineCheck: true
+    Routines:
+    - Wavelength Sweep:Default
     Type: 9ring
     Wavelength: '1550'
   9ring0_4:
@@ -50,8 +54,9 @@ Devices:
     - 4410.0
     - 1030.0
     Polarization: TE
-    RoutineCheck: false
-    Routines: []
+    RoutineCheck: true
+    Routines:
+    - Wavelength Sweep:Default
     Type: 9ring
     Wavelength: '1550'
   9ring1_0:
@@ -61,8 +66,9 @@ Devices:
     - 410.0
     - 2630.0
     Polarization: TE
-    RoutineCheck: false
-    Routines: []
+    RoutineCheck: true
+    Routines:
+    - Wavelength Sweep:Default
     Type: 9ring
     Wavelength: '1550'
   9ring1_1:
@@ -72,8 +78,9 @@ Devices:
     - 1410.0
     - 2630.0
     Polarization: TE
-    RoutineCheck: false
-    Routines: []
+    RoutineCheck: true
+    Routines:
+    - Wavelength Sweep:Default
     Type: 9ring
     Wavelength: '1550'
   9ring1_2:
@@ -83,8 +90,9 @@ Devices:
     - 2410.0
     - 2630.0
     Polarization: TE
-    RoutineCheck: false
-    Routines: []
+    RoutineCheck: true
+    Routines:
+    - Wavelength Sweep:Default
     Type: 9ring
     Wavelength: '1550'
   9ring1_3:
@@ -94,8 +102,9 @@ Devices:
     - 3410.0
     - 2630.0
     Polarization: TE
-    RoutineCheck: false
-    Routines: []
+    RoutineCheck: true
+    Routines:
+    - Wavelength Sweep:Default
     Type: 9ring
     Wavelength: '1550'
   9ring1_4:
@@ -105,8 +114,9 @@ Devices:
     - 4410.0
     - 2630.0
     Polarization: TE
-    RoutineCheck: false
-    Routines: []
+    RoutineCheck: true
+    Routines:
+    - Wavelength Sweep:Default
     Type: 9ring
     Wavelength: '1550'
   9ring2_0:
@@ -116,8 +126,9 @@ Devices:
     - 410.0
     - 4230.0
     Polarization: TE
-    RoutineCheck: false
-    Routines: []
+    RoutineCheck: true
+    Routines:
+    - Wavelength Sweep:Default
     Type: 9ring
     Wavelength: '1550'
   9ring2_1:
@@ -127,8 +138,9 @@ Devices:
     - 1410.0
     - 4230.0
     Polarization: TE
-    RoutineCheck: false
-    Routines: []
+    RoutineCheck: true
+    Routines:
+    - Wavelength Sweep:Default
     Type: 9ring
     Wavelength: '1550'
   9ring2_2:
@@ -138,8 +150,9 @@ Devices:
     - 2410.0
     - 4230.0
     Polarization: TE
-    RoutineCheck: false
-    Routines: []
+    RoutineCheck: true
+    Routines:
+    - Wavelength Sweep:Default
     Type: 9ring
     Wavelength: '1550'
   9ring2_3:
@@ -149,8 +162,9 @@ Devices:
     - 3410.0
     - 4230.0
     Polarization: TE
-    RoutineCheck: false
-    Routines: []
+    RoutineCheck: true
+    Routines:
+    - Wavelength Sweep:Default
     Type: 9ring
     Wavelength: '1550'
   9ring2_4:
@@ -160,8 +174,9 @@ Devices:
     - 4410.0
     - 4230.0
     Polarization: TE
-    RoutineCheck: false
-    Routines: []
+    RoutineCheck: true
+    Routines:
+    - Wavelength Sweep:Default
     Type: 9ring
     Wavelength: '1550'
   9ring3_0:
@@ -171,8 +186,9 @@ Devices:
     - 410.0
     - 5830.0
     Polarization: TE
-    RoutineCheck: false
-    Routines: []
+    RoutineCheck: true
+    Routines:
+    - Wavelength Sweep:Default
     Type: 9ring
     Wavelength: '1550'
   9ring3_1:
@@ -182,8 +198,9 @@ Devices:
     - 1410.0
     - 5830.0
     Polarization: TE
-    RoutineCheck: false
-    Routines: []
+    RoutineCheck: true
+    Routines:
+    - Wavelength Sweep:Default
     Type: 9ring
     Wavelength: '1550'
   9ring3_2:
@@ -193,8 +210,9 @@ Devices:
     - 2410.0
     - 5830.0
     Polarization: TE
-    RoutineCheck: false
-    Routines: []
+    RoutineCheck: true
+    Routines:
+    - Wavelength Sweep:Default
     Type: 9ring
     Wavelength: '1550'
   9ring3_3:
@@ -204,8 +222,9 @@ Devices:
     - 3410.0
     - 5830.0
     Polarization: TE
-    RoutineCheck: false
-    Routines: []
+    RoutineCheck: true
+    Routines:
+    - Wavelength Sweep:Default
     Type: 9ring
     Wavelength: '1550'
   9ring3_4:
@@ -215,8 +234,9 @@ Devices:
     - 4410.0
     - 5830.0
     Polarization: TE
-    RoutineCheck: false
-    Routines: []
+    RoutineCheck: true
+    Routines:
+    - Wavelength Sweep:Default
     Type: 9ring
     Wavelength: '1550'
   InvFWM0_0:

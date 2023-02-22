@@ -142,7 +142,7 @@ class AP2087A(object):
 
     def getNumPWMChannels(self):
         """ Returns the number of registered PWM channels """
-        return 1;
+        return 2;
     
     # def setPWMAveragingTime(self, slot, chan, avgTime):
     #     res = self.hp816x_set_PWM_averagingTime(self.hDriver, slot, chan, avgTime);
@@ -173,5 +173,6 @@ class AP2087A(object):
     def getName(self):
         return "AP2087A"
 
-
+    def getDetector(self):
+        return "AP2087A"
 
