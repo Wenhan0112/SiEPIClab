@@ -1143,13 +1143,13 @@ class autoMeasurePanel(wx.Panel):
         Move laser and or probe to selected device
         """
         # If laser and probe are connected
-        print('GOTO!')
         global xscalevar
         global yscalevar
         if self.calibrationflag == False:
             if self.devSelectCb.GetString(self.devSelectCb.GetSelection()) == '':
                 print("Please select a device to move to")
                 return
+            
         print('Moving to device')
         if self.autoMeasure.laser and self.autoMeasure.motorElec and self.calibrationflag == False:
             # Calculate transform matrices

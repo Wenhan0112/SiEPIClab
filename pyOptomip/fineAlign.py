@@ -61,13 +61,12 @@ class fineAlign(object):
     def doFineAlign(self):
         xStartPos = self.stage.getPosition()[0]
         yStartPos = self.stage.getPosition()[1]
-        print('Doing finealign')
-        print(self.detectorPriority)
+        print('Performing fine alignment...')
 
-        print('laser connected:')
-        print(self.laser)
-        print('stage connected:')
-        print(self.stage)
+        # print('laser connected:')
+        # print(self.laser)
+        # print('stage connected:')
+        # print(self.stage)
         
         for det in [0]:#self.detectorPriority:
 
@@ -77,7 +76,6 @@ class fineAlign(object):
             detChan = self.laser.pwmSlotMap[det][1]
 
             self.laser.setPWMPowerUnit(detSlot, detChan, 'dBm')
-            # self.laser.setPWMPowerRange(detSlot, detChan, 'auto', 0)
             
             # Try to set laser output. If the laser only has one output, an error is thrown
             # which will be ignored here
@@ -86,7 +84,7 @@ class fineAlign(object):
             # except hp816x_instr.InstrumentError:
             #     pass
         
-            # self.laser.setTLSWavelength(self.wavelength, slot=self.laserSlot)
+            self.laser.setTLSWavelength(self.wavelength, slot=self.laserSlot)
             # self.laser.setTLSPower(self.laserPower, slot=self.laserSlot)
             self.laser.setTLSState('on', slot=self.laserSlot)
 
@@ -138,8 +136,8 @@ class fineAlign(object):
             
             # X movement
             for ii in range(1, numSteps + 1):
-                print('stage move x')
-                print(self.stepSize * direction)
+                # print('stage move x')
+                # print(self.stepSize * direction)
 
                 self.stage.moveRelativeXY(self.stepSize * direction, 0)
                 power = self.laser.readPWM(detSlot, detChan)

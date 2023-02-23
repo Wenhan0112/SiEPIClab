@@ -653,7 +653,7 @@ class autoMeasure(object):
                                     'Wavelength sweep', motorCoordOpt, timeStart, timeStop, chipTimeStart,
                                    self.devFolder, routine, leg=legend)
 
-                    self.drawGraph(wav * 1e9, pow, self.graphPanel, 'Wavelength (nm)', 'Power (dBm)', legend=legend)
+                    self.drawGraph(wav, pow, self.graphPanel, 'Wavelength (nm)', 'Power (dBm)', legend=legend)
                     #data.extend([wav * 1e9, pow, self.graphPanel, 'Wavelength (nm)', 'Power (dBm)', legend=0])
 
             if device.getSetWavelengthVoltageSweepRoutines() and self.laser and self.motorElec and self.smu:

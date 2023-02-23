@@ -488,8 +488,9 @@ Devices:
     - 440.0
     - 250.0
     Polarization: TE
-    RoutineCheck: false
-    Routines: []
+    RoutineCheck: true
+    Routines:
+    - Wavelength Sweep:Default
     Type: amo
     Wavelength: '1550'
   amo0_1:
@@ -499,8 +500,9 @@ Devices:
     - 1440.0
     - 250.0
     Polarization: TE
-    RoutineCheck: false
-    Routines: []
+    RoutineCheck: true
+    Routines:
+    - Wavelength Sweep:Default
     Type: amo
     Wavelength: '1550'
   amo1_0:
@@ -510,8 +512,9 @@ Devices:
     - 440.0
     - 1850.0
     Polarization: TE
-    RoutineCheck: false
-    Routines: []
+    RoutineCheck: true
+    Routines:
+    - Wavelength Sweep:Default
     Type: amo
     Wavelength: '1550'
   amo1_1:
@@ -521,8 +524,9 @@ Devices:
     - 1440.0
     - 1850.0
     Polarization: TE
-    RoutineCheck: false
-    Routines: []
+    RoutineCheck: true
+    Routines:
+    - Wavelength Sweep:Default
     Type: amo
     Wavelength: '1550'
   amo2_0:
@@ -532,8 +536,9 @@ Devices:
     - 440.0
     - 3450.0
     Polarization: TE
-    RoutineCheck: false
-    Routines: []
+    RoutineCheck: true
+    Routines:
+    - Wavelength Sweep:Default
     Type: amo
     Wavelength: '1550'
   amo2_1:
@@ -543,8 +548,9 @@ Devices:
     - 1440.0
     - 3450.0
     Polarization: TE
-    RoutineCheck: false
-    Routines: []
+    RoutineCheck: true
+    Routines:
+    - Wavelength Sweep:Default
     Type: amo
     Wavelength: '1550'
   amo3_0:
@@ -554,8 +560,9 @@ Devices:
     - 440.0
     - 5050.0
     Polarization: TE
-    RoutineCheck: false
-    Routines: []
+    RoutineCheck: true
+    Routines:
+    - Wavelength Sweep:Default
     Type: amo
     Wavelength: '1550'
   amo3_1:
@@ -565,8 +572,9 @@ Devices:
     - 1440.0
     - 5050.0
     Polarization: TE
-    RoutineCheck: false
-    Routines: []
+    RoutineCheck: true
+    Routines:
+    - Wavelength Sweep:Default
     Type: amo
     Wavelength: '1550'
   caliboffset=-4nm:
@@ -631,8 +639,9 @@ Devices:
     - 2440.0
     - 250.0
     Polarization: TE
-    RoutineCheck: false
-    Routines: []
+    RoutineCheck: true
+    Routines:
+    - Wavelength Sweep:Default
     Type: prd
     Wavelength: '1550'
   prd0_3:
@@ -642,8 +651,9 @@ Devices:
     - 3440.0
     - 250.0
     Polarization: TE
-    RoutineCheck: false
-    Routines: []
+    RoutineCheck: true
+    Routines:
+    - Wavelength Sweep:Default
     Type: prd
     Wavelength: '1550'
   prd0_4:
@@ -653,8 +663,9 @@ Devices:
     - 4440.0
     - 250.0
     Polarization: TE
-    RoutineCheck: false
-    Routines: []
+    RoutineCheck: true
+    Routines:
+    - Wavelength Sweep:Default
     Type: prd
     Wavelength: '1550'
   prd1_2:
@@ -664,8 +675,9 @@ Devices:
     - 2440.0
     - 1850.0
     Polarization: TE
-    RoutineCheck: false
-    Routines: []
+    RoutineCheck: true
+    Routines:
+    - Wavelength Sweep:Default
     Type: prd
     Wavelength: '1550'
   prd1_3:
@@ -675,8 +687,9 @@ Devices:
     - 3440.0
     - 1850.0
     Polarization: TE
-    RoutineCheck: false
-    Routines: []
+    RoutineCheck: true
+    Routines:
+    - Wavelength Sweep:Default
     Type: prd
     Wavelength: '1550'
   prd1_4:
@@ -686,8 +699,9 @@ Devices:
     - 4440.0
     - 1850.0
     Polarization: TE
-    RoutineCheck: false
-    Routines: []
+    RoutineCheck: true
+    Routines:
+    - Wavelength Sweep:Default
     Type: prd
     Wavelength: '1550'
   prd2_2:
@@ -697,8 +711,9 @@ Devices:
     - 2440.0
     - 3450.0
     Polarization: TE
-    RoutineCheck: false
-    Routines: []
+    RoutineCheck: true
+    Routines:
+    - Wavelength Sweep:Default
     Type: prd
     Wavelength: '1550'
   prd2_3:
@@ -708,8 +723,9 @@ Devices:
     - 3440.0
     - 3450.0
     Polarization: TE
-    RoutineCheck: false
-    Routines: []
+    RoutineCheck: true
+    Routines:
+    - Wavelength Sweep:Default
     Type: prd
     Wavelength: '1550'
   prd2_4:
@@ -719,8 +735,9 @@ Devices:
     - 4440.0
     - 3450.0
     Polarization: TE
-    RoutineCheck: false
-    Routines: []
+    RoutineCheck: true
+    Routines:
+    - Wavelength Sweep:Default
     Type: prd
     Wavelength: '1550'
   prd3_2:
@@ -730,8 +747,9 @@ Devices:
     - 2440.0
     - 5050.0
     Polarization: TE
-    RoutineCheck: false
-    Routines: []
+    RoutineCheck: true
+    Routines:
+    - Wavelength Sweep:Default
     Type: prd
     Wavelength: '1550'
   prd3_3:
@@ -741,8 +759,9 @@ Devices:
     - 3440.0
     - 5050.0
     Polarization: TE
-    RoutineCheck: false
-    Routines: []
+    RoutineCheck: true
+    Routines:
+    - Wavelength Sweep:Default
     Type: prd
     Wavelength: '1550'
   prd3_4:
@@ -752,8 +771,9 @@ Devices:
     - 4440.0
     - 5050.0
     Polarization: TE
-    RoutineCheck: false
-    Routines: []
+    RoutineCheck: true
+    Routines:
+    - Wavelength Sweep:Default
     Type: prd
     Wavelength: '1550'
 Routines:

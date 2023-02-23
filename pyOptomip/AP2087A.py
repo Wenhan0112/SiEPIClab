@@ -28,6 +28,22 @@ class AP2087A(object):
     isElec = False
     hasDetector = True
 
+    sweepStartWvl = 1520e-9;
+    sweepStopWvl = 1600e-9;
+    sweepStepWvl = 0.04e-9;
+    
+    # dummy parameters
+    sweepSpeed = '10nm';
+    sweepUnit = 'dBm'
+    sweepPower = 0;
+    sweepLaserOutput = 'lowsse';
+    sweepNumScans = 1;
+    sweepPWMChannel = 'all';
+    sweepInitialRange = -20;
+    sweepRangeDecrement = 20;
+    sweepUseClipping = 1;
+    sweepClipLimit = -100;
+    
     def __init__(self):
         self.connected = False
 
@@ -57,8 +73,14 @@ class AP2087A(object):
 
     def sweep(self):
         """ Performs a wavelength sweep """
+        
+        self.OSA.SetStartWavelength(self.sweepStartWvl*1e9)
+        self.OSA.SetStopWavelength(self.sweepStopWvl*1e9)
+        self.OSA.DeactivateAutoNPoints()
+        self.OSA.SetNPoints(int((self.sweepStopWvl-self.sweepStartWvl)/self.sweepStepWvl))
+
         Trace = self.OSA.Run()
-        time.sleep(15)
+        time.sleep(10)
         # If the single measurement is good (Trace > 0), we get the data in a list Data = [[Power Data], [Wavelength Data]]
         bASCII_data = True #TODO: [ZJ] not sure what it means
         if Trace > 0:
@@ -99,9 +121,10 @@ class AP2087A(object):
         status = self.TLS.GetStatus()
         print("Laser status =", status)
         
-    # TODO: not working
     def setTLSWavelength(self, wavelength, selMode='manual', slot='auto'):
-        self.TLS.SetWavelength(wavelength)
+        # wavelength input unit: um
+        print('set wavelength to' + str(wavelength))
+        self.TLS.SetWavelength(int(wavelength*1e9))
         time.sleep(0.150)
         dWL = self.TLS.GetWavelength()
         time.sleep(0.150)
@@ -125,6 +148,8 @@ class AP2087A(object):
         return len(self.pwmSlotIndex);
 
     def setRangeParams(self, chan, initialRange, rangeDecrement, reset=0):
+        print(initialRange)
+        print(rangeDecrement)
         return;
 
     def setAutorangeAll(self): #TODO
