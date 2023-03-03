@@ -169,7 +169,7 @@ class fineAlign(object):
 
     def gradientSearch(self, detSlot, detChan):
         peakFoundCount = 0;  # Count how many consective peaks are found
-        numConsecutivePeaks = 1;  # Need this many consecutive peaks to conclude the peak was found
+        numConsecutivePeaks = 3;  # Need this many consecutive peaks to conclude the peak was found
         for ii in range(self.numGradientIter):
             if self.abort:
                 return self.FINE_ALIGN_ABORTED

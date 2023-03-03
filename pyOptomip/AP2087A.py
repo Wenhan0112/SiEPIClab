@@ -65,8 +65,8 @@ class AP2087A(object):
         self.TLS = self.MyAP2087A.TLS()
         
         # dummy index and map
-        self.pwmSlotIndex = [1]
-        self.pwmSlotMap = [(1,0)]
+        self.pwmSlotIndex = [1, 2]
+        self.pwmSlotMap = [(1,0), (1,1)]
         
         print('Connected to the laser')
         self.connected = True
@@ -78,7 +78,9 @@ class AP2087A(object):
         self.OSA.SetStopWavelength(self.sweepStopWvl*1e9)
         self.OSA.DeactivateAutoNPoints()
         self.OSA.SetNPoints(int((self.sweepStopWvl-self.sweepStartWvl)/self.sweepStepWvl))
-
+        print('start wlen = ' +str(self.OSA.GetStartWavelength()))
+        print('stop wlen = ' +str(self.OSA.GetStopWavelength()))
+        print('points = ' +str(self.OSA.GetNPoints()))
         Trace = self.OSA.Run()
         time.sleep(10)
         # If the single measurement is good (Trace > 0), we get the data in a list Data = [[Power Data], [Wavelength Data]]
@@ -154,12 +156,13 @@ class AP2087A(object):
 
     def setAutorangeAll(self): #TODO
         """ Turns on autorange for all detectors and sets units to dBm """
-        for slotinfo in self.pwmSlotMap:
-            detslot = slotinfo[0];
-            detchan = slotinfo[1]
+        # for slotinfo in self.pwmSlotMap:
+        #     detslot = slotinfo[0];
+        #     detchan = slotinfo[1]
 
-            self.setPWMPowerUnit(detslot, detchan, 'dBm')
+        #     self.setPWMPowerUnit(detslot, detchan, 'dBm')
             # self.setPWMPowerRange(detslot, detchan, rangeMode='auto')
+        return
     def findTLSSlots(self):
         """ Returns a list of all tunable lasers in the mainframe """
         return [0]
@@ -167,7 +170,7 @@ class AP2087A(object):
 
     def getNumPWMChannels(self):
         """ Returns the number of registered PWM channels """
-        return 1;
+        return 2;
     
     # def setPWMAveragingTime(self, slot, chan, avgTime):
     #     res = self.hp816x_set_PWM_averagingTime(self.hDriver, slot, chan, avgTime);

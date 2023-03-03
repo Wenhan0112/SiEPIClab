@@ -185,6 +185,10 @@ class coordinateMapPanel(wx.Panel):
         """Drop down menu for the first device. When a device is selected, its coordinates are added to the
         gds coordinates list"""
         for dev in self.autoMeasure.devices:
+            print('debug automeasurepanel')
+            print(dev)
+            print(self.GDSDevList)
+            print(self.GDSDevList[0].GetSelection())
             if self.GDSDevList[0].GetString(self.GDSDevList[0].GetSelection()) == dev.getDeviceID():
                 if dev.getOpticalCoordinates() is not None:
                     self.stxGdsCoordLst[0] = dev.getOpticalCoordinates()[0]
@@ -652,7 +656,7 @@ class autoMeasurePanel(wx.Panel):
 
         if self.autoMeasure.laser:
             # Format check boxes for detector selection
-            self.numDetectors = self.autoMeasure.laser.numPWMSlots - 1
+            self.numDetectors = self.autoMeasure.laser.numPWMSlots
             self.detectorList = []
             for ii in range(self.numDetectors):
                 self.sel = wx.CheckBox(self, label='Slot {} Det 1'.format(ii+1), pos=(20, 20))

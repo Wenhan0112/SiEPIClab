@@ -40,6 +40,7 @@ from SMUParameters import SMUParameters
 from outputlogPanel import outputlogPanel
 from logWriter import logWriter, logWriterError
 import sys
+import time
 import pyvisa as visa
 from instrumentFrame_withtabs import instrumentFrame_withtabs
 from pylablib.devices import Thorlabs

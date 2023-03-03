@@ -428,7 +428,8 @@ class autoMeasure(object):
         # For each checked device
 
         for i, device in enumerate(devices):
-
+            print(i)
+            print(devices)
             motorCoordOpt = self.motorOpt.getPosition()
             self.devFolder = os.path.join(self.saveFolder, device.getDeviceID())
             if not os.path.exists(self.devFolder):
@@ -615,6 +616,9 @@ class autoMeasure(object):
 
             if device.getWavelengthSweepRoutines() and self.laser:
                 for routine in device.getWavelengthSweepRoutines():
+                    print('device and routine')
+                    print(device)
+                    print(routine)
                     ii = self.wavelengthSweeps['RoutineName'].index(routine)
                     timeStart = time.strftime("%d_%b_%Y_%H_%M_%S", time.localtime())
                     routineName = self.wavelengthSweeps['RoutineName'][ii]
@@ -635,6 +639,9 @@ class autoMeasure(object):
                     self.graphPanel.canvas.sweepResultDict = {}
                     self.graphPanel.canvas.sweepResultDict['wavelength'] = wav
                     self.graphPanel.canvas.sweepResultDict['power'] = pow
+                    
+                    print('[debug: automeasure.py] automeasure detectors')
+                    print(self.activeDetectors)
                     if len(self.activeDetectors) > 1:
                         self.detstringlist = ['Detector Slot ' + str(self.activeDetectors[0] + 1)]
                         for det in self.activeDetectors:
