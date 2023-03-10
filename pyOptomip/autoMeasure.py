@@ -391,7 +391,7 @@ class autoMeasure(object):
         self.hasRoutines = True
 
 
-    def beginMeasure(self, devices, checkList, activeDetectors, camera, data, abortFunction=None, updateFunction=None,
+    def beginMeasure(self, devices, checkList, activeDetectors, camera, data, abortFunction=True, updateFunction=None,
                      updateGraph=True):
         """ Runs an automated measurement. For each device, wedge probe is moved out of the way, chip stage is moved
         so laser in aligned, wedge probe is moved to position. Various tests are performed depending on the contents
@@ -616,9 +616,6 @@ class autoMeasure(object):
 
             if device.getWavelengthSweepRoutines() and self.laser:
                 for routine in device.getWavelengthSweepRoutines():
-                    print('device and routine')
-                    print(device)
-                    print(routine)
                     ii = self.wavelengthSweeps['RoutineName'].index(routine)
                     timeStart = time.strftime("%d_%b_%Y_%H_%M_%S", time.localtime())
                     routineName = self.wavelengthSweeps['RoutineName'][ii]
@@ -640,8 +637,6 @@ class autoMeasure(object):
                     self.graphPanel.canvas.sweepResultDict['wavelength'] = wav
                     self.graphPanel.canvas.sweepResultDict['power'] = pow
                     
-                    print('[debug: automeasure.py] automeasure detectors')
-                    print(self.activeDetectors)
                     if len(self.activeDetectors) > 1:
                         self.detstringlist = ['Detector Slot ' + str(self.activeDetectors[0] + 1)]
                         for det in self.activeDetectors:

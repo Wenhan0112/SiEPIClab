@@ -6,9 +6,8 @@ Devices:
     - 410.0
     - 1030.0
     Polarization: TE
-    RoutineCheck: true
-    Routines:
-    - Wavelength Sweep:finswp
+    RoutineCheck: false
+    Routines: []
     Type: 9ring
     Wavelength: '1550'
   9ring0_1:
@@ -18,9 +17,8 @@ Devices:
     - 1410.0
     - 1030.0
     Polarization: TE
-    RoutineCheck: true
-    Routines:
-    - Wavelength Sweep:finswp
+    RoutineCheck: false
+    Routines: []
     Type: 9ring
     Wavelength: '1550'
   9ring0_2:
@@ -30,9 +28,8 @@ Devices:
     - 2410.0
     - 1030.0
     Polarization: TE
-    RoutineCheck: true
-    Routines:
-    - Wavelength Sweep:finswp
+    RoutineCheck: false
+    Routines: []
     Type: 9ring
     Wavelength: '1550'
   9ring0_3:
@@ -42,9 +39,8 @@ Devices:
     - 3410.0
     - 1030.0
     Polarization: TE
-    RoutineCheck: true
-    Routines:
-    - Wavelength Sweep:finswp
+    RoutineCheck: false
+    Routines: []
     Type: 9ring
     Wavelength: '1550'
   9ring0_4:
@@ -54,9 +50,8 @@ Devices:
     - 4410.0
     - 1030.0
     Polarization: TE
-    RoutineCheck: true
-    Routines:
-    - Wavelength Sweep:finswp
+    RoutineCheck: false
+    Routines: []
     Type: 9ring
     Wavelength: '1550'
   9ring1_0:
@@ -66,9 +61,8 @@ Devices:
     - 410.0
     - 2630.0
     Polarization: TE
-    RoutineCheck: true
-    Routines:
-    - Wavelength Sweep:finswp
+    RoutineCheck: false
+    Routines: []
     Type: 9ring
     Wavelength: '1550'
   9ring1_1:
@@ -78,9 +72,8 @@ Devices:
     - 1410.0
     - 2630.0
     Polarization: TE
-    RoutineCheck: true
-    Routines:
-    - Wavelength Sweep:finswp
+    RoutineCheck: false
+    Routines: []
     Type: 9ring
     Wavelength: '1550'
   9ring1_2:
@@ -90,9 +83,8 @@ Devices:
     - 2410.0
     - 2630.0
     Polarization: TE
-    RoutineCheck: true
-    Routines:
-    - Wavelength Sweep:finswp
+    RoutineCheck: false
+    Routines: []
     Type: 9ring
     Wavelength: '1550'
   9ring1_3:
@@ -102,9 +94,8 @@ Devices:
     - 3410.0
     - 2630.0
     Polarization: TE
-    RoutineCheck: true
-    Routines:
-    - Wavelength Sweep:finswp
+    RoutineCheck: false
+    Routines: []
     Type: 9ring
     Wavelength: '1550'
   9ring1_4:
@@ -114,9 +105,8 @@ Devices:
     - 4410.0
     - 2630.0
     Polarization: TE
-    RoutineCheck: true
-    Routines:
-    - Wavelength Sweep:finswp
+    RoutineCheck: false
+    Routines: []
     Type: 9ring
     Wavelength: '1550'
   9ring2_0:
@@ -126,9 +116,8 @@ Devices:
     - 410.0
     - 4230.0
     Polarization: TE
-    RoutineCheck: true
-    Routines:
-    - Wavelength Sweep:finswp
+    RoutineCheck: false
+    Routines: []
     Type: 9ring
     Wavelength: '1550'
   9ring2_1:
@@ -138,9 +127,8 @@ Devices:
     - 1410.0
     - 4230.0
     Polarization: TE
-    RoutineCheck: true
-    Routines:
-    - Wavelength Sweep:finswp
+    RoutineCheck: false
+    Routines: []
     Type: 9ring
     Wavelength: '1550'
   9ring2_2:
@@ -150,9 +138,8 @@ Devices:
     - 2410.0
     - 4230.0
     Polarization: TE
-    RoutineCheck: true
-    Routines:
-    - Wavelength Sweep:finswp
+    RoutineCheck: false
+    Routines: []
     Type: 9ring
     Wavelength: '1550'
   9ring2_3:
@@ -162,9 +149,8 @@ Devices:
     - 3410.0
     - 4230.0
     Polarization: TE
-    RoutineCheck: true
-    Routines:
-    - Wavelength Sweep:finswp
+    RoutineCheck: false
+    Routines: []
     Type: 9ring
     Wavelength: '1550'
   9ring2_4:
@@ -174,9 +160,8 @@ Devices:
     - 4410.0
     - 4230.0
     Polarization: TE
-    RoutineCheck: true
-    Routines:
-    - Wavelength Sweep:finswp
+    RoutineCheck: false
+    Routines: []
     Type: 9ring
     Wavelength: '1550'
   InvFWM0_0:
@@ -188,7 +173,7 @@ Devices:
     Polarization: TE
     RoutineCheck: true
     Routines:
-    - Wavelength Sweep:finswp
+    - Wavelength Sweep:fineswp
     Type: InvFWM
     Wavelength: '1550'
   InvFWM0_1:
@@ -200,7 +185,7 @@ Devices:
     Polarization: TE
     RoutineCheck: true
     Routines:
-    - Wavelength Sweep:finswp
+    - Wavelength Sweep:fineswp
     Type: InvFWM
     Wavelength: '1550'
   InvFWM0_2:
@@ -212,7 +197,7 @@ Devices:
     Polarization: TE
     RoutineCheck: true
     Routines:
-    - Wavelength Sweep:finswp
+    - Wavelength Sweep:fineswp
     Type: InvFWM
     Wavelength: '1550'
   InvFWM0_3:
@@ -224,7 +209,7 @@ Devices:
     Polarization: TE
     RoutineCheck: true
     Routines:
-    - Wavelength Sweep:finswp
+    - Wavelength Sweep:fineswp
     Type: InvFWM
     Wavelength: '1550'
   InvFWM0_4:
@@ -236,7 +221,7 @@ Devices:
     Polarization: TE
     RoutineCheck: true
     Routines:
-    - Wavelength Sweep:finswp
+    - Wavelength Sweep:fineswp
     Type: InvFWM
     Wavelength: '1550'
   InvFWM0_5:
@@ -248,7 +233,7 @@ Devices:
     Polarization: TE
     RoutineCheck: true
     Routines:
-    - Wavelength Sweep:finswp
+    - Wavelength Sweep:fineswp
     Type: InvFWM
     Wavelength: '1550'
   InvFWM0_6:
@@ -260,7 +245,7 @@ Devices:
     Polarization: TE
     RoutineCheck: true
     Routines:
-    - Wavelength Sweep:finswp
+    - Wavelength Sweep:fineswp
     Type: InvFWM
     Wavelength: '1550'
   InvFWM0_7:
@@ -272,7 +257,7 @@ Devices:
     Polarization: TE
     RoutineCheck: true
     Routines:
-    - Wavelength Sweep:finswp
+    - Wavelength Sweep:fineswp
     Type: InvFWM
     Wavelength: '1550'
   InvFWM0_8:
@@ -284,7 +269,7 @@ Devices:
     Polarization: TE
     RoutineCheck: true
     Routines:
-    - Wavelength Sweep:finswp
+    - Wavelength Sweep:fineswp
     Type: InvFWM
     Wavelength: '1550'
   InvFWM1_0:
@@ -296,7 +281,7 @@ Devices:
     Polarization: TE
     RoutineCheck: true
     Routines:
-    - Wavelength Sweep:finswp
+    - Wavelength Sweep:fineswp
     Type: InvFWM
     Wavelength: '1550'
   InvFWM1_1:
@@ -308,7 +293,7 @@ Devices:
     Polarization: TE
     RoutineCheck: true
     Routines:
-    - Wavelength Sweep:finswp
+    - Wavelength Sweep:fineswp
     Type: InvFWM
     Wavelength: '1550'
   InvFWM1_2:
@@ -320,7 +305,7 @@ Devices:
     Polarization: TE
     RoutineCheck: true
     Routines:
-    - Wavelength Sweep:finswp
+    - Wavelength Sweep:fineswp
     Type: InvFWM
     Wavelength: '1550'
   InvFWM1_3:
@@ -332,7 +317,7 @@ Devices:
     Polarization: TE
     RoutineCheck: true
     Routines:
-    - Wavelength Sweep:finswp
+    - Wavelength Sweep:fineswp
     Type: InvFWM
     Wavelength: '1550'
   InvFWM1_4:
@@ -344,7 +329,7 @@ Devices:
     Polarization: TE
     RoutineCheck: true
     Routines:
-    - Wavelength Sweep:finswp
+    - Wavelength Sweep:fineswp
     Type: InvFWM
     Wavelength: '1550'
   InvFWM1_5:
@@ -356,7 +341,7 @@ Devices:
     Polarization: TE
     RoutineCheck: true
     Routines:
-    - Wavelength Sweep:finswp
+    - Wavelength Sweep:fineswp
     Type: InvFWM
     Wavelength: '1550'
   InvFWM1_6:
@@ -368,7 +353,7 @@ Devices:
     Polarization: TE
     RoutineCheck: true
     Routines:
-    - Wavelength Sweep:finswp
+    - Wavelength Sweep:fineswp
     Type: InvFWM
     Wavelength: '1550'
   InvFWM1_7:
@@ -380,7 +365,7 @@ Devices:
     Polarization: TE
     RoutineCheck: true
     Routines:
-    - Wavelength Sweep:finswp
+    - Wavelength Sweep:fineswp
     Type: InvFWM
     Wavelength: '1550'
   InvFWM1_8:
@@ -392,7 +377,7 @@ Devices:
     Polarization: TE
     RoutineCheck: true
     Routines:
-    - Wavelength Sweep:finswp
+    - Wavelength Sweep:fineswp
     Type: InvFWM
     Wavelength: '1550'
   InvFWM2_0:
@@ -404,7 +389,7 @@ Devices:
     Polarization: TE
     RoutineCheck: true
     Routines:
-    - Wavelength Sweep:finswp
+    - Wavelength Sweep:fineswp
     Type: InvFWM
     Wavelength: '1550'
   InvFWM2_1:
@@ -416,7 +401,7 @@ Devices:
     Polarization: TE
     RoutineCheck: true
     Routines:
-    - Wavelength Sweep:finswp
+    - Wavelength Sweep:fineswp
     Type: InvFWM
     Wavelength: '1550'
   InvFWM2_2:
@@ -428,7 +413,7 @@ Devices:
     Polarization: TE
     RoutineCheck: true
     Routines:
-    - Wavelength Sweep:finswp
+    - Wavelength Sweep:fineswp
     Type: InvFWM
     Wavelength: '1550'
   InvFWM2_3:
@@ -440,7 +425,7 @@ Devices:
     Polarization: TE
     RoutineCheck: true
     Routines:
-    - Wavelength Sweep:finswp
+    - Wavelength Sweep:fineswp
     Type: InvFWM
     Wavelength: '1550'
   InvFWM2_4:
@@ -452,7 +437,7 @@ Devices:
     Polarization: TE
     RoutineCheck: true
     Routines:
-    - Wavelength Sweep:finswp
+    - Wavelength Sweep:fineswp
     Type: InvFWM
     Wavelength: '1550'
   InvFWM2_5:
@@ -464,7 +449,7 @@ Devices:
     Polarization: TE
     RoutineCheck: true
     Routines:
-    - Wavelength Sweep:finswp
+    - Wavelength Sweep:fineswp
     Type: InvFWM
     Wavelength: '1550'
   InvFWM2_6:
@@ -476,7 +461,7 @@ Devices:
     Polarization: TE
     RoutineCheck: true
     Routines:
-    - Wavelength Sweep:finswp
+    - Wavelength Sweep:fineswp
     Type: InvFWM
     Wavelength: '1550'
   InvFWM3_0:
@@ -488,7 +473,7 @@ Devices:
     Polarization: TE
     RoutineCheck: true
     Routines:
-    - Wavelength Sweep:finswp
+    - Wavelength Sweep:fineswp
     Type: InvFWM
     Wavelength: '1550'
   InvFWM3_1:
@@ -500,7 +485,7 @@ Devices:
     Polarization: TE
     RoutineCheck: true
     Routines:
-    - Wavelength Sweep:finswp
+    - Wavelength Sweep:fineswp
     Type: InvFWM
     Wavelength: '1550'
   InvFWM3_2:
@@ -512,7 +497,7 @@ Devices:
     Polarization: TE
     RoutineCheck: true
     Routines:
-    - Wavelength Sweep:finswp
+    - Wavelength Sweep:fineswp
     Type: InvFWM
     Wavelength: '1550'
   InvFWM3_3:
@@ -524,7 +509,7 @@ Devices:
     Polarization: TE
     RoutineCheck: true
     Routines:
-    - Wavelength Sweep:finswp
+    - Wavelength Sweep:fineswp
     Type: InvFWM
     Wavelength: '1550'
   InvFWM3_4:
@@ -536,7 +521,7 @@ Devices:
     Polarization: TE
     RoutineCheck: true
     Routines:
-    - Wavelength Sweep:finswp
+    - Wavelength Sweep:fineswp
     Type: InvFWM
     Wavelength: '1550'
   InvFWM3_5:
@@ -548,7 +533,7 @@ Devices:
     Polarization: TE
     RoutineCheck: true
     Routines:
-    - Wavelength Sweep:finswp
+    - Wavelength Sweep:fineswp
     Type: InvFWM
     Wavelength: '1550'
   InvFWM3_6:
@@ -560,7 +545,7 @@ Devices:
     Polarization: TE
     RoutineCheck: true
     Routines:
-    - Wavelength Sweep:finswp
+    - Wavelength Sweep:fineswp
     Type: InvFWM
     Wavelength: '1550'
   SingleRing0:
@@ -1033,7 +1018,7 @@ Routines:
       Wavelengths: ''
       setvflag: false
       setwflag: false
-    finswp:
+    fineswp:
       Channel A: false
       Channel B: false
       IV: false

@@ -66,7 +66,7 @@ class AP2087A(object):
         
         # dummy index and map
         self.pwmSlotIndex = [1, 2]
-        self.pwmSlotMap = [(1,0), (1,1)]
+        self.pwmSlotMap = [(1,1), (1,2)]
         
         print('Connected to the laser')
         self.connected = True
@@ -82,7 +82,7 @@ class AP2087A(object):
         print('stop wlen = ' +str(self.OSA.GetStopWavelength()))
         print('points = ' +str(self.OSA.GetNPoints()))
         Trace = self.OSA.Run()
-        time.sleep(10)
+        time.sleep(1)
         # If the single measurement is good (Trace > 0), we get the data in a list Data = [[Power Data], [Wavelength Data]]
         bASCII_data = True #TODO: [ZJ] not sure what it means
         if Trace > 0:
@@ -108,8 +108,10 @@ class AP2087A(object):
         print('Disconnected from the laser')
 
     def readPWM(self, slot, chan):
+        power = float(self.PowerMeter.GetPower(Polar=chan))
+        print('%2.2f' %power, end = '')
         """ read a single wavelength """
-        return float(self.PowerMeter.GetPower(Polar=chan));
+        return power
     
     def setTLSState(self, state, slot='auto'):
         """ turn on or off"""

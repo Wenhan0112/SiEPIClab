@@ -25,6 +25,7 @@
 
 import math
 import numpy as np
+import collections
 import hp816x_instr
 
 
@@ -49,6 +50,8 @@ class fineAlign(object):
     useCrosshair = 0  # Set to 1 to use crosshair search after gradient. Doesn't work very well.
 
     abort = False  # Can set to true to self.abort a fine align
+    
+    use_cache = True
 
     NO_ERROR = 0
     DEVICE_NOT_FOUND = 1
@@ -56,6 +59,8 @@ class fineAlign(object):
     def __init__(self, laser, stage):
         self.laser = laser
         self.stage = stage
+        self.cache = collections.defaultdict(list)
+        self.idx = (None, None)
 
 
     def doFineAlign(self):
@@ -69,6 +74,9 @@ class fineAlign(object):
         # print(self.stage)
         
         for det in [0]:#self.detectorPriority:
+            self.cache = collections.defaultdict(list)
+            self.idx = (0, 0)
+            
 
             maxSteps = math.ceil(self.scanWindowSize / float(self.stepSize))
             # Get the detector slot number and channel for the chosen detector index
@@ -119,10 +127,20 @@ class fineAlign(object):
         self.laser.setAutorangeAll()
         return res, False
 
+    def read_power(self, det_slot, det_chan, force_sample=False):
+        if not self.use_cache:
+            return self.laser.readPWM(det_slot, det_chan)
+        if self.cache[self.idx] and not force_sample:
+            return self.cache[self.idx][-1]
+        power = self.laser.readPWM(det_slot, det_chan)
+        self.cache[self.idx].append(power)
+        return power
+
     def spiralSearch(self, maxSteps, detSlot, detChan):
         numSteps = 1
         print('spiral search started')
-        power = self.laser.readPWM(detSlot, detChan)
+        # power = self.laser.readPWM(detSlot, detChan)
+        power = self.read_power(detSlot, detChan)
 
         direction = 1
 
@@ -140,9 +158,11 @@ class fineAlign(object):
                 # print(self.stepSize * direction)
 
                 self.stage.moveRelativeXY(self.stepSize * direction, 0)
-                power = self.laser.readPWM(detSlot, detChan)
-                print(power)
-
+                self.idx = (self.idx[0]+direction, self.idx[1])
+                # power = self.laser.readPWM(detSlot, detChan)
+                power = self.read_power(detSlot, detChan)
+                print(power, end = '')
+                
                 if self.abort:
                     return self.FINE_ALIGN_ABORTED
                 elif power > self.threshold:
@@ -151,7 +171,9 @@ class fineAlign(object):
             # Y movement
             for ii in range(1, numSteps + 1):
                 self.stage.moveRelativeXY(0, self.stepSize * direction)
-                power = self.laser.readPWM(detSlot, detChan)
+                self.idx = (self.idx[0], self.idx[1]+direction)
+                # power = self.laser.readPWM(detSlot, detChan)
+                power = self.read_power(detSlot, detChan)
                 if self.abort:
                     return self.FINE_ALIGN_ABORTED
                 elif power > self.threshold:
@@ -169,43 +191,56 @@ class fineAlign(object):
 
     def gradientSearch(self, detSlot, detChan):
         peakFoundCount = 0;  # Count how many consective peaks are found
-        numConsecutivePeaks = 3;  # Need this many consecutive peaks to conclude the peak was found
+        numConsecutivePeaks = 1;  # Need this many consecutive peaks to conclude the peak was found
+        found_peak = False
         for ii in range(self.numGradientIter):
             if self.abort:
                 return self.FINE_ALIGN_ABORTED
             # Always move in the direction of increasing power
-            power = self.laser.readPWM(detSlot, detChan)
+            base_idx = self.idx
+            # power = self.laser.readPWM(detSlot, detChan)
+            power = self.read_power(detSlot, detChan, force_sample=found_peak)
+            
 
             self.stage.moveRelativeXY(self.stepSize, 0)
-            power_posx = self.laser.readPWM(detSlot, detChan)
-
+            self.idx = (base_idx[0]+1, base_idx[1])
+            # power_posx = self.laser.readPWM(detSlot, detChan)
+            power_posx = self.read_power(detSlot, detChan, force_sample=found_peak)
             if power_posx > power:
                 peakFoundCount = 0
                 continue
 
             self.stage.moveRelativeXY(-2 * self.stepSize, 0)
-            power_negx = self.laser.readPWM(detSlot, detChan)
+            self.idx = (base_idx[0]-1, base_idx[1])
+            # power_negx = self.laser.readPWM(detSlot, detChan)
+            power_negx = self.read_power(detSlot, detChan, force_sample=found_peak)
             if power_negx > power:
                 peakFoundCount = 0
                 continue
 
             self.stage.moveRelativeXY(self.stepSize, self.stepSize)
-            power_posy = self.laser.readPWM(detSlot, detChan)
+            self.idx = (base_idx[0], base_idx[1]+1)
+            # power_posy = self.laser.readPWM(detSlot, detChan)
+            power_posy = self.read_power(detSlot, detChan, force_sample=found_peak)
             if power_posy > power:
                 peakFoundCount = 0
                 continue
 
             self.stage.moveRelativeXY(0, -2 * self.stepSize)
-            power_negy = self.laser.readPWM(detSlot, detChan)
+            self.idx = (base_idx[0], base_idx[1]-1)
+            # power_negy = self.laser.readPWM(detSlot, detChan)
+            power_negy = self.read_power(detSlot, detChan, force_sample=found_peak)
             if power_negy > power:
                 peakFoundCount = 0
                 continue
 
             self.stage.moveRelativeXY(0, self.stepSize)
+            self.idx = base_idx
             if peakFoundCount == numConsecutivePeaks:
                 return self.NO_ERROR
 
             peakFoundCount += 1
+            found_peak = True
 
         return self.NO_ERROR
 

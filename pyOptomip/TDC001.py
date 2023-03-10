@@ -66,7 +66,7 @@ class TDC001Motor:
         
         # Z812b motor: 29nm/step
         self.tdc[axis].move_relative(distance=int(x*1000/29), bay=0, channel=0)
-        time.sleep(0.25)
+        time.sleep(0.35)
 
         self.position[axis] = self.tdc[axis].status['position']
         # self.position[axis] -= int(x*1000/29)

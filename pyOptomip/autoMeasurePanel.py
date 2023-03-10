@@ -552,6 +552,10 @@ class autoMeasurePanel(wx.Panel):
 
         self.startBtn = wx.Button(self, label='Start Measurements', size=(550, 20))
         self.startBtn.Bind(wx.EVT_BUTTON, self.OnButton_Start)
+        
+        self.stopBtn = wx.Button(self, label='Stop', size=(300, 20))
+        self.stopBtn.Bind(wx.EVT_BUTTON, self.OnButton_Stop)
+        
         self.saveBtn = wx.Button(self, label='Save Optical Alignment', size=(200, 20))
         self.saveBtn.Bind(wx.EVT_BUTTON, self.OnButton_Save)
         self.importBtn = wx.Button(self, label='Import Optical Alignment', size=(200, 20))
@@ -569,6 +573,8 @@ class autoMeasurePanel(wx.Panel):
 
         startBox = wx.BoxSizer(wx.HORIZONTAL)
         startBox.AddMany([(self.startBtn, 0, wx.EXPAND)])
+        stopBox = wx.BoxSizer(wx.HORIZONTAL)
+        stopBox.AddMany([(self.stopBtn, 0, wx.EXPAND)])
 
         scaletext = wx.StaticBox(self, label='Scale Adjust')
         scalehbox = wx.StaticBoxSizer(scaletext, wx.HORIZONTAL)
@@ -659,7 +665,7 @@ class autoMeasurePanel(wx.Panel):
             self.numDetectors = self.autoMeasure.laser.numPWMSlots
             self.detectorList = []
             for ii in range(self.numDetectors):
-                self.sel = wx.CheckBox(self, label='Slot {} Det 1'.format(ii+1), pos=(20, 20))
+                self.sel = wx.CheckBox(self, label='Slot {} Det 1'.format(ii), pos=(20, 20))
                 self.sel.SetValue(False)
                 self.detectorList.append(self.sel)
                 hboxDetectors.AddMany([(self.sel, 1, wx.EXPAND)])
@@ -875,7 +881,10 @@ class autoMeasurePanel(wx.Panel):
 
         self.checkList.SortItems(checkListSort)  # Make sure items in list are sorted
         self.checkList.Refresh()
-
+        
+    def OnButton_Stop(self, event):
+        return True
+    
     def OnButton_CheckAll(self, event):
         """Selects all items in the devices check list"""
         for ii in range(self.checkList.GetItemCount()):
