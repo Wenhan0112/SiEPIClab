@@ -83,7 +83,7 @@ class TDC001Motor:
         time.sleep(0.5)
 
         self.position[axis] = int(x*1000/29)
-        print(f"TDC001 Controller Moved to {x} um!")
+        # print(f"TDC001 Controller Moved to {x} um!")
         
         
     # temp function for fineAlign, need to fix the unit

@@ -412,9 +412,9 @@ class TopPanel(wx.Panel):
                     self.routinedict[routine][x]['PV'] = False
                     self.routinedict[routine][x]['Channel A'] = False
                     self.routinedict[routine][x]['Channel B'] = False
-                    self.routinedict[routine][x]['Start'] = '1480'
-                    self.routinedict[routine][x]['Stop'] = '1580'
-                    self.routinedict[routine][x]['Stepsize'] = '1'
+                    self.routinedict[routine][x]['Start'] = '1520'
+                    self.routinedict[routine][x]['Stop'] = '1600'
+                    self.routinedict[routine][x]['Stepsize'] = '0.02'
                     self.routinedict[routine][x]['Sweeppower'] = '0'
                     self.routinedict[routine][x]['Sweepspeed'] = 'auto'
                     self.routinedict[routine][x]['Laseroutput'] = 'High power'

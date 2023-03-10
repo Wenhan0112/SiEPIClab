@@ -87,9 +87,9 @@ class AP2087A(object):
         bASCII_data = True #TODO: [ZJ] not sure what it means
         if Trace > 0:
         	if bASCII_data == True:
-        		 Data = self.OSA.GetData(ScaleX = "nm", ScaleY = "log", TraceNumber = 2)
+        		Data = self.OSA.GetData(ScaleX = "nm", ScaleY = "log", TraceNumber = 1)
         	else:
-        		Data = self.OSA.GetDataBin(ScaleX = "nm", ScaleY = "log", TraceNumber = 2)
+        		Data = self.OSA.GetDataBin(ScaleX = "nm", ScaleY = "log", TraceNumber = 1)
                 
         # Convert values from string representation to integers for the driver
         wavelengthArrPWM = np.asarray(Data[1])

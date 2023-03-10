@@ -428,14 +428,12 @@ class autoMeasure(object):
         # For each checked device
 
         for i, device in enumerate(devices):
-            print(i)
-            print(devices)
             motorCoordOpt = self.motorOpt.getPosition()
-            self.devFolder = os.path.join(self.saveFolder, device.getDeviceID())
-            if not os.path.exists(self.devFolder):
-                os.makedirs(self.devFolder)
+            # self.devFolder = os.path.join(self.saveFolder, device.getDeviceID())
+            # if not os.path.exists(self.devFolder):
+            #     os.makedirs(self.devFolder)
 
-            camera.startrecord(path=self.devFolder)
+            camera.startrecord(path=self.saveFolder)
 
             # Move to device
             self.moveToDevice(device.getDeviceID())
@@ -615,11 +613,14 @@ class autoMeasure(object):
                             self.drawGraph(CurB, PowB, self.graphPanel, 'Current (mA)', 'Power (W)')
 
             if device.getWavelengthSweepRoutines() and self.laser:
-                for routine in device.getWavelengthSweepRoutines():
+                for routine in [device.getWavelengthSweepRoutines()[0]]: #[zhetao] temp solution to remove dup scan
+                    # print(routine)
+                    # print(device.getWavelengthSweepRoutines())
+
                     ii = self.wavelengthSweeps['RoutineName'].index(routine)
                     timeStart = time.strftime("%d_%b_%Y_%H_%M_%S", time.localtime())
                     routineName = self.wavelengthSweeps['RoutineName'][ii]
-                    print("Performing Optical Test {}".format(routineName))
+                    print("Performing (laser only) Optical Test {}".format(routineName))
                     start = self.wavelengthSweeps['Start'][ii]
                     stop = self.wavelengthSweeps['Stop'][ii]
                     stepsize = self.wavelengthSweeps['Stepsize'][ii]
@@ -651,10 +652,12 @@ class autoMeasure(object):
                         legend = 1
 
                     # save all associated files
+                    # self.saveFiles(device, 'Wavelength (nm)', 'Power (dBm)', ii, wav * 1e9, pow,
+                    #                 'Wavelength sweep', motorCoordOpt, timeStart, timeStop, chipTimeStart,
+                    #                self.devFolder, routine, leg=legend)
                     self.saveFiles(device, 'Wavelength (nm)', 'Power (dBm)', ii, wav * 1e9, pow,
                                     'Wavelength sweep', motorCoordOpt, timeStart, timeStop, chipTimeStart,
-                                   self.devFolder, routine, leg=legend)
-
+                                    self.saveFolder, device.getDeviceID(), leg=legend)
                     self.drawGraph(wav, pow, self.graphPanel, 'Wavelength (nm)', 'Power (dBm)', legend=legend)
                     #data.extend([wav * 1e9, pow, self.graphPanel, 'Wavelength (nm)', 'Power (dBm)', legend=0])
 
@@ -1303,7 +1306,7 @@ class autoMeasure(object):
                     gdsCoordOpt = (device.getOpticalCoordinates()[0], device.getOpticalCoordinates()[1])
                     motorCoordOpt = self.gdsToMotorCoordsOpt(gdsCoordOpt)
                     # Move chip stage
-                    print('moveto%2.2f,%2.2f, %2.2f' %(motorCoordOpt[0],motorCoordOpt[1],motorCoordOpt[2]))
+                    print('Move to device %s at (%2.2f, %2.2f, %2.2f)' %(device.getDeviceID(), motorCoordOpt[0],motorCoordOpt[1],motorCoordOpt[2]))
                     self.motorOpt.moveAbsoluteXYZ(motorCoordOpt[0], motorCoordOpt[1], motorCoordOpt[2])
 
                     # Fine align to device
