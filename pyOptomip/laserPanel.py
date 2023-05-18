@@ -222,7 +222,10 @@ class tlsPanel(wx.Panel):
 
     def drawGraph(self, wavelength, power):
         self.graphPanel.axes.cla()
-        self.graphPanel.axes.plot(wavelength, power)
+        self.graphPanel.axes.plot(wavelength/1e9, power)
+        self.graphPanel.axes.set_xlabel('Wavelength (nm)')
+        self.graphPanel.axes.set_ylabel('Intensity (dBm)')
+        self.graphPanel.axes.grid()
         self.graphPanel.axes.ticklabel_format(useOffset=False)
         self.graphPanel.canvas.draw()
 

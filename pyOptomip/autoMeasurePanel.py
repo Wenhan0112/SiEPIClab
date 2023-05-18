@@ -546,10 +546,10 @@ class autoMeasurePanel(wx.Panel):
         electricalBox = wx.BoxSizer(wx.HORIZONTAL)
         electricalBox.Add(self.coordMapPanelElec, proportion=1, flag=wx.EXPAND)
 
-        self.startBtn = wx.Button(self, label='Start Measurements', size=(550, 20))
+        self.startBtn = wx.Button(self, label='Start Measurements', size=(275, 20))
         self.startBtn.Bind(wx.EVT_BUTTON, self.OnButton_Start)
         
-        self.stopBtn = wx.Button(self, label='Stop', size=(300, 20))
+        self.stopBtn = wx.Button(self, label='Stop Measurements', size=(275, 20))
         self.stopBtn.Bind(wx.EVT_BUTTON, self.OnButton_Stop)
         
         self.saveBtn = wx.Button(self, label='Save Optical Alignment', size=(200, 20))
@@ -568,9 +568,9 @@ class autoMeasurePanel(wx.Panel):
         alignmentBox.AddMany([(self.saveBtn, 0, wx.EXPAND), (self.importBtn, 0, wx.EXPAND)])
 
         startBox = wx.BoxSizer(wx.HORIZONTAL)
-        startBox.AddMany([(self.startBtn, 0, wx.EXPAND)])
-        stopBox = wx.BoxSizer(wx.HORIZONTAL)
-        stopBox.AddMany([(self.stopBtn, 0, wx.EXPAND)])
+        startBox.AddMany([(self.startBtn, 0, wx.EXPAND), (self.stopBtn, 0, wx.EXPAND)])
+        # stopBox = wx.BoxSizer(wx.HORIZONTAL)
+        # stopBox.AddMany([(self.stopBtn, 0, wx.EXPAND)])
 
         scaletext = wx.StaticBox(self, label='Scale Adjust')
         scalehbox = wx.StaticBoxSizer(scaletext, wx.HORIZONTAL)
@@ -661,7 +661,7 @@ class autoMeasurePanel(wx.Panel):
             self.numDetectors = self.autoMeasure.laser.numPWMSlots
             self.detectorList = []
             for ii in range(self.numDetectors):
-                self.sel = wx.CheckBox(self, label='Slot {} Det 1'.format(ii), pos=(20, 20))
+                self.sel = wx.CheckBox(self, label='Slot 1 Det {}'.format(ii+1), pos=(20, 20))
                 self.sel.SetValue(False)
                 self.detectorList.append(self.sel)
                 hboxDetectors.AddMany([(self.sel, 1, wx.EXPAND)])
@@ -1342,8 +1342,9 @@ class autoMeasurePanel(wx.Panel):
                         q = Queue()
                         data = []
                         # self.autoMeasure.smu.automeasureflag = False
+                        aborter = Default_Aborter("ABORTION_FILE.txt")
                         p = Thread(target=self.autoMeasure.beginMeasure, args=(
-                        checkedDevicesText, self.checkList, activeDetectors, self.camera, data, None, None, True))
+                        checkedDevicesText, self.checkList, activeDetectors, self.camera, data, aborter, None, True))
                         p.daemon = True
                         p.start()
 
@@ -1597,3 +1598,33 @@ class autoMeasurePanel(wx.Panel):
         self.save_pdf(deviceObject, x, y, xArray, yArray, saveFolder, routineName, legend = leg, )
         self.save_mat(deviceObject, devNum, motorCoord, xArray, yArray, x, y, saveFolder, routineName)
         self.save_csv(deviceObject, testType, xArray, yArray, start, stop, chipStart, motorCoord, devNum, saveFolder, routineName, x, y)
+        
+class Default_Aborter():
+    """
+    Default aborter for automeasurement. Type 'abort' in the beginning of the 
+    corresponding abortion file. 
+    """
+    def __init__(self, fn: str):
+        """
+        Constructor
+        @params fn (str): The abortion file path. 
+        """
+        self.fn = fn
+        assert os.path.exists(fn)
+        self.clear()
+    
+    def clear(self):
+        f = open(self.fn, "w")
+        f.truncate(0)
+        f.close()
+    
+    def __call__(self):
+        """
+        Abort the automeasurement. 
+        """
+        f = open(self.fn, "r")
+        c = f.read(5).lower().startswith("abort")
+        f.close()
+        if c:
+            self.clear()
+        return c

@@ -38,7 +38,7 @@ class AP2087A(object):
     sweepPower = 0;
     sweepLaserOutput = 'lowsse';
     sweepNumScans = 1;
-    sweepPWMChannel = 'all';
+    sweepPWMChannel = 3; # 0:1+2, 1: 1&2, 2:1,3:2
     sweepInitialRange = -20;
     sweepRangeDecrement = 20;
     sweepUseClipping = 1;
@@ -68,19 +68,21 @@ class AP2087A(object):
         self.pwmSlotIndex = [1, 2]
         self.pwmSlotMap = [(1,1), (1,2)]
         
+        self.OSA.SetPolarizationMode('1&2') # use both detectors
         print('Connected to the laser')
         self.connected = True
-
+        
+        
     def sweep(self):
         """ Performs a wavelength sweep """
         
+        self.OSA.SetPolarizationMode(self.sweepPWMChannel)
         self.OSA.SetStartWavelength(self.sweepStartWvl*1e9)
         self.OSA.SetStopWavelength(self.sweepStopWvl*1e9)
         self.OSA.DeactivateAutoNPoints()
         self.OSA.SetNPoints(int((self.sweepStopWvl-self.sweepStartWvl)/self.sweepStepWvl))
-        print('start wlen = ' +str(self.OSA.GetStartWavelength()))
-        print('stop wlen = ' +str(self.OSA.GetStopWavelength()))
-        print('points = ' +str(self.OSA.GetNPoints()))
+        print('start wlen = %2.2f, stop wlen = %2.2f, points = %d.' 
+              %(self.OSA.GetStartWavelength(), self.OSA.GetStopWavelength(), self.OSA.GetNPoints()))
         Trace = self.OSA.Run()
         time.sleep(1)
         # If the single measurement is good (Trace > 0), we get the data in a list Data = [[Power Data], [Wavelength Data]]
@@ -94,11 +96,7 @@ class AP2087A(object):
         # Convert values from string representation to integers for the driver
         wavelengthArrPWM = np.asarray(Data[1])
         powerArrPWM = np.asarray(Data[0])
-        
-        # for testing
-        # plt.plot(wavelengthArrPWM, powerArrPWM)
-        # print(len(wavelengthArrPWM))
-        # print(len(powerArrPWM))
+        # self.OSA.SetPolarizationMode('1&2')
 
         return (wavelengthArrPWM, powerArrPWM)
 
@@ -127,12 +125,11 @@ class AP2087A(object):
         
     def setTLSWavelength(self, wavelength, selMode='manual', slot='auto'):
         # wavelength input unit: um
-        print('set wavelength to' + str(wavelength))
         self.TLS.SetWavelength(int(wavelength*1e9))
         time.sleep(0.150)
         dWL = self.TLS.GetWavelength()
         time.sleep(0.150)
-        print("Get Static WL =", dWL)
+        print("Set TLS wavelength = ", dWL)
         
     def setPWMPowerUnit(self, slot, chan, unit):
         # Set Power Unit 
@@ -144,7 +141,7 @@ class AP2087A(object):
         time.sleep(0.150)
         dPow = self.TLS.GetPower()
         time.sleep(0.150)
-        print("Get Static Power =", dPow)
+        # print("Get Static Power =", dPow)
         elf.checkError(res);
         
     # dummy function

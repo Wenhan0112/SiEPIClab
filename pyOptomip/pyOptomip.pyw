@@ -87,7 +87,7 @@ class pyOptomip(wx.Frame):
                           size=(600, 400))
         self.panel = wx.Panel(self)
         self.panel.instList = []
-        self.notebook = ConnectCB(self.panel, -1, self.panel)
+        self.notebook = ConnectCB(self.panel, -1, self.panel)   
         sizer = wx.BoxSizer(wx.VERTICAL)
         sizer.Add(self.notebook, 2, wx.ALL | wx.EXPAND, 5)
         self.doneButton = wx.Button(self.panel, label='Done', size=(75, 20))
