@@ -44,7 +44,7 @@ class fineAlign(object):
 
     scanWindowSize = 50#50  # Size of square window which will be searched by fine align
 
-    threshold = -61#-56  # Spiral search will stop once power is greater than the threshold
+    threshold = -59#-56  # Spiral search will stop once power is greater than the threshold
 
     numGradientIter = 25#50
 

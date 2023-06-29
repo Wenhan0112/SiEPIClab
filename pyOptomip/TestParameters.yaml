@@ -4,1055 +4,109 @@ Devices:
     Electrical Coordinates: []
     Optical Coordinates:
     - 0.0
-    - -400.0
+    - 0.0
     Polarization: TE
-    RoutineCheck: true
-    Routines:
-    - Wavelength Sweep:Default
+    RoutineCheck: false
+    Routines: []
     Type: InvFWM
     Wavelength: '1550'
   InvFWM0_1:
     DeviceID: InvFWM0_1
     Electrical Coordinates: []
     Optical Coordinates:
-    - 500.0
-    - -400.0
+    - 580.0
+    - 0.0
     Polarization: TE
-    RoutineCheck: true
-    Routines:
-    - Wavelength Sweep:Default
-    Type: InvFWM
-    Wavelength: '1550'
-  InvFWM0_10:
-    DeviceID: InvFWM0_10
-    Electrical Coordinates: []
-    Optical Coordinates:
-    - 5000.0
-    - -400.0
-    Polarization: TE
-    RoutineCheck: true
-    Routines:
-    - Wavelength Sweep:Default
+    RoutineCheck: false
+    Routines: []
     Type: InvFWM
     Wavelength: '1550'
   InvFWM0_2:
     DeviceID: InvFWM0_2
     Electrical Coordinates: []
     Optical Coordinates:
-    - 1000.0
-    - -400.0
+    - 1160.0
+    - 0.0
     Polarization: TE
-    RoutineCheck: true
-    Routines:
-    - Wavelength Sweep:Default
+    RoutineCheck: false
+    Routines: []
     Type: InvFWM
     Wavelength: '1550'
   InvFWM0_3:
     DeviceID: InvFWM0_3
     Electrical Coordinates: []
     Optical Coordinates:
-    - 1500.0
-    - -400.0
+    - 1740.0
+    - 0.0
     Polarization: TE
-    RoutineCheck: true
-    Routines:
-    - Wavelength Sweep:Default
+    RoutineCheck: false
+    Routines: []
     Type: InvFWM
     Wavelength: '1550'
   InvFWM0_4:
     DeviceID: InvFWM0_4
     Electrical Coordinates: []
     Optical Coordinates:
-    - 2000.0
-    - -400.0
+    - 2320.0
+    - 0.0
     Polarization: TE
-    RoutineCheck: true
-    Routines:
-    - Wavelength Sweep:Default
+    RoutineCheck: false
+    Routines: []
     Type: InvFWM
     Wavelength: '1550'
   InvFWM0_5:
     DeviceID: InvFWM0_5
     Electrical Coordinates: []
     Optical Coordinates:
-    - 2500.0
-    - -400.0
+    - 2900.0
+    - 0.0
     Polarization: TE
-    RoutineCheck: true
-    Routines:
-    - Wavelength Sweep:Default
+    RoutineCheck: false
+    Routines: []
     Type: InvFWM
     Wavelength: '1550'
   InvFWM0_6:
     DeviceID: InvFWM0_6
     Electrical Coordinates: []
     Optical Coordinates:
-    - 3000.0
-    - -400.0
+    - 3480.0
+    - 0.0
     Polarization: TE
-    RoutineCheck: true
-    Routines:
-    - Wavelength Sweep:Default
+    RoutineCheck: false
+    Routines: []
     Type: InvFWM
     Wavelength: '1550'
   InvFWM0_7:
     DeviceID: InvFWM0_7
     Electrical Coordinates: []
     Optical Coordinates:
-    - 3500.0
-    - -400.0
+    - 4060.0
+    - 0.0
     Polarization: TE
-    RoutineCheck: true
-    Routines:
-    - Wavelength Sweep:Default
+    RoutineCheck: false
+    Routines: []
     Type: InvFWM
     Wavelength: '1550'
   InvFWM0_8:
     DeviceID: InvFWM0_8
     Electrical Coordinates: []
     Optical Coordinates:
-    - 4000.0
-    - -400.0
+    - 4640.0
+    - 0.0
     Polarization: TE
-    RoutineCheck: true
-    Routines:
-    - Wavelength Sweep:Default
+    RoutineCheck: false
+    Routines: []
     Type: InvFWM
     Wavelength: '1550'
   InvFWM0_9:
     DeviceID: InvFWM0_9
     Electrical Coordinates: []
     Optical Coordinates:
-    - 4500.0
-    - -400.0
-    Polarization: TE
-    RoutineCheck: true
-    Routines:
-    - Wavelength Sweep:Default
-    Type: InvFWM
-    Wavelength: '1550'
-  InvFWM10_0:
-    DeviceID: InvFWM10_0
-    Electrical Coordinates: []
-    Optical Coordinates:
+    - 5220.0
     - 0.0
-    - 1600.0
     Polarization: TE
-    RoutineCheck: true
-    Routines:
-    - Wavelength Sweep:Default
-    Type: InvFWM
-    Wavelength: '1550'
-  InvFWM10_1:
-    DeviceID: InvFWM10_1
-    Electrical Coordinates: []
-    Optical Coordinates:
-    - 500.0
-    - 1600.0
-    Polarization: TE
-    RoutineCheck: true
-    Routines:
-    - Wavelength Sweep:Default
-    Type: InvFWM
-    Wavelength: '1550'
-  InvFWM10_10:
-    DeviceID: InvFWM10_10
-    Electrical Coordinates: []
-    Optical Coordinates:
-    - 5000.0
-    - 1600.0
-    Polarization: TE
-    RoutineCheck: true
-    Routines:
-    - Wavelength Sweep:Default
-    Type: InvFWM
-    Wavelength: '1550'
-  InvFWM10_2:
-    DeviceID: InvFWM10_2
-    Electrical Coordinates: []
-    Optical Coordinates:
-    - 1000.0
-    - 1600.0
-    Polarization: TE
-    RoutineCheck: true
-    Routines:
-    - Wavelength Sweep:Default
-    Type: InvFWM
-    Wavelength: '1550'
-  InvFWM10_3:
-    DeviceID: InvFWM10_3
-    Electrical Coordinates: []
-    Optical Coordinates:
-    - 1500.0
-    - 1600.0
-    Polarization: TE
-    RoutineCheck: true
-    Routines:
-    - Wavelength Sweep:Default
-    Type: InvFWM
-    Wavelength: '1550'
-  InvFWM10_4:
-    DeviceID: InvFWM10_4
-    Electrical Coordinates: []
-    Optical Coordinates:
-    - 2000.0
-    - 1600.0
-    Polarization: TE
-    RoutineCheck: true
-    Routines:
-    - Wavelength Sweep:Default
-    Type: InvFWM
-    Wavelength: '1550'
-  InvFWM10_5:
-    DeviceID: InvFWM10_5
-    Electrical Coordinates: []
-    Optical Coordinates:
-    - 2500.0
-    - 1600.0
-    Polarization: TE
-    RoutineCheck: true
-    Routines:
-    - Wavelength Sweep:Default
-    Type: InvFWM
-    Wavelength: '1550'
-  InvFWM10_6:
-    DeviceID: InvFWM10_6
-    Electrical Coordinates: []
-    Optical Coordinates:
-    - 3000.0
-    - 1600.0
-    Polarization: TE
-    RoutineCheck: true
-    Routines:
-    - Wavelength Sweep:Default
-    Type: InvFWM
-    Wavelength: '1550'
-  InvFWM10_7:
-    DeviceID: InvFWM10_7
-    Electrical Coordinates: []
-    Optical Coordinates:
-    - 3500.0
-    - 1600.0
-    Polarization: TE
-    RoutineCheck: true
-    Routines:
-    - Wavelength Sweep:Default
-    Type: InvFWM
-    Wavelength: '1550'
-  InvFWM10_8:
-    DeviceID: InvFWM10_8
-    Electrical Coordinates: []
-    Optical Coordinates:
-    - 4000.0
-    - 1600.0
-    Polarization: TE
-    RoutineCheck: true
-    Routines:
-    - Wavelength Sweep:Default
-    Type: InvFWM
-    Wavelength: '1550'
-  InvFWM10_9:
-    DeviceID: InvFWM10_9
-    Electrical Coordinates: []
-    Optical Coordinates:
-    - 4500.0
-    - 1600.0
-    Polarization: TE
-    RoutineCheck: true
-    Routines:
-    - Wavelength Sweep:Default
-    Type: InvFWM
-    Wavelength: '1550'
-  InvFWM11_0:
-    DeviceID: InvFWM11_0
-    Electrical Coordinates: []
-    Optical Coordinates:
-    - 0.0
-    - 1800.0
-    Polarization: TE
-    RoutineCheck: true
-    Routines:
-    - Wavelength Sweep:Default
-    Type: InvFWM
-    Wavelength: '1550'
-  InvFWM11_1:
-    DeviceID: InvFWM11_1
-    Electrical Coordinates: []
-    Optical Coordinates:
-    - 500.0
-    - 1800.0
-    Polarization: TE
-    RoutineCheck: true
-    Routines:
-    - Wavelength Sweep:Default
-    Type: InvFWM
-    Wavelength: '1550'
-  InvFWM11_10:
-    DeviceID: InvFWM11_10
-    Electrical Coordinates: []
-    Optical Coordinates:
-    - 5000.0
-    - 1800.0
-    Polarization: TE
-    RoutineCheck: true
-    Routines:
-    - Wavelength Sweep:Default
-    Type: InvFWM
-    Wavelength: '1550'
-  InvFWM11_2:
-    DeviceID: InvFWM11_2
-    Electrical Coordinates: []
-    Optical Coordinates:
-    - 1000.0
-    - 1800.0
-    Polarization: TE
-    RoutineCheck: true
-    Routines:
-    - Wavelength Sweep:Default
-    Type: InvFWM
-    Wavelength: '1550'
-  InvFWM11_3:
-    DeviceID: InvFWM11_3
-    Electrical Coordinates: []
-    Optical Coordinates:
-    - 1500.0
-    - 1800.0
-    Polarization: TE
-    RoutineCheck: true
-    Routines:
-    - Wavelength Sweep:Default
-    Type: InvFWM
-    Wavelength: '1550'
-  InvFWM11_4:
-    DeviceID: InvFWM11_4
-    Electrical Coordinates: []
-    Optical Coordinates:
-    - 2000.0
-    - 1800.0
-    Polarization: TE
-    RoutineCheck: true
-    Routines:
-    - Wavelength Sweep:Default
-    Type: InvFWM
-    Wavelength: '1550'
-  InvFWM11_5:
-    DeviceID: InvFWM11_5
-    Electrical Coordinates: []
-    Optical Coordinates:
-    - 2500.0
-    - 1800.0
-    Polarization: TE
-    RoutineCheck: true
-    Routines:
-    - Wavelength Sweep:Default
-    Type: InvFWM
-    Wavelength: '1550'
-  InvFWM11_6:
-    DeviceID: InvFWM11_6
-    Electrical Coordinates: []
-    Optical Coordinates:
-    - 3000.0
-    - 1800.0
-    Polarization: TE
-    RoutineCheck: true
-    Routines:
-    - Wavelength Sweep:Default
-    Type: InvFWM
-    Wavelength: '1550'
-  InvFWM11_7:
-    DeviceID: InvFWM11_7
-    Electrical Coordinates: []
-    Optical Coordinates:
-    - 3500.0
-    - 1800.0
-    Polarization: TE
-    RoutineCheck: true
-    Routines:
-    - Wavelength Sweep:Default
-    Type: InvFWM
-    Wavelength: '1550'
-  InvFWM11_8:
-    DeviceID: InvFWM11_8
-    Electrical Coordinates: []
-    Optical Coordinates:
-    - 4000.0
-    - 1800.0
-    Polarization: TE
-    RoutineCheck: true
-    Routines:
-    - Wavelength Sweep:Default
-    Type: InvFWM
-    Wavelength: '1550'
-  InvFWM11_9:
-    DeviceID: InvFWM11_9
-    Electrical Coordinates: []
-    Optical Coordinates:
-    - 4500.0
-    - 1800.0
-    Polarization: TE
-    RoutineCheck: true
-    Routines:
-    - Wavelength Sweep:Default
-    Type: InvFWM
-    Wavelength: '1550'
-  InvFWM12_0:
-    DeviceID: InvFWM12_0
-    Electrical Coordinates: []
-    Optical Coordinates:
-    - 0.0
-    - 2000.0
-    Polarization: TE
-    RoutineCheck: true
-    Routines:
-    - Wavelength Sweep:Default
-    Type: InvFWM
-    Wavelength: '1550'
-  InvFWM12_1:
-    DeviceID: InvFWM12_1
-    Electrical Coordinates: []
-    Optical Coordinates:
-    - 500.0
-    - 2000.0
-    Polarization: TE
-    RoutineCheck: true
-    Routines:
-    - Wavelength Sweep:Default
-    Type: InvFWM
-    Wavelength: '1550'
-  InvFWM12_10:
-    DeviceID: InvFWM12_10
-    Electrical Coordinates: []
-    Optical Coordinates:
-    - 5000.0
-    - 2000.0
-    Polarization: TE
-    RoutineCheck: true
-    Routines:
-    - Wavelength Sweep:Default
-    Type: InvFWM
-    Wavelength: '1550'
-  InvFWM12_2:
-    DeviceID: InvFWM12_2
-    Electrical Coordinates: []
-    Optical Coordinates:
-    - 1000.0
-    - 2000.0
-    Polarization: TE
-    RoutineCheck: true
-    Routines:
-    - Wavelength Sweep:Default
-    Type: InvFWM
-    Wavelength: '1550'
-  InvFWM12_3:
-    DeviceID: InvFWM12_3
-    Electrical Coordinates: []
-    Optical Coordinates:
-    - 1500.0
-    - 2000.0
-    Polarization: TE
-    RoutineCheck: true
-    Routines:
-    - Wavelength Sweep:Default
-    Type: InvFWM
-    Wavelength: '1550'
-  InvFWM12_4:
-    DeviceID: InvFWM12_4
-    Electrical Coordinates: []
-    Optical Coordinates:
-    - 2000.0
-    - 2000.0
-    Polarization: TE
-    RoutineCheck: true
-    Routines:
-    - Wavelength Sweep:Default
-    Type: InvFWM
-    Wavelength: '1550'
-  InvFWM12_5:
-    DeviceID: InvFWM12_5
-    Electrical Coordinates: []
-    Optical Coordinates:
-    - 2500.0
-    - 2000.0
-    Polarization: TE
-    RoutineCheck: true
-    Routines:
-    - Wavelength Sweep:Default
-    Type: InvFWM
-    Wavelength: '1550'
-  InvFWM12_6:
-    DeviceID: InvFWM12_6
-    Electrical Coordinates: []
-    Optical Coordinates:
-    - 3000.0
-    - 2000.0
-    Polarization: TE
-    RoutineCheck: true
-    Routines:
-    - Wavelength Sweep:Default
-    Type: InvFWM
-    Wavelength: '1550'
-  InvFWM12_7:
-    DeviceID: InvFWM12_7
-    Electrical Coordinates: []
-    Optical Coordinates:
-    - 3500.0
-    - 2000.0
-    Polarization: TE
-    RoutineCheck: true
-    Routines:
-    - Wavelength Sweep:Default
-    Type: InvFWM
-    Wavelength: '1550'
-  InvFWM12_8:
-    DeviceID: InvFWM12_8
-    Electrical Coordinates: []
-    Optical Coordinates:
-    - 4000.0
-    - 2000.0
-    Polarization: TE
-    RoutineCheck: true
-    Routines:
-    - Wavelength Sweep:Default
-    Type: InvFWM
-    Wavelength: '1550'
-  InvFWM12_9:
-    DeviceID: InvFWM12_9
-    Electrical Coordinates: []
-    Optical Coordinates:
-    - 4500.0
-    - 2000.0
-    Polarization: TE
-    RoutineCheck: true
-    Routines:
-    - Wavelength Sweep:Default
-    Type: InvFWM
-    Wavelength: '1550'
-  InvFWM13_0:
-    DeviceID: InvFWM13_0
-    Electrical Coordinates: []
-    Optical Coordinates:
-    - 0.0
-    - 2200.0
-    Polarization: TE
-    RoutineCheck: true
-    Routines:
-    - Wavelength Sweep:Default
-    Type: InvFWM
-    Wavelength: '1550'
-  InvFWM13_1:
-    DeviceID: InvFWM13_1
-    Electrical Coordinates: []
-    Optical Coordinates:
-    - 500.0
-    - 2200.0
-    Polarization: TE
-    RoutineCheck: true
-    Routines:
-    - Wavelength Sweep:Default
-    Type: InvFWM
-    Wavelength: '1550'
-  InvFWM13_10:
-    DeviceID: InvFWM13_10
-    Electrical Coordinates: []
-    Optical Coordinates:
-    - 5000.0
-    - 2200.0
-    Polarization: TE
-    RoutineCheck: true
-    Routines:
-    - Wavelength Sweep:Default
-    Type: InvFWM
-    Wavelength: '1550'
-  InvFWM13_2:
-    DeviceID: InvFWM13_2
-    Electrical Coordinates: []
-    Optical Coordinates:
-    - 1000.0
-    - 2200.0
-    Polarization: TE
-    RoutineCheck: true
-    Routines:
-    - Wavelength Sweep:Default
-    Type: InvFWM
-    Wavelength: '1550'
-  InvFWM13_3:
-    DeviceID: InvFWM13_3
-    Electrical Coordinates: []
-    Optical Coordinates:
-    - 1500.0
-    - 2200.0
-    Polarization: TE
-    RoutineCheck: true
-    Routines:
-    - Wavelength Sweep:Default
-    Type: InvFWM
-    Wavelength: '1550'
-  InvFWM13_4:
-    DeviceID: InvFWM13_4
-    Electrical Coordinates: []
-    Optical Coordinates:
-    - 2000.0
-    - 2200.0
-    Polarization: TE
-    RoutineCheck: true
-    Routines:
-    - Wavelength Sweep:Default
-    Type: InvFWM
-    Wavelength: '1550'
-  InvFWM13_5:
-    DeviceID: InvFWM13_5
-    Electrical Coordinates: []
-    Optical Coordinates:
-    - 2500.0
-    - 2200.0
-    Polarization: TE
-    RoutineCheck: true
-    Routines:
-    - Wavelength Sweep:Default
-    Type: InvFWM
-    Wavelength: '1550'
-  InvFWM13_6:
-    DeviceID: InvFWM13_6
-    Electrical Coordinates: []
-    Optical Coordinates:
-    - 3000.0
-    - 2200.0
-    Polarization: TE
-    RoutineCheck: true
-    Routines:
-    - Wavelength Sweep:Default
-    Type: InvFWM
-    Wavelength: '1550'
-  InvFWM13_7:
-    DeviceID: InvFWM13_7
-    Electrical Coordinates: []
-    Optical Coordinates:
-    - 3500.0
-    - 2200.0
-    Polarization: TE
-    RoutineCheck: true
-    Routines:
-    - Wavelength Sweep:Default
-    Type: InvFWM
-    Wavelength: '1550'
-  InvFWM13_8:
-    DeviceID: InvFWM13_8
-    Electrical Coordinates: []
-    Optical Coordinates:
-    - 4000.0
-    - 2200.0
-    Polarization: TE
-    RoutineCheck: true
-    Routines:
-    - Wavelength Sweep:Default
-    Type: InvFWM
-    Wavelength: '1550'
-  InvFWM13_9:
-    DeviceID: InvFWM13_9
-    Electrical Coordinates: []
-    Optical Coordinates:
-    - 4500.0
-    - 2200.0
-    Polarization: TE
-    RoutineCheck: true
-    Routines:
-    - Wavelength Sweep:Default
-    Type: InvFWM
-    Wavelength: '1550'
-  InvFWM14_0:
-    DeviceID: InvFWM14_0
-    Electrical Coordinates: []
-    Optical Coordinates:
-    - 0.0
-    - 2400.0
-    Polarization: TE
-    RoutineCheck: true
-    Routines:
-    - Wavelength Sweep:Default
-    Type: InvFWM
-    Wavelength: '1550'
-  InvFWM14_1:
-    DeviceID: InvFWM14_1
-    Electrical Coordinates: []
-    Optical Coordinates:
-    - 500.0
-    - 2400.0
-    Polarization: TE
-    RoutineCheck: true
-    Routines:
-    - Wavelength Sweep:Default
-    Type: InvFWM
-    Wavelength: '1550'
-  InvFWM14_10:
-    DeviceID: InvFWM14_10
-    Electrical Coordinates: []
-    Optical Coordinates:
-    - 5000.0
-    - 2400.0
-    Polarization: TE
-    RoutineCheck: true
-    Routines:
-    - Wavelength Sweep:Default
-    Type: InvFWM
-    Wavelength: '1550'
-  InvFWM14_2:
-    DeviceID: InvFWM14_2
-    Electrical Coordinates: []
-    Optical Coordinates:
-    - 1000.0
-    - 2400.0
-    Polarization: TE
-    RoutineCheck: true
-    Routines:
-    - Wavelength Sweep:Default
-    Type: InvFWM
-    Wavelength: '1550'
-  InvFWM14_3:
-    DeviceID: InvFWM14_3
-    Electrical Coordinates: []
-    Optical Coordinates:
-    - 1500.0
-    - 2400.0
-    Polarization: TE
-    RoutineCheck: true
-    Routines:
-    - Wavelength Sweep:Default
-    Type: InvFWM
-    Wavelength: '1550'
-  InvFWM14_4:
-    DeviceID: InvFWM14_4
-    Electrical Coordinates: []
-    Optical Coordinates:
-    - 2000.0
-    - 2400.0
-    Polarization: TE
-    RoutineCheck: true
-    Routines:
-    - Wavelength Sweep:Default
-    Type: InvFWM
-    Wavelength: '1550'
-  InvFWM14_5:
-    DeviceID: InvFWM14_5
-    Electrical Coordinates: []
-    Optical Coordinates:
-    - 2500.0
-    - 2400.0
-    Polarization: TE
-    RoutineCheck: true
-    Routines:
-    - Wavelength Sweep:Default
-    Type: InvFWM
-    Wavelength: '1550'
-  InvFWM14_6:
-    DeviceID: InvFWM14_6
-    Electrical Coordinates: []
-    Optical Coordinates:
-    - 3000.0
-    - 2400.0
-    Polarization: TE
-    RoutineCheck: true
-    Routines:
-    - Wavelength Sweep:Default
-    Type: InvFWM
-    Wavelength: '1550'
-  InvFWM14_7:
-    DeviceID: InvFWM14_7
-    Electrical Coordinates: []
-    Optical Coordinates:
-    - 3500.0
-    - 2400.0
-    Polarization: TE
-    RoutineCheck: true
-    Routines:
-    - Wavelength Sweep:Default
-    Type: InvFWM
-    Wavelength: '1550'
-  InvFWM14_8:
-    DeviceID: InvFWM14_8
-    Electrical Coordinates: []
-    Optical Coordinates:
-    - 4000.0
-    - 2400.0
-    Polarization: TE
-    RoutineCheck: true
-    Routines:
-    - Wavelength Sweep:Default
-    Type: InvFWM
-    Wavelength: '1550'
-  InvFWM14_9:
-    DeviceID: InvFWM14_9
-    Electrical Coordinates: []
-    Optical Coordinates:
-    - 4500.0
-    - 2400.0
-    Polarization: TE
-    RoutineCheck: true
-    Routines:
-    - Wavelength Sweep:Default
-    Type: InvFWM
-    Wavelength: '1550'
-  InvFWM15_0:
-    DeviceID: InvFWM15_0
-    Electrical Coordinates: []
-    Optical Coordinates:
-    - 0.0
-    - 2600.0
-    Polarization: TE
-    RoutineCheck: true
-    Routines:
-    - Wavelength Sweep:Default
-    Type: InvFWM
-    Wavelength: '1550'
-  InvFWM15_1:
-    DeviceID: InvFWM15_1
-    Electrical Coordinates: []
-    Optical Coordinates:
-    - 500.0
-    - 2600.0
-    Polarization: TE
-    RoutineCheck: true
-    Routines:
-    - Wavelength Sweep:Default
-    Type: InvFWM
-    Wavelength: '1550'
-  InvFWM15_10:
-    DeviceID: InvFWM15_10
-    Electrical Coordinates: []
-    Optical Coordinates:
-    - 5000.0
-    - 2600.0
-    Polarization: TE
-    RoutineCheck: true
-    Routines:
-    - Wavelength Sweep:Default
-    Type: InvFWM
-    Wavelength: '1550'
-  InvFWM15_2:
-    DeviceID: InvFWM15_2
-    Electrical Coordinates: []
-    Optical Coordinates:
-    - 1000.0
-    - 2600.0
-    Polarization: TE
-    RoutineCheck: true
-    Routines:
-    - Wavelength Sweep:Default
-    Type: InvFWM
-    Wavelength: '1550'
-  InvFWM15_3:
-    DeviceID: InvFWM15_3
-    Electrical Coordinates: []
-    Optical Coordinates:
-    - 1500.0
-    - 2600.0
-    Polarization: TE
-    RoutineCheck: true
-    Routines:
-    - Wavelength Sweep:Default
-    Type: InvFWM
-    Wavelength: '1550'
-  InvFWM15_4:
-    DeviceID: InvFWM15_4
-    Electrical Coordinates: []
-    Optical Coordinates:
-    - 2000.0
-    - 2600.0
-    Polarization: TE
-    RoutineCheck: true
-    Routines:
-    - Wavelength Sweep:Default
-    Type: InvFWM
-    Wavelength: '1550'
-  InvFWM15_5:
-    DeviceID: InvFWM15_5
-    Electrical Coordinates: []
-    Optical Coordinates:
-    - 2500.0
-    - 2600.0
-    Polarization: TE
-    RoutineCheck: true
-    Routines:
-    - Wavelength Sweep:Default
-    Type: InvFWM
-    Wavelength: '1550'
-  InvFWM15_6:
-    DeviceID: InvFWM15_6
-    Electrical Coordinates: []
-    Optical Coordinates:
-    - 3000.0
-    - 2600.0
-    Polarization: TE
-    RoutineCheck: true
-    Routines:
-    - Wavelength Sweep:Default
-    Type: InvFWM
-    Wavelength: '1550'
-  InvFWM15_7:
-    DeviceID: InvFWM15_7
-    Electrical Coordinates: []
-    Optical Coordinates:
-    - 3500.0
-    - 2600.0
-    Polarization: TE
-    RoutineCheck: true
-    Routines:
-    - Wavelength Sweep:Default
-    Type: InvFWM
-    Wavelength: '1550'
-  InvFWM15_8:
-    DeviceID: InvFWM15_8
-    Electrical Coordinates: []
-    Optical Coordinates:
-    - 4000.0
-    - 2600.0
-    Polarization: TE
-    RoutineCheck: true
-    Routines:
-    - Wavelength Sweep:Default
-    Type: InvFWM
-    Wavelength: '1550'
-  InvFWM15_9:
-    DeviceID: InvFWM15_9
-    Electrical Coordinates: []
-    Optical Coordinates:
-    - 4500.0
-    - 2600.0
-    Polarization: TE
-    RoutineCheck: true
-    Routines:
-    - Wavelength Sweep:Default
-    Type: InvFWM
-    Wavelength: '1550'
-  InvFWM16_0:
-    DeviceID: InvFWM16_0
-    Electrical Coordinates: []
-    Optical Coordinates:
-    - 0.0
-    - 2800.0
-    Polarization: TE
-    RoutineCheck: true
-    Routines:
-    - Wavelength Sweep:Default
-    Type: InvFWM
-    Wavelength: '1550'
-  InvFWM16_1:
-    DeviceID: InvFWM16_1
-    Electrical Coordinates: []
-    Optical Coordinates:
-    - 500.0
-    - 2800.0
-    Polarization: TE
-    RoutineCheck: true
-    Routines:
-    - Wavelength Sweep:Default
-    Type: InvFWM
-    Wavelength: '1550'
-  InvFWM16_10:
-    DeviceID: InvFWM16_10
-    Electrical Coordinates: []
-    Optical Coordinates:
-    - 5000.0
-    - 2800.0
-    Polarization: TE
-    RoutineCheck: true
-    Routines:
-    - Wavelength Sweep:Default
-    Type: InvFWM
-    Wavelength: '1550'
-  InvFWM16_2:
-    DeviceID: InvFWM16_2
-    Electrical Coordinates: []
-    Optical Coordinates:
-    - 1000.0
-    - 2800.0
-    Polarization: TE
-    RoutineCheck: true
-    Routines:
-    - Wavelength Sweep:Default
-    Type: InvFWM
-    Wavelength: '1550'
-  InvFWM16_3:
-    DeviceID: InvFWM16_3
-    Electrical Coordinates: []
-    Optical Coordinates:
-    - 1500.0
-    - 2800.0
-    Polarization: TE
-    RoutineCheck: true
-    Routines:
-    - Wavelength Sweep:Default
-    Type: InvFWM
-    Wavelength: '1550'
-  InvFWM16_4:
-    DeviceID: InvFWM16_4
-    Electrical Coordinates: []
-    Optical Coordinates:
-    - 2000.0
-    - 2800.0
-    Polarization: TE
-    RoutineCheck: true
-    Routines:
-    - Wavelength Sweep:Default
-    Type: InvFWM
-    Wavelength: '1550'
-  InvFWM16_5:
-    DeviceID: InvFWM16_5
-    Electrical Coordinates: []
-    Optical Coordinates:
-    - 2500.0
-    - 2800.0
-    Polarization: TE
-    RoutineCheck: true
-    Routines:
-    - Wavelength Sweep:Default
-    Type: InvFWM
-    Wavelength: '1550'
-  InvFWM16_6:
-    DeviceID: InvFWM16_6
-    Electrical Coordinates: []
-    Optical Coordinates:
-    - 3000.0
-    - 2800.0
-    Polarization: TE
-    RoutineCheck: true
-    Routines:
-    - Wavelength Sweep:Default
-    Type: InvFWM
-    Wavelength: '1550'
-  InvFWM16_7:
-    DeviceID: InvFWM16_7
-    Electrical Coordinates: []
-    Optical Coordinates:
-    - 3500.0
-    - 2800.0
-    Polarization: TE
-    RoutineCheck: true
-    Routines:
-    - Wavelength Sweep:Default
-    Type: InvFWM
-    Wavelength: '1550'
-  InvFWM16_8:
-    DeviceID: InvFWM16_8
-    Electrical Coordinates: []
-    Optical Coordinates:
-    - 4000.0
-    - 2800.0
-    Polarization: TE
-    RoutineCheck: true
-    Routines:
-    - Wavelength Sweep:Default
-    Type: InvFWM
-    Wavelength: '1550'
-  InvFWM16_9:
-    DeviceID: InvFWM16_9
-    Electrical Coordinates: []
-    Optical Coordinates:
-    - 4500.0
-    - 2800.0
-    Polarization: TE
-    RoutineCheck: true
-    Routines:
-    - Wavelength Sweep:Default
+    RoutineCheck: false
+    Routines: []
     Type: InvFWM
     Wavelength: '1550'
   InvFWM1_0:
@@ -1060,131 +114,109 @@ Devices:
     Electrical Coordinates: []
     Optical Coordinates:
     - 0.0
-    - -200.0
+    - 200.0
     Polarization: TE
-    RoutineCheck: true
-    Routines:
-    - Wavelength Sweep:Default
+    RoutineCheck: false
+    Routines: []
     Type: InvFWM
     Wavelength: '1550'
   InvFWM1_1:
     DeviceID: InvFWM1_1
     Electrical Coordinates: []
     Optical Coordinates:
-    - 500.0
-    - -200.0
+    - 580.0
+    - 200.0
     Polarization: TE
-    RoutineCheck: true
-    Routines:
-    - Wavelength Sweep:Default
-    Type: InvFWM
-    Wavelength: '1550'
-  InvFWM1_10:
-    DeviceID: InvFWM1_10
-    Electrical Coordinates: []
-    Optical Coordinates:
-    - 5000.0
-    - -200.0
-    Polarization: TE
-    RoutineCheck: true
-    Routines:
-    - Wavelength Sweep:Default
+    RoutineCheck: false
+    Routines: []
     Type: InvFWM
     Wavelength: '1550'
   InvFWM1_2:
     DeviceID: InvFWM1_2
     Electrical Coordinates: []
     Optical Coordinates:
-    - 1000.0
-    - -200.0
+    - 1160.0
+    - 200.0
     Polarization: TE
-    RoutineCheck: true
-    Routines:
-    - Wavelength Sweep:Default
+    RoutineCheck: false
+    Routines: []
     Type: InvFWM
     Wavelength: '1550'
   InvFWM1_3:
     DeviceID: InvFWM1_3
     Electrical Coordinates: []
     Optical Coordinates:
-    - 1500.0
-    - -200.0
+    - 1740.0
+    - 200.0
     Polarization: TE
-    RoutineCheck: true
-    Routines:
-    - Wavelength Sweep:Default
+    RoutineCheck: false
+    Routines: []
     Type: InvFWM
     Wavelength: '1550'
   InvFWM1_4:
     DeviceID: InvFWM1_4
     Electrical Coordinates: []
     Optical Coordinates:
-    - 2000.0
-    - -200.0
+    - 2320.0
+    - 200.0
     Polarization: TE
-    RoutineCheck: true
-    Routines:
-    - Wavelength Sweep:Default
+    RoutineCheck: false
+    Routines: []
     Type: InvFWM
     Wavelength: '1550'
   InvFWM1_5:
     DeviceID: InvFWM1_5
     Electrical Coordinates: []
     Optical Coordinates:
-    - 2500.0
-    - -200.0
+    - 2900.0
+    - 200.0
     Polarization: TE
-    RoutineCheck: true
-    Routines:
-    - Wavelength Sweep:Default
+    RoutineCheck: false
+    Routines: []
     Type: InvFWM
     Wavelength: '1550'
   InvFWM1_6:
     DeviceID: InvFWM1_6
     Electrical Coordinates: []
     Optical Coordinates:
-    - 3000.0
-    - -200.0
+    - 3480.0
+    - 200.0
     Polarization: TE
-    RoutineCheck: true
-    Routines:
-    - Wavelength Sweep:Default
+    RoutineCheck: false
+    Routines: []
     Type: InvFWM
     Wavelength: '1550'
   InvFWM1_7:
     DeviceID: InvFWM1_7
     Electrical Coordinates: []
     Optical Coordinates:
-    - 3500.0
-    - -200.0
+    - 4060.0
+    - 200.0
     Polarization: TE
-    RoutineCheck: true
-    Routines:
-    - Wavelength Sweep:Default
+    RoutineCheck: false
+    Routines: []
     Type: InvFWM
     Wavelength: '1550'
   InvFWM1_8:
     DeviceID: InvFWM1_8
     Electrical Coordinates: []
     Optical Coordinates:
-    - 4000.0
-    - -200.0
+    - 4640.0
+    - 200.0
     Polarization: TE
-    RoutineCheck: true
-    Routines:
-    - Wavelength Sweep:Default
+    RoutineCheck: false
+    Routines: []
     Type: InvFWM
     Wavelength: '1550'
   InvFWM1_9:
     DeviceID: InvFWM1_9
     Electrical Coordinates: []
     Optical Coordinates:
-    - 4500.0
-    - -200.0
+    - 5220.0
+    - 200.0
     Polarization: TE
-    RoutineCheck: true
-    Routines:
-    - Wavelength Sweep:Default
+    RoutineCheck: false
+    Routines: []
     Type: InvFWM
     Wavelength: '1550'
   InvFWM2_0:
@@ -1192,131 +224,109 @@ Devices:
     Electrical Coordinates: []
     Optical Coordinates:
     - 0.0
-    - 0.0
+    - 400.0
     Polarization: TE
-    RoutineCheck: true
-    Routines:
-    - Wavelength Sweep:Default
+    RoutineCheck: false
+    Routines: []
     Type: InvFWM
     Wavelength: '1550'
   InvFWM2_1:
     DeviceID: InvFWM2_1
     Electrical Coordinates: []
     Optical Coordinates:
-    - 500.0
-    - 0.0
+    - 580.0
+    - 400.0
     Polarization: TE
-    RoutineCheck: true
-    Routines:
-    - Wavelength Sweep:Default
-    Type: InvFWM
-    Wavelength: '1550'
-  InvFWM2_10:
-    DeviceID: InvFWM2_10
-    Electrical Coordinates: []
-    Optical Coordinates:
-    - 5000.0
-    - 0.0
-    Polarization: TE
-    RoutineCheck: true
-    Routines:
-    - Wavelength Sweep:Default
+    RoutineCheck: false
+    Routines: []
     Type: InvFWM
     Wavelength: '1550'
   InvFWM2_2:
     DeviceID: InvFWM2_2
     Electrical Coordinates: []
     Optical Coordinates:
-    - 1000.0
-    - 0.0
+    - 1160.0
+    - 400.0
     Polarization: TE
-    RoutineCheck: true
-    Routines:
-    - Wavelength Sweep:Default
+    RoutineCheck: false
+    Routines: []
     Type: InvFWM
     Wavelength: '1550'
   InvFWM2_3:
     DeviceID: InvFWM2_3
     Electrical Coordinates: []
     Optical Coordinates:
-    - 1500.0
-    - 0.0
+    - 1740.0
+    - 400.0
     Polarization: TE
-    RoutineCheck: true
-    Routines:
-    - Wavelength Sweep:Default
+    RoutineCheck: false
+    Routines: []
     Type: InvFWM
     Wavelength: '1550'
   InvFWM2_4:
     DeviceID: InvFWM2_4
     Electrical Coordinates: []
     Optical Coordinates:
-    - 2000.0
-    - 0.0
+    - 2320.0
+    - 400.0
     Polarization: TE
-    RoutineCheck: true
-    Routines:
-    - Wavelength Sweep:Default
+    RoutineCheck: false
+    Routines: []
     Type: InvFWM
     Wavelength: '1550'
   InvFWM2_5:
     DeviceID: InvFWM2_5
     Electrical Coordinates: []
     Optical Coordinates:
-    - 2500.0
-    - 0.0
+    - 2900.0
+    - 400.0
     Polarization: TE
-    RoutineCheck: true
-    Routines:
-    - Wavelength Sweep:Default
+    RoutineCheck: false
+    Routines: []
     Type: InvFWM
     Wavelength: '1550'
   InvFWM2_6:
     DeviceID: InvFWM2_6
     Electrical Coordinates: []
     Optical Coordinates:
-    - 3000.0
-    - 0.0
+    - 3480.0
+    - 400.0
     Polarization: TE
-    RoutineCheck: true
-    Routines:
-    - Wavelength Sweep:Default
+    RoutineCheck: false
+    Routines: []
     Type: InvFWM
     Wavelength: '1550'
   InvFWM2_7:
     DeviceID: InvFWM2_7
     Electrical Coordinates: []
     Optical Coordinates:
-    - 3500.0
-    - 0.0
+    - 4060.0
+    - 400.0
     Polarization: TE
-    RoutineCheck: true
-    Routines:
-    - Wavelength Sweep:Default
+    RoutineCheck: false
+    Routines: []
     Type: InvFWM
     Wavelength: '1550'
   InvFWM2_8:
     DeviceID: InvFWM2_8
     Electrical Coordinates: []
     Optical Coordinates:
-    - 4000.0
-    - 0.0
+    - 4640.0
+    - 400.0
     Polarization: TE
-    RoutineCheck: true
-    Routines:
-    - Wavelength Sweep:Default
+    RoutineCheck: false
+    Routines: []
     Type: InvFWM
     Wavelength: '1550'
   InvFWM2_9:
     DeviceID: InvFWM2_9
     Electrical Coordinates: []
     Optical Coordinates:
-    - 4500.0
-    - 0.0
+    - 5220.0
+    - 400.0
     Polarization: TE
-    RoutineCheck: true
-    Routines:
-    - Wavelength Sweep:Default
+    RoutineCheck: false
+    Routines: []
     Type: InvFWM
     Wavelength: '1550'
   InvFWM3_0:
@@ -1324,131 +334,109 @@ Devices:
     Electrical Coordinates: []
     Optical Coordinates:
     - 0.0
-    - 200.0
+    - 600.0
     Polarization: TE
-    RoutineCheck: true
-    Routines:
-    - Wavelength Sweep:Default
+    RoutineCheck: false
+    Routines: []
     Type: InvFWM
     Wavelength: '1550'
   InvFWM3_1:
     DeviceID: InvFWM3_1
     Electrical Coordinates: []
     Optical Coordinates:
-    - 500.0
-    - 200.0
+    - 580.0
+    - 600.0
     Polarization: TE
-    RoutineCheck: true
-    Routines:
-    - Wavelength Sweep:Default
-    Type: InvFWM
-    Wavelength: '1550'
-  InvFWM3_10:
-    DeviceID: InvFWM3_10
-    Electrical Coordinates: []
-    Optical Coordinates:
-    - 5000.0
-    - 200.0
-    Polarization: TE
-    RoutineCheck: true
-    Routines:
-    - Wavelength Sweep:Default
+    RoutineCheck: false
+    Routines: []
     Type: InvFWM
     Wavelength: '1550'
   InvFWM3_2:
     DeviceID: InvFWM3_2
     Electrical Coordinates: []
     Optical Coordinates:
-    - 1000.0
-    - 200.0
+    - 1160.0
+    - 600.0
     Polarization: TE
-    RoutineCheck: true
-    Routines:
-    - Wavelength Sweep:Default
+    RoutineCheck: false
+    Routines: []
     Type: InvFWM
     Wavelength: '1550'
   InvFWM3_3:
     DeviceID: InvFWM3_3
     Electrical Coordinates: []
     Optical Coordinates:
-    - 1500.0
-    - 200.0
+    - 1740.0
+    - 600.0
     Polarization: TE
-    RoutineCheck: true
-    Routines:
-    - Wavelength Sweep:Default
+    RoutineCheck: false
+    Routines: []
     Type: InvFWM
     Wavelength: '1550'
   InvFWM3_4:
     DeviceID: InvFWM3_4
     Electrical Coordinates: []
     Optical Coordinates:
-    - 2000.0
-    - 200.0
+    - 2320.0
+    - 600.0
     Polarization: TE
-    RoutineCheck: true
-    Routines:
-    - Wavelength Sweep:Default
+    RoutineCheck: false
+    Routines: []
     Type: InvFWM
     Wavelength: '1550'
   InvFWM3_5:
     DeviceID: InvFWM3_5
     Electrical Coordinates: []
     Optical Coordinates:
-    - 2500.0
-    - 200.0
+    - 2900.0
+    - 600.0
     Polarization: TE
-    RoutineCheck: true
-    Routines:
-    - Wavelength Sweep:Default
+    RoutineCheck: false
+    Routines: []
     Type: InvFWM
     Wavelength: '1550'
   InvFWM3_6:
     DeviceID: InvFWM3_6
     Electrical Coordinates: []
     Optical Coordinates:
-    - 3000.0
-    - 200.0
+    - 3480.0
+    - 600.0
     Polarization: TE
-    RoutineCheck: true
-    Routines:
-    - Wavelength Sweep:Default
+    RoutineCheck: false
+    Routines: []
     Type: InvFWM
     Wavelength: '1550'
   InvFWM3_7:
     DeviceID: InvFWM3_7
     Electrical Coordinates: []
     Optical Coordinates:
-    - 3500.0
-    - 200.0
+    - 4060.0
+    - 600.0
     Polarization: TE
-    RoutineCheck: true
-    Routines:
-    - Wavelength Sweep:Default
+    RoutineCheck: false
+    Routines: []
     Type: InvFWM
     Wavelength: '1550'
   InvFWM3_8:
     DeviceID: InvFWM3_8
     Electrical Coordinates: []
     Optical Coordinates:
-    - 4000.0
-    - 200.0
+    - 4640.0
+    - 600.0
     Polarization: TE
-    RoutineCheck: true
-    Routines:
-    - Wavelength Sweep:Default
+    RoutineCheck: false
+    Routines: []
     Type: InvFWM
     Wavelength: '1550'
   InvFWM3_9:
     DeviceID: InvFWM3_9
     Electrical Coordinates: []
     Optical Coordinates:
-    - 4500.0
-    - 200.0
+    - 5220.0
+    - 600.0
     Polarization: TE
-    RoutineCheck: true
-    Routines:
-    - Wavelength Sweep:Default
+    RoutineCheck: false
+    Routines: []
     Type: InvFWM
     Wavelength: '1550'
   InvFWM4_0:
@@ -1456,131 +444,109 @@ Devices:
     Electrical Coordinates: []
     Optical Coordinates:
     - 0.0
-    - 400.0
+    - 800.0
     Polarization: TE
-    RoutineCheck: true
-    Routines:
-    - Wavelength Sweep:Default
+    RoutineCheck: false
+    Routines: []
     Type: InvFWM
     Wavelength: '1550'
   InvFWM4_1:
     DeviceID: InvFWM4_1
     Electrical Coordinates: []
     Optical Coordinates:
-    - 500.0
-    - 400.0
+    - 580.0
+    - 800.0
     Polarization: TE
-    RoutineCheck: true
-    Routines:
-    - Wavelength Sweep:Default
-    Type: InvFWM
-    Wavelength: '1550'
-  InvFWM4_10:
-    DeviceID: InvFWM4_10
-    Electrical Coordinates: []
-    Optical Coordinates:
-    - 5000.0
-    - 400.0
-    Polarization: TE
-    RoutineCheck: true
-    Routines:
-    - Wavelength Sweep:Default
+    RoutineCheck: false
+    Routines: []
     Type: InvFWM
     Wavelength: '1550'
   InvFWM4_2:
     DeviceID: InvFWM4_2
     Electrical Coordinates: []
     Optical Coordinates:
-    - 1000.0
-    - 400.0
+    - 1160.0
+    - 800.0
     Polarization: TE
-    RoutineCheck: true
-    Routines:
-    - Wavelength Sweep:Default
+    RoutineCheck: false
+    Routines: []
     Type: InvFWM
     Wavelength: '1550'
   InvFWM4_3:
     DeviceID: InvFWM4_3
     Electrical Coordinates: []
     Optical Coordinates:
-    - 1500.0
-    - 400.0
+    - 1740.0
+    - 800.0
     Polarization: TE
-    RoutineCheck: true
-    Routines:
-    - Wavelength Sweep:Default
+    RoutineCheck: false
+    Routines: []
     Type: InvFWM
     Wavelength: '1550'
   InvFWM4_4:
     DeviceID: InvFWM4_4
     Electrical Coordinates: []
     Optical Coordinates:
-    - 2000.0
-    - 400.0
+    - 2320.0
+    - 800.0
     Polarization: TE
-    RoutineCheck: true
-    Routines:
-    - Wavelength Sweep:Default
+    RoutineCheck: false
+    Routines: []
     Type: InvFWM
     Wavelength: '1550'
   InvFWM4_5:
     DeviceID: InvFWM4_5
     Electrical Coordinates: []
     Optical Coordinates:
-    - 2500.0
-    - 400.0
+    - 2900.0
+    - 800.0
     Polarization: TE
-    RoutineCheck: true
-    Routines:
-    - Wavelength Sweep:Default
+    RoutineCheck: false
+    Routines: []
     Type: InvFWM
     Wavelength: '1550'
   InvFWM4_6:
     DeviceID: InvFWM4_6
     Electrical Coordinates: []
     Optical Coordinates:
-    - 3000.0
-    - 400.0
+    - 3480.0
+    - 800.0
     Polarization: TE
-    RoutineCheck: true
-    Routines:
-    - Wavelength Sweep:Default
+    RoutineCheck: false
+    Routines: []
     Type: InvFWM
     Wavelength: '1550'
   InvFWM4_7:
     DeviceID: InvFWM4_7
     Electrical Coordinates: []
     Optical Coordinates:
-    - 3500.0
-    - 400.0
+    - 4060.0
+    - 800.0
     Polarization: TE
-    RoutineCheck: true
-    Routines:
-    - Wavelength Sweep:Default
+    RoutineCheck: false
+    Routines: []
     Type: InvFWM
     Wavelength: '1550'
   InvFWM4_8:
     DeviceID: InvFWM4_8
     Electrical Coordinates: []
     Optical Coordinates:
-    - 4000.0
-    - 400.0
+    - 4640.0
+    - 800.0
     Polarization: TE
-    RoutineCheck: true
-    Routines:
-    - Wavelength Sweep:Default
+    RoutineCheck: false
+    Routines: []
     Type: InvFWM
     Wavelength: '1550'
   InvFWM4_9:
     DeviceID: InvFWM4_9
     Electrical Coordinates: []
     Optical Coordinates:
-    - 4500.0
-    - 400.0
+    - 5220.0
+    - 800.0
     Polarization: TE
-    RoutineCheck: true
-    Routines:
-    - Wavelength Sweep:Default
+    RoutineCheck: false
+    Routines: []
     Type: InvFWM
     Wavelength: '1550'
   InvFWM5_0:
@@ -1588,131 +554,109 @@ Devices:
     Electrical Coordinates: []
     Optical Coordinates:
     - 0.0
-    - 600.0
+    - 1000.0
     Polarization: TE
-    RoutineCheck: true
-    Routines:
-    - Wavelength Sweep:Default
+    RoutineCheck: false
+    Routines: []
     Type: InvFWM
     Wavelength: '1550'
   InvFWM5_1:
     DeviceID: InvFWM5_1
     Electrical Coordinates: []
     Optical Coordinates:
-    - 500.0
-    - 600.0
+    - 580.0
+    - 1000.0
     Polarization: TE
-    RoutineCheck: true
-    Routines:
-    - Wavelength Sweep:Default
-    Type: InvFWM
-    Wavelength: '1550'
-  InvFWM5_10:
-    DeviceID: InvFWM5_10
-    Electrical Coordinates: []
-    Optical Coordinates:
-    - 5000.0
-    - 600.0
-    Polarization: TE
-    RoutineCheck: true
-    Routines:
-    - Wavelength Sweep:Default
+    RoutineCheck: false
+    Routines: []
     Type: InvFWM
     Wavelength: '1550'
   InvFWM5_2:
     DeviceID: InvFWM5_2
     Electrical Coordinates: []
     Optical Coordinates:
+    - 1160.0
     - 1000.0
-    - 600.0
     Polarization: TE
-    RoutineCheck: true
-    Routines:
-    - Wavelength Sweep:Default
+    RoutineCheck: false
+    Routines: []
     Type: InvFWM
     Wavelength: '1550'
   InvFWM5_3:
     DeviceID: InvFWM5_3
     Electrical Coordinates: []
     Optical Coordinates:
-    - 1500.0
-    - 600.0
+    - 1740.0
+    - 1000.0
     Polarization: TE
-    RoutineCheck: true
-    Routines:
-    - Wavelength Sweep:Default
+    RoutineCheck: false
+    Routines: []
     Type: InvFWM
     Wavelength: '1550'
   InvFWM5_4:
     DeviceID: InvFWM5_4
     Electrical Coordinates: []
     Optical Coordinates:
-    - 2000.0
-    - 600.0
+    - 2320.0
+    - 1000.0
     Polarization: TE
-    RoutineCheck: true
-    Routines:
-    - Wavelength Sweep:Default
+    RoutineCheck: false
+    Routines: []
     Type: InvFWM
     Wavelength: '1550'
   InvFWM5_5:
     DeviceID: InvFWM5_5
     Electrical Coordinates: []
     Optical Coordinates:
-    - 2500.0
-    - 600.0
+    - 2900.0
+    - 1000.0
     Polarization: TE
-    RoutineCheck: true
-    Routines:
-    - Wavelength Sweep:Default
+    RoutineCheck: false
+    Routines: []
     Type: InvFWM
     Wavelength: '1550'
   InvFWM5_6:
     DeviceID: InvFWM5_6
     Electrical Coordinates: []
     Optical Coordinates:
-    - 3000.0
-    - 600.0
+    - 3480.0
+    - 1000.0
     Polarization: TE
-    RoutineCheck: true
-    Routines:
-    - Wavelength Sweep:Default
+    RoutineCheck: false
+    Routines: []
     Type: InvFWM
     Wavelength: '1550'
   InvFWM5_7:
     DeviceID: InvFWM5_7
     Electrical Coordinates: []
     Optical Coordinates:
-    - 3500.0
-    - 600.0
+    - 4060.0
+    - 1000.0
     Polarization: TE
-    RoutineCheck: true
-    Routines:
-    - Wavelength Sweep:Default
+    RoutineCheck: false
+    Routines: []
     Type: InvFWM
     Wavelength: '1550'
   InvFWM5_8:
     DeviceID: InvFWM5_8
     Electrical Coordinates: []
     Optical Coordinates:
-    - 4000.0
-    - 600.0
+    - 4640.0
+    - 1000.0
     Polarization: TE
-    RoutineCheck: true
-    Routines:
-    - Wavelength Sweep:Default
+    RoutineCheck: false
+    Routines: []
     Type: InvFWM
     Wavelength: '1550'
   InvFWM5_9:
     DeviceID: InvFWM5_9
     Electrical Coordinates: []
     Optical Coordinates:
-    - 4500.0
-    - 600.0
+    - 5220.0
+    - 1000.0
     Polarization: TE
-    RoutineCheck: true
-    Routines:
-    - Wavelength Sweep:Default
+    RoutineCheck: false
+    Routines: []
     Type: InvFWM
     Wavelength: '1550'
   InvFWM6_0:
@@ -1720,131 +664,109 @@ Devices:
     Electrical Coordinates: []
     Optical Coordinates:
     - 0.0
-    - 800.0
+    - 1200.0
     Polarization: TE
-    RoutineCheck: true
-    Routines:
-    - Wavelength Sweep:Default
+    RoutineCheck: false
+    Routines: []
     Type: InvFWM
     Wavelength: '1550'
   InvFWM6_1:
     DeviceID: InvFWM6_1
     Electrical Coordinates: []
     Optical Coordinates:
-    - 500.0
-    - 800.0
+    - 580.0
+    - 1200.0
     Polarization: TE
-    RoutineCheck: true
-    Routines:
-    - Wavelength Sweep:Default
-    Type: InvFWM
-    Wavelength: '1550'
-  InvFWM6_10:
-    DeviceID: InvFWM6_10
-    Electrical Coordinates: []
-    Optical Coordinates:
-    - 5000.0
-    - 800.0
-    Polarization: TE
-    RoutineCheck: true
-    Routines:
-    - Wavelength Sweep:Default
+    RoutineCheck: false
+    Routines: []
     Type: InvFWM
     Wavelength: '1550'
   InvFWM6_2:
     DeviceID: InvFWM6_2
     Electrical Coordinates: []
     Optical Coordinates:
-    - 1000.0
-    - 800.0
+    - 1160.0
+    - 1200.0
     Polarization: TE
-    RoutineCheck: true
-    Routines:
-    - Wavelength Sweep:Default
+    RoutineCheck: false
+    Routines: []
     Type: InvFWM
     Wavelength: '1550'
   InvFWM6_3:
     DeviceID: InvFWM6_3
     Electrical Coordinates: []
     Optical Coordinates:
-    - 1500.0
-    - 800.0
+    - 1740.0
+    - 1200.0
     Polarization: TE
-    RoutineCheck: true
-    Routines:
-    - Wavelength Sweep:Default
+    RoutineCheck: false
+    Routines: []
     Type: InvFWM
     Wavelength: '1550'
   InvFWM6_4:
     DeviceID: InvFWM6_4
     Electrical Coordinates: []
     Optical Coordinates:
-    - 2000.0
-    - 800.0
+    - 2320.0
+    - 1200.0
     Polarization: TE
-    RoutineCheck: true
-    Routines:
-    - Wavelength Sweep:Default
+    RoutineCheck: false
+    Routines: []
     Type: InvFWM
     Wavelength: '1550'
   InvFWM6_5:
     DeviceID: InvFWM6_5
     Electrical Coordinates: []
     Optical Coordinates:
-    - 2500.0
-    - 800.0
+    - 2900.0
+    - 1200.0
     Polarization: TE
-    RoutineCheck: true
-    Routines:
-    - Wavelength Sweep:Default
+    RoutineCheck: false
+    Routines: []
     Type: InvFWM
     Wavelength: '1550'
   InvFWM6_6:
     DeviceID: InvFWM6_6
     Electrical Coordinates: []
     Optical Coordinates:
-    - 3000.0
-    - 800.0
+    - 3480.0
+    - 1200.0
     Polarization: TE
-    RoutineCheck: true
-    Routines:
-    - Wavelength Sweep:Default
+    RoutineCheck: false
+    Routines: []
     Type: InvFWM
     Wavelength: '1550'
   InvFWM6_7:
     DeviceID: InvFWM6_7
     Electrical Coordinates: []
     Optical Coordinates:
-    - 3500.0
-    - 800.0
+    - 4060.0
+    - 1200.0
     Polarization: TE
-    RoutineCheck: true
-    Routines:
-    - Wavelength Sweep:Default
+    RoutineCheck: false
+    Routines: []
     Type: InvFWM
     Wavelength: '1550'
   InvFWM6_8:
     DeviceID: InvFWM6_8
     Electrical Coordinates: []
     Optical Coordinates:
-    - 4000.0
-    - 800.0
+    - 4640.0
+    - 1200.0
     Polarization: TE
-    RoutineCheck: true
-    Routines:
-    - Wavelength Sweep:Default
+    RoutineCheck: false
+    Routines: []
     Type: InvFWM
     Wavelength: '1550'
   InvFWM6_9:
     DeviceID: InvFWM6_9
     Electrical Coordinates: []
     Optical Coordinates:
-    - 4500.0
-    - 800.0
+    - 5220.0
+    - 1200.0
     Polarization: TE
-    RoutineCheck: true
-    Routines:
-    - Wavelength Sweep:Default
+    RoutineCheck: false
+    Routines: []
     Type: InvFWM
     Wavelength: '1550'
   InvFWM7_0:
@@ -1852,131 +774,109 @@ Devices:
     Electrical Coordinates: []
     Optical Coordinates:
     - 0.0
-    - 1000.0
+    - 1400.0
     Polarization: TE
-    RoutineCheck: true
-    Routines:
-    - Wavelength Sweep:Default
+    RoutineCheck: false
+    Routines: []
     Type: InvFWM
     Wavelength: '1550'
   InvFWM7_1:
     DeviceID: InvFWM7_1
     Electrical Coordinates: []
     Optical Coordinates:
-    - 500.0
-    - 1000.0
+    - 580.0
+    - 1400.0
     Polarization: TE
-    RoutineCheck: true
-    Routines:
-    - Wavelength Sweep:Default
-    Type: InvFWM
-    Wavelength: '1550'
-  InvFWM7_10:
-    DeviceID: InvFWM7_10
-    Electrical Coordinates: []
-    Optical Coordinates:
-    - 5000.0
-    - 1000.0
-    Polarization: TE
-    RoutineCheck: true
-    Routines:
-    - Wavelength Sweep:Default
+    RoutineCheck: false
+    Routines: []
     Type: InvFWM
     Wavelength: '1550'
   InvFWM7_2:
     DeviceID: InvFWM7_2
     Electrical Coordinates: []
     Optical Coordinates:
-    - 1000.0
-    - 1000.0
+    - 1160.0
+    - 1400.0
     Polarization: TE
-    RoutineCheck: true
-    Routines:
-    - Wavelength Sweep:Default
+    RoutineCheck: false
+    Routines: []
     Type: InvFWM
     Wavelength: '1550'
   InvFWM7_3:
     DeviceID: InvFWM7_3
     Electrical Coordinates: []
     Optical Coordinates:
-    - 1500.0
-    - 1000.0
+    - 1740.0
+    - 1400.0
     Polarization: TE
-    RoutineCheck: true
-    Routines:
-    - Wavelength Sweep:Default
+    RoutineCheck: false
+    Routines: []
     Type: InvFWM
     Wavelength: '1550'
   InvFWM7_4:
     DeviceID: InvFWM7_4
     Electrical Coordinates: []
     Optical Coordinates:
-    - 2000.0
-    - 1000.0
+    - 2320.0
+    - 1400.0
     Polarization: TE
-    RoutineCheck: true
-    Routines:
-    - Wavelength Sweep:Default
+    RoutineCheck: false
+    Routines: []
     Type: InvFWM
     Wavelength: '1550'
   InvFWM7_5:
     DeviceID: InvFWM7_5
     Electrical Coordinates: []
     Optical Coordinates:
-    - 2500.0
-    - 1000.0
+    - 2900.0
+    - 1400.0
     Polarization: TE
-    RoutineCheck: true
-    Routines:
-    - Wavelength Sweep:Default
+    RoutineCheck: false
+    Routines: []
     Type: InvFWM
     Wavelength: '1550'
   InvFWM7_6:
     DeviceID: InvFWM7_6
     Electrical Coordinates: []
     Optical Coordinates:
-    - 3000.0
-    - 1000.0
+    - 3480.0
+    - 1400.0
     Polarization: TE
-    RoutineCheck: true
-    Routines:
-    - Wavelength Sweep:Default
+    RoutineCheck: false
+    Routines: []
     Type: InvFWM
     Wavelength: '1550'
   InvFWM7_7:
     DeviceID: InvFWM7_7
     Electrical Coordinates: []
     Optical Coordinates:
-    - 3500.0
-    - 1000.0
+    - 4060.0
+    - 1400.0
     Polarization: TE
-    RoutineCheck: true
-    Routines:
-    - Wavelength Sweep:Default
+    RoutineCheck: false
+    Routines: []
     Type: InvFWM
     Wavelength: '1550'
   InvFWM7_8:
     DeviceID: InvFWM7_8
     Electrical Coordinates: []
     Optical Coordinates:
-    - 4000.0
-    - 1000.0
+    - 4640.0
+    - 1400.0
     Polarization: TE
-    RoutineCheck: true
-    Routines:
-    - Wavelength Sweep:Default
+    RoutineCheck: false
+    Routines: []
     Type: InvFWM
     Wavelength: '1550'
   InvFWM7_9:
     DeviceID: InvFWM7_9
     Electrical Coordinates: []
     Optical Coordinates:
-    - 4500.0
-    - 1000.0
+    - 5220.0
+    - 1400.0
     Polarization: TE
-    RoutineCheck: true
-    Routines:
-    - Wavelength Sweep:Default
+    RoutineCheck: false
+    Routines: []
     Type: InvFWM
     Wavelength: '1550'
   InvFWM8_0:
@@ -1984,1261 +884,1100 @@ Devices:
     Electrical Coordinates: []
     Optical Coordinates:
     - 0.0
-    - 1200.0
+    - 1600.0
     Polarization: TE
-    RoutineCheck: true
-    Routines:
-    - Wavelength Sweep:Default
+    RoutineCheck: false
+    Routines: []
     Type: InvFWM
     Wavelength: '1550'
   InvFWM8_1:
     DeviceID: InvFWM8_1
     Electrical Coordinates: []
     Optical Coordinates:
-    - 500.0
-    - 1200.0
+    - 580.0
+    - 1600.0
     Polarization: TE
-    RoutineCheck: true
-    Routines:
-    - Wavelength Sweep:Default
-    Type: InvFWM
-    Wavelength: '1550'
-  InvFWM8_10:
-    DeviceID: InvFWM8_10
-    Electrical Coordinates: []
-    Optical Coordinates:
-    - 5000.0
-    - 1200.0
-    Polarization: TE
-    RoutineCheck: true
-    Routines:
-    - Wavelength Sweep:Default
+    RoutineCheck: false
+    Routines: []
     Type: InvFWM
     Wavelength: '1550'
   InvFWM8_2:
     DeviceID: InvFWM8_2
     Electrical Coordinates: []
     Optical Coordinates:
-    - 1000.0
-    - 1200.0
+    - 1160.0
+    - 1600.0
     Polarization: TE
-    RoutineCheck: true
-    Routines:
-    - Wavelength Sweep:Default
+    RoutineCheck: false
+    Routines: []
     Type: InvFWM
     Wavelength: '1550'
   InvFWM8_3:
     DeviceID: InvFWM8_3
     Electrical Coordinates: []
     Optical Coordinates:
-    - 1500.0
-    - 1200.0
+    - 1740.0
+    - 1600.0
     Polarization: TE
-    RoutineCheck: true
-    Routines:
-    - Wavelength Sweep:Default
+    RoutineCheck: false
+    Routines: []
     Type: InvFWM
     Wavelength: '1550'
   InvFWM8_4:
     DeviceID: InvFWM8_4
     Electrical Coordinates: []
     Optical Coordinates:
-    - 2000.0
-    - 1200.0
+    - 2320.0
+    - 1600.0
     Polarization: TE
-    RoutineCheck: true
-    Routines:
-    - Wavelength Sweep:Default
+    RoutineCheck: false
+    Routines: []
     Type: InvFWM
     Wavelength: '1550'
   InvFWM8_5:
     DeviceID: InvFWM8_5
     Electrical Coordinates: []
     Optical Coordinates:
-    - 2500.0
-    - 1200.0
+    - 2900.0
+    - 1600.0
     Polarization: TE
-    RoutineCheck: true
-    Routines:
-    - Wavelength Sweep:Default
+    RoutineCheck: false
+    Routines: []
     Type: InvFWM
     Wavelength: '1550'
   InvFWM8_6:
     DeviceID: InvFWM8_6
     Electrical Coordinates: []
     Optical Coordinates:
-    - 3000.0
-    - 1200.0
+    - 3480.0
+    - 1600.0
     Polarization: TE
-    RoutineCheck: true
-    Routines:
-    - Wavelength Sweep:Default
+    RoutineCheck: false
+    Routines: []
     Type: InvFWM
     Wavelength: '1550'
   InvFWM8_7:
     DeviceID: InvFWM8_7
     Electrical Coordinates: []
     Optical Coordinates:
-    - 3500.0
-    - 1200.0
+    - 4060.0
+    - 1600.0
     Polarization: TE
-    RoutineCheck: true
-    Routines:
-    - Wavelength Sweep:Default
+    RoutineCheck: false
+    Routines: []
     Type: InvFWM
     Wavelength: '1550'
   InvFWM8_8:
     DeviceID: InvFWM8_8
     Electrical Coordinates: []
     Optical Coordinates:
-    - 4000.0
-    - 1200.0
+    - 4640.0
+    - 1600.0
     Polarization: TE
-    RoutineCheck: true
-    Routines:
-    - Wavelength Sweep:Default
+    RoutineCheck: false
+    Routines: []
     Type: InvFWM
     Wavelength: '1550'
   InvFWM8_9:
     DeviceID: InvFWM8_9
     Electrical Coordinates: []
     Optical Coordinates:
-    - 4500.0
-    - 1200.0
+    - 5220.0
+    - 1600.0
     Polarization: TE
-    RoutineCheck: true
-    Routines:
-    - Wavelength Sweep:Default
+    RoutineCheck: false
+    Routines: []
     Type: InvFWM
     Wavelength: '1550'
-  InvFWM9_0:
-    DeviceID: InvFWM9_0
+  InvFWMboth0_0:
+    DeviceID: InvFWMboth0_0
     Electrical Coordinates: []
     Optical Coordinates:
     - 0.0
-    - 1400.0
-    Polarization: TE
-    RoutineCheck: true
-    Routines:
-    - Wavelength Sweep:Default
-    Type: InvFWM
-    Wavelength: '1550'
-  InvFWM9_1:
-    DeviceID: InvFWM9_1
-    Electrical Coordinates: []
-    Optical Coordinates:
-    - 500.0
-    - 1400.0
-    Polarization: TE
-    RoutineCheck: true
-    Routines:
-    - Wavelength Sweep:Default
-    Type: InvFWM
-    Wavelength: '1550'
-  InvFWM9_10:
-    DeviceID: InvFWM9_10
-    Electrical Coordinates: []
-    Optical Coordinates:
-    - 5000.0
-    - 1400.0
-    Polarization: TE
-    RoutineCheck: true
-    Routines:
-    - Wavelength Sweep:Default
-    Type: InvFWM
-    Wavelength: '1550'
-  InvFWM9_2:
-    DeviceID: InvFWM9_2
-    Electrical Coordinates: []
-    Optical Coordinates:
-    - 1000.0
-    - 1400.0
-    Polarization: TE
-    RoutineCheck: true
-    Routines:
-    - Wavelength Sweep:Default
-    Type: InvFWM
-    Wavelength: '1550'
-  InvFWM9_3:
-    DeviceID: InvFWM9_3
-    Electrical Coordinates: []
-    Optical Coordinates:
-    - 1500.0
-    - 1400.0
-    Polarization: TE
-    RoutineCheck: true
-    Routines:
-    - Wavelength Sweep:Default
-    Type: InvFWM
-    Wavelength: '1550'
-  InvFWM9_4:
-    DeviceID: InvFWM9_4
-    Electrical Coordinates: []
-    Optical Coordinates:
-    - 2000.0
-    - 1400.0
-    Polarization: TE
-    RoutineCheck: true
-    Routines:
-    - Wavelength Sweep:Default
-    Type: InvFWM
-    Wavelength: '1550'
-  InvFWM9_5:
-    DeviceID: InvFWM9_5
-    Electrical Coordinates: []
-    Optical Coordinates:
-    - 2500.0
-    - 1400.0
-    Polarization: TE
-    RoutineCheck: true
-    Routines:
-    - Wavelength Sweep:Default
-    Type: InvFWM
-    Wavelength: '1550'
-  InvFWM9_6:
-    DeviceID: InvFWM9_6
-    Electrical Coordinates: []
-    Optical Coordinates:
-    - 3000.0
-    - 1400.0
-    Polarization: TE
-    RoutineCheck: true
-    Routines:
-    - Wavelength Sweep:Default
-    Type: InvFWM
-    Wavelength: '1550'
-  InvFWM9_7:
-    DeviceID: InvFWM9_7
-    Electrical Coordinates: []
-    Optical Coordinates:
-    - 3500.0
-    - 1400.0
-    Polarization: TE
-    RoutineCheck: true
-    Routines:
-    - Wavelength Sweep:Default
-    Type: InvFWM
-    Wavelength: '1550'
-  InvFWM9_8:
-    DeviceID: InvFWM9_8
-    Electrical Coordinates: []
-    Optical Coordinates:
-    - 4000.0
-    - 1400.0
-    Polarization: TE
-    RoutineCheck: true
-    Routines:
-    - Wavelength Sweep:Default
-    Type: InvFWM
-    Wavelength: '1550'
-  InvFWM9_9:
-    DeviceID: InvFWM9_9
-    Electrical Coordinates: []
-    Optical Coordinates:
-    - 4500.0
-    - 1400.0
-    Polarization: TE
-    RoutineCheck: true
-    Routines:
-    - Wavelength Sweep:Default
-    Type: InvFWM
-    Wavelength: '1550'
-  InvFWMswp10_0:
-    DeviceID: InvFWMswp10_0
-    Electrical Coordinates: []
-    Optical Coordinates:
-    - 1000.0
-    - 3000.0
+    - -1050.0
     Polarization: TE
     RoutineCheck: false
     Routines: []
-    Type: InvFWMswp1
+    Type: InvFWMboth
     Wavelength: '1550'
-  InvFWMswp10_1:
-    DeviceID: InvFWMswp10_1
+  InvFWMboth0_1:
+    DeviceID: InvFWMboth0_1
     Electrical Coordinates: []
     Optical Coordinates:
-    - 1500.0
-    - 3000.0
+    - 580.0
+    - -1050.0
     Polarization: TE
     RoutineCheck: false
     Routines: []
-    Type: InvFWMswp1
+    Type: InvFWMboth
     Wavelength: '1550'
-  InvFWMswp10_2:
-    DeviceID: InvFWMswp10_2
+  InvFWMboth0_2:
+    DeviceID: InvFWMboth0_2
     Electrical Coordinates: []
     Optical Coordinates:
-    - 2000.0
-    - 3000.0
+    - 1160.0
+    - -1050.0
     Polarization: TE
     RoutineCheck: false
     Routines: []
-    Type: InvFWMswp1
+    Type: InvFWMboth
     Wavelength: '1550'
-  InvFWMswp10_3:
-    DeviceID: InvFWMswp10_3
+  InvFWMboth0_3:
+    DeviceID: InvFWMboth0_3
     Electrical Coordinates: []
     Optical Coordinates:
-    - 2500.0
-    - 3000.0
+    - 1740.0
+    - -1050.0
     Polarization: TE
     RoutineCheck: false
     Routines: []
-    Type: InvFWMswp1
+    Type: InvFWMboth
     Wavelength: '1550'
-  InvFWMswp10_4:
-    DeviceID: InvFWMswp10_4
+  InvFWMboth0_4:
+    DeviceID: InvFWMboth0_4
     Electrical Coordinates: []
     Optical Coordinates:
-    - 3000.0
-    - 3000.0
+    - 2320.0
+    - -1050.0
     Polarization: TE
     RoutineCheck: false
     Routines: []
-    Type: InvFWMswp1
+    Type: InvFWMboth
     Wavelength: '1550'
-  InvFWMswp10_5:
-    DeviceID: InvFWMswp10_5
+  InvFWMboth0_5:
+    DeviceID: InvFWMboth0_5
     Electrical Coordinates: []
     Optical Coordinates:
-    - 3500.0
-    - 3000.0
+    - 2900.0
+    - -1050.0
     Polarization: TE
     RoutineCheck: false
     Routines: []
-    Type: InvFWMswp1
+    Type: InvFWMboth
     Wavelength: '1550'
-  InvFWMswp10_6:
-    DeviceID: InvFWMswp10_6
+  InvFWMboth0_6:
+    DeviceID: InvFWMboth0_6
     Electrical Coordinates: []
     Optical Coordinates:
-    - 4000.0
-    - 3000.0
+    - 3480.0
+    - -1050.0
     Polarization: TE
     RoutineCheck: false
     Routines: []
-    Type: InvFWMswp1
+    Type: InvFWMboth
     Wavelength: '1550'
-  InvFWMswp11_0:
-    DeviceID: InvFWMswp11_0
+  InvFWMboth0_7:
+    DeviceID: InvFWMboth0_7
     Electrical Coordinates: []
     Optical Coordinates:
-    - 1000.0
-    - 3200.0
+    - 4060.0
+    - -1050.0
     Polarization: TE
     RoutineCheck: false
     Routines: []
-    Type: InvFWMswp1
+    Type: InvFWMboth
     Wavelength: '1550'
-  InvFWMswp11_1:
-    DeviceID: InvFWMswp11_1
+  InvFWMboth0_8:
+    DeviceID: InvFWMboth0_8
     Electrical Coordinates: []
     Optical Coordinates:
-    - 1500.0
-    - 3200.0
+    - 4640.0
+    - -1050.0
     Polarization: TE
     RoutineCheck: false
     Routines: []
-    Type: InvFWMswp1
+    Type: InvFWMboth
     Wavelength: '1550'
-  InvFWMswp11_2:
-    DeviceID: InvFWMswp11_2
-    Electrical Coordinates: []
-    Optical Coordinates:
-    - 2000.0
-    - 3200.0
-    Polarization: TE
-    RoutineCheck: false
-    Routines: []
-    Type: InvFWMswp1
-    Wavelength: '1550'
-  InvFWMswp11_3:
-    DeviceID: InvFWMswp11_3
-    Electrical Coordinates: []
-    Optical Coordinates:
-    - 2500.0
-    - 3200.0
-    Polarization: TE
-    RoutineCheck: false
-    Routines: []
-    Type: InvFWMswp1
-    Wavelength: '1550'
-  InvFWMswp11_4:
-    DeviceID: InvFWMswp11_4
-    Electrical Coordinates: []
-    Optical Coordinates:
-    - 3000.0
-    - 3200.0
-    Polarization: TE
-    RoutineCheck: false
-    Routines: []
-    Type: InvFWMswp1
-    Wavelength: '1550'
-  InvFWMswp11_5:
-    DeviceID: InvFWMswp11_5
-    Electrical Coordinates: []
-    Optical Coordinates:
-    - 3500.0
-    - 3200.0
-    Polarization: TE
-    RoutineCheck: false
-    Routines: []
-    Type: InvFWMswp1
-    Wavelength: '1550'
-  InvFWMswp11_6:
-    DeviceID: InvFWMswp11_6
-    Electrical Coordinates: []
-    Optical Coordinates:
-    - 4000.0
-    - 3200.0
-    Polarization: TE
-    RoutineCheck: false
-    Routines: []
-    Type: InvFWMswp1
-    Wavelength: '1550'
-  InvFWMswp12_0:
-    DeviceID: InvFWMswp12_0
-    Electrical Coordinates: []
-    Optical Coordinates:
-    - 1000.0
-    - 3400.0
-    Polarization: TE
-    RoutineCheck: false
-    Routines: []
-    Type: InvFWMswp1
-    Wavelength: '1550'
-  InvFWMswp12_1:
-    DeviceID: InvFWMswp12_1
-    Electrical Coordinates: []
-    Optical Coordinates:
-    - 1500.0
-    - 3400.0
-    Polarization: TE
-    RoutineCheck: false
-    Routines: []
-    Type: InvFWMswp1
-    Wavelength: '1550'
-  InvFWMswp12_2:
-    DeviceID: InvFWMswp12_2
-    Electrical Coordinates: []
-    Optical Coordinates:
-    - 2000.0
-    - 3400.0
-    Polarization: TE
-    RoutineCheck: false
-    Routines: []
-    Type: InvFWMswp1
-    Wavelength: '1550'
-  InvFWMswp12_3:
-    DeviceID: InvFWMswp12_3
-    Electrical Coordinates: []
-    Optical Coordinates:
-    - 2500.0
-    - 3400.0
-    Polarization: TE
-    RoutineCheck: false
-    Routines: []
-    Type: InvFWMswp1
-    Wavelength: '1550'
-  InvFWMswp12_4:
-    DeviceID: InvFWMswp12_4
-    Electrical Coordinates: []
-    Optical Coordinates:
-    - 3000.0
-    - 3400.0
-    Polarization: TE
-    RoutineCheck: false
-    Routines: []
-    Type: InvFWMswp1
-    Wavelength: '1550'
-  InvFWMswp12_5:
-    DeviceID: InvFWMswp12_5
-    Electrical Coordinates: []
-    Optical Coordinates:
-    - 3500.0
-    - 3400.0
-    Polarization: TE
-    RoutineCheck: false
-    Routines: []
-    Type: InvFWMswp1
-    Wavelength: '1550'
-  InvFWMswp12_6:
-    DeviceID: InvFWMswp12_6
-    Electrical Coordinates: []
-    Optical Coordinates:
-    - 4000.0
-    - 3400.0
-    Polarization: TE
-    RoutineCheck: false
-    Routines: []
-    Type: InvFWMswp1
-    Wavelength: '1550'
-  InvFWMswp13_0:
-    DeviceID: InvFWMswp13_0
-    Electrical Coordinates: []
-    Optical Coordinates:
-    - 1000.0
-    - 3600.0
-    Polarization: TE
-    RoutineCheck: false
-    Routines: []
-    Type: InvFWMswp1
-    Wavelength: '1550'
-  InvFWMswp13_1:
-    DeviceID: InvFWMswp13_1
-    Electrical Coordinates: []
-    Optical Coordinates:
-    - 1500.0
-    - 3600.0
-    Polarization: TE
-    RoutineCheck: false
-    Routines: []
-    Type: InvFWMswp1
-    Wavelength: '1550'
-  InvFWMswp13_2:
-    DeviceID: InvFWMswp13_2
-    Electrical Coordinates: []
-    Optical Coordinates:
-    - 2000.0
-    - 3600.0
-    Polarization: TE
-    RoutineCheck: false
-    Routines: []
-    Type: InvFWMswp1
-    Wavelength: '1550'
-  InvFWMswp13_3:
-    DeviceID: InvFWMswp13_3
-    Electrical Coordinates: []
-    Optical Coordinates:
-    - 2500.0
-    - 3600.0
-    Polarization: TE
-    RoutineCheck: false
-    Routines: []
-    Type: InvFWMswp1
-    Wavelength: '1550'
-  InvFWMswp13_4:
-    DeviceID: InvFWMswp13_4
-    Electrical Coordinates: []
-    Optical Coordinates:
-    - 3000.0
-    - 3600.0
-    Polarization: TE
-    RoutineCheck: false
-    Routines: []
-    Type: InvFWMswp1
-    Wavelength: '1550'
-  InvFWMswp13_5:
-    DeviceID: InvFWMswp13_5
-    Electrical Coordinates: []
-    Optical Coordinates:
-    - 3500.0
-    - 3600.0
-    Polarization: TE
-    RoutineCheck: false
-    Routines: []
-    Type: InvFWMswp1
-    Wavelength: '1550'
-  InvFWMswp13_6:
-    DeviceID: InvFWMswp13_6
-    Electrical Coordinates: []
-    Optical Coordinates:
-    - 4000.0
-    - 3600.0
-    Polarization: TE
-    RoutineCheck: false
-    Routines: []
-    Type: InvFWMswp1
-    Wavelength: '1550'
-  InvFWMswp24_0:
-    DeviceID: InvFWMswp24_0
-    Electrical Coordinates: []
-    Optical Coordinates:
-    - 1000.0
-    - 3800.0
-    Polarization: TE
-    RoutineCheck: false
-    Routines: []
-    Type: InvFWMswp2
-    Wavelength: '1550'
-  InvFWMswp24_1:
-    DeviceID: InvFWMswp24_1
-    Electrical Coordinates: []
-    Optical Coordinates:
-    - 1500.0
-    - 3800.0
-    Polarization: TE
-    RoutineCheck: false
-    Routines: []
-    Type: InvFWMswp2
-    Wavelength: '1550'
-  InvFWMswp24_2:
-    DeviceID: InvFWMswp24_2
-    Electrical Coordinates: []
-    Optical Coordinates:
-    - 2000.0
-    - 3800.0
-    Polarization: TE
-    RoutineCheck: false
-    Routines: []
-    Type: InvFWMswp2
-    Wavelength: '1550'
-  InvFWMswp24_3:
-    DeviceID: InvFWMswp24_3
-    Electrical Coordinates: []
-    Optical Coordinates:
-    - 2500.0
-    - 3800.0
-    Polarization: TE
-    RoutineCheck: false
-    Routines: []
-    Type: InvFWMswp2
-    Wavelength: '1550'
-  InvFWMswp24_4:
-    DeviceID: InvFWMswp24_4
-    Electrical Coordinates: []
-    Optical Coordinates:
-    - 3000.0
-    - 3800.0
-    Polarization: TE
-    RoutineCheck: false
-    Routines: []
-    Type: InvFWMswp2
-    Wavelength: '1550'
-  InvFWMswp24_5:
-    DeviceID: InvFWMswp24_5
-    Electrical Coordinates: []
-    Optical Coordinates:
-    - 3500.0
-    - 3800.0
-    Polarization: TE
-    RoutineCheck: false
-    Routines: []
-    Type: InvFWMswp2
-    Wavelength: '1550'
-  InvFWMswp24_6:
-    DeviceID: InvFWMswp24_6
-    Electrical Coordinates: []
-    Optical Coordinates:
-    - 4000.0
-    - 3800.0
-    Polarization: TE
-    RoutineCheck: false
-    Routines: []
-    Type: InvFWMswp2
-    Wavelength: '1550'
-  InvFWMswp25_0:
-    DeviceID: InvFWMswp25_0
-    Electrical Coordinates: []
-    Optical Coordinates:
-    - 1000.0
-    - 4000.0
-    Polarization: TE
-    RoutineCheck: false
-    Routines: []
-    Type: InvFWMswp2
-    Wavelength: '1550'
-  InvFWMswp25_1:
-    DeviceID: InvFWMswp25_1
-    Electrical Coordinates: []
-    Optical Coordinates:
-    - 1500.0
-    - 4000.0
-    Polarization: TE
-    RoutineCheck: false
-    Routines: []
-    Type: InvFWMswp2
-    Wavelength: '1550'
-  InvFWMswp25_2:
-    DeviceID: InvFWMswp25_2
-    Electrical Coordinates: []
-    Optical Coordinates:
-    - 2000.0
-    - 4000.0
-    Polarization: TE
-    RoutineCheck: false
-    Routines: []
-    Type: InvFWMswp2
-    Wavelength: '1550'
-  InvFWMswp25_3:
-    DeviceID: InvFWMswp25_3
-    Electrical Coordinates: []
-    Optical Coordinates:
-    - 2500.0
-    - 4000.0
-    Polarization: TE
-    RoutineCheck: false
-    Routines: []
-    Type: InvFWMswp2
-    Wavelength: '1550'
-  InvFWMswp25_4:
-    DeviceID: InvFWMswp25_4
-    Electrical Coordinates: []
-    Optical Coordinates:
-    - 3000.0
-    - 4000.0
-    Polarization: TE
-    RoutineCheck: false
-    Routines: []
-    Type: InvFWMswp2
-    Wavelength: '1550'
-  InvFWMswp25_5:
-    DeviceID: InvFWMswp25_5
-    Electrical Coordinates: []
-    Optical Coordinates:
-    - 3500.0
-    - 4000.0
-    Polarization: TE
-    RoutineCheck: false
-    Routines: []
-    Type: InvFWMswp2
-    Wavelength: '1550'
-  InvFWMswp25_6:
-    DeviceID: InvFWMswp25_6
-    Electrical Coordinates: []
-    Optical Coordinates:
-    - 4000.0
-    - 4000.0
-    Polarization: TE
-    RoutineCheck: false
-    Routines: []
-    Type: InvFWMswp2
-    Wavelength: '1550'
-  InvFWMswp26_0:
-    DeviceID: InvFWMswp26_0
-    Electrical Coordinates: []
-    Optical Coordinates:
-    - 1000.0
-    - 4200.0
-    Polarization: TE
-    RoutineCheck: false
-    Routines: []
-    Type: InvFWMswp2
-    Wavelength: '1550'
-  InvFWMswp26_1:
-    DeviceID: InvFWMswp26_1
-    Electrical Coordinates: []
-    Optical Coordinates:
-    - 1500.0
-    - 4200.0
-    Polarization: TE
-    RoutineCheck: false
-    Routines: []
-    Type: InvFWMswp2
-    Wavelength: '1550'
-  InvFWMswp26_2:
-    DeviceID: InvFWMswp26_2
-    Electrical Coordinates: []
-    Optical Coordinates:
-    - 2000.0
-    - 4200.0
-    Polarization: TE
-    RoutineCheck: false
-    Routines: []
-    Type: InvFWMswp2
-    Wavelength: '1550'
-  InvFWMswp26_3:
-    DeviceID: InvFWMswp26_3
-    Electrical Coordinates: []
-    Optical Coordinates:
-    - 2500.0
-    - 4200.0
-    Polarization: TE
-    RoutineCheck: false
-    Routines: []
-    Type: InvFWMswp2
-    Wavelength: '1550'
-  InvFWMswp26_4:
-    DeviceID: InvFWMswp26_4
-    Electrical Coordinates: []
-    Optical Coordinates:
-    - 3000.0
-    - 4200.0
-    Polarization: TE
-    RoutineCheck: false
-    Routines: []
-    Type: InvFWMswp2
-    Wavelength: '1550'
-  InvFWMswp26_5:
-    DeviceID: InvFWMswp26_5
-    Electrical Coordinates: []
-    Optical Coordinates:
-    - 3500.0
-    - 4200.0
-    Polarization: TE
-    RoutineCheck: false
-    Routines: []
-    Type: InvFWMswp2
-    Wavelength: '1550'
-  InvFWMswp26_6:
-    DeviceID: InvFWMswp26_6
-    Electrical Coordinates: []
-    Optical Coordinates:
-    - 4000.0
-    - 4200.0
-    Polarization: TE
-    RoutineCheck: false
-    Routines: []
-    Type: InvFWMswp2
-    Wavelength: '1550'
-  InvFWMswp27_0:
-    DeviceID: InvFWMswp27_0
-    Electrical Coordinates: []
-    Optical Coordinates:
-    - 1000.0
-    - 4400.0
-    Polarization: TE
-    RoutineCheck: false
-    Routines: []
-    Type: InvFWMswp2
-    Wavelength: '1550'
-  InvFWMswp27_1:
-    DeviceID: InvFWMswp27_1
-    Electrical Coordinates: []
-    Optical Coordinates:
-    - 1500.0
-    - 4400.0
-    Polarization: TE
-    RoutineCheck: false
-    Routines: []
-    Type: InvFWMswp2
-    Wavelength: '1550'
-  InvFWMswp27_2:
-    DeviceID: InvFWMswp27_2
-    Electrical Coordinates: []
-    Optical Coordinates:
-    - 2000.0
-    - 4400.0
-    Polarization: TE
-    RoutineCheck: false
-    Routines: []
-    Type: InvFWMswp2
-    Wavelength: '1550'
-  InvFWMswp27_3:
-    DeviceID: InvFWMswp27_3
-    Electrical Coordinates: []
-    Optical Coordinates:
-    - 2500.0
-    - 4400.0
-    Polarization: TE
-    RoutineCheck: false
-    Routines: []
-    Type: InvFWMswp2
-    Wavelength: '1550'
-  InvFWMswp27_4:
-    DeviceID: InvFWMswp27_4
-    Electrical Coordinates: []
-    Optical Coordinates:
-    - 3000.0
-    - 4400.0
-    Polarization: TE
-    RoutineCheck: false
-    Routines: []
-    Type: InvFWMswp2
-    Wavelength: '1550'
-  InvFWMswp27_5:
-    DeviceID: InvFWMswp27_5
-    Electrical Coordinates: []
-    Optical Coordinates:
-    - 3500.0
-    - 4400.0
-    Polarization: TE
-    RoutineCheck: false
-    Routines: []
-    Type: InvFWMswp2
-    Wavelength: '1550'
-  InvFWMswp27_6:
-    DeviceID: InvFWMswp27_6
-    Electrical Coordinates: []
-    Optical Coordinates:
-    - 4000.0
-    - 4400.0
-    Polarization: TE
-    RoutineCheck: false
-    Routines: []
-    Type: InvFWMswp2
-    Wavelength: '1550'
-  caliboffset0=-2nm:
-    DeviceID: caliboffset0=-2nm
-    Electrical Coordinates: []
-    Optical Coordinates:
-    - 4500.0
-    - 3400.0
-    Polarization: TE
-    RoutineCheck: true
-    Routines:
-    - Wavelength Sweep:Default
-    Type: calib
-    Wavelength: '1550'
-  caliboffset0=-4nm:
-    DeviceID: caliboffset0=-4nm
-    Electrical Coordinates: []
-    Optical Coordinates:
-    - 4500.0
-    - 3200.0
-    Polarization: TE
-    RoutineCheck: true
-    Routines:
-    - Wavelength Sweep:Default
-    Type: calib
-    Wavelength: '1550'
-  caliboffset0=-8nm:
-    DeviceID: caliboffset0=-8nm
-    Electrical Coordinates: []
-    Optical Coordinates:
-    - 4500.0
-    - 3000.0
-    Polarization: TE
-    RoutineCheck: true
-    Routines:
-    - Wavelength Sweep:Default
-    Type: calib
-    Wavelength: '1550'
-  caliboffset0=0nm:
-    DeviceID: caliboffset0=0nm
-    Electrical Coordinates: []
-    Optical Coordinates:
-    - 4500.0
-    - 3600.0
-    Polarization: TE
-    RoutineCheck: true
-    Routines:
-    - Wavelength Sweep:Default
-    Type: calib
-    Wavelength: '1550'
-  caliboffset0=12nm:
-    DeviceID: caliboffset0=12nm
-    Electrical Coordinates: []
-    Optical Coordinates:
-    - 4500.0
-    - 4600.0
-    Polarization: TE
-    RoutineCheck: true
-    Routines:
-    - Wavelength Sweep:Default
-    Type: calib
-    Wavelength: '1550'
-  caliboffset0=2nm:
-    DeviceID: caliboffset0=2nm
-    Electrical Coordinates: []
-    Optical Coordinates:
-    - 4500.0
-    - 3800.0
-    Polarization: TE
-    RoutineCheck: true
-    Routines:
-    - Wavelength Sweep:Default
-    Type: calib
-    Wavelength: '1550'
-  caliboffset0=4nm:
-    DeviceID: caliboffset0=4nm
-    Electrical Coordinates: []
-    Optical Coordinates:
-    - 4500.0
-    - 4000.0
-    Polarization: TE
-    RoutineCheck: true
-    Routines:
-    - Wavelength Sweep:Default
-    Type: calib
-    Wavelength: '1550'
-  caliboffset0=6nm:
-    DeviceID: caliboffset0=6nm
-    Electrical Coordinates: []
-    Optical Coordinates:
-    - 4500.0
-    - 4200.0
-    Polarization: TE
-    RoutineCheck: true
-    Routines:
-    - Wavelength Sweep:Default
-    Type: calib
-    Wavelength: '1550'
-  caliboffset0=8nm:
-    DeviceID: caliboffset0=8nm
-    Electrical Coordinates: []
-    Optical Coordinates:
-    - 4500.0
-    - 4400.0
-    Polarization: TE
-    RoutineCheck: true
-    Routines:
-    - Wavelength Sweep:Default
-    Type: calib
-    Wavelength: '1550'
-  caliboffset1=-2nm:
-    DeviceID: caliboffset1=-2nm
-    Electrical Coordinates: []
-    Optical Coordinates:
-    - 5000.0
-    - 3400.0
-    Polarization: TE
-    RoutineCheck: true
-    Routines:
-    - Wavelength Sweep:Default
-    Type: calib
-    Wavelength: '1550'
-  caliboffset1=-4nm:
-    DeviceID: caliboffset1=-4nm
-    Electrical Coordinates: []
-    Optical Coordinates:
-    - 5000.0
-    - 3200.0
-    Polarization: TE
-    RoutineCheck: true
-    Routines:
-    - Wavelength Sweep:Default
-    Type: calib
-    Wavelength: '1550'
-  caliboffset1=-8nm:
-    DeviceID: caliboffset1=-8nm
-    Electrical Coordinates: []
-    Optical Coordinates:
-    - 5000.0
-    - 3000.0
-    Polarization: TE
-    RoutineCheck: true
-    Routines:
-    - Wavelength Sweep:Default
-    Type: calib
-    Wavelength: '1550'
-  caliboffset1=0nm:
-    DeviceID: caliboffset1=0nm
-    Electrical Coordinates: []
-    Optical Coordinates:
-    - 5000.0
-    - 3600.0
-    Polarization: TE
-    RoutineCheck: true
-    Routines:
-    - Wavelength Sweep:Default
-    Type: calib
-    Wavelength: '1550'
-  caliboffset1=12nm:
-    DeviceID: caliboffset1=12nm
-    Electrical Coordinates: []
-    Optical Coordinates:
-    - 5000.0
-    - 4600.0
-    Polarization: TE
-    RoutineCheck: true
-    Routines:
-    - Wavelength Sweep:Default
-    Type: calib
-    Wavelength: '1550'
-  caliboffset1=2nm:
-    DeviceID: caliboffset1=2nm
-    Electrical Coordinates: []
-    Optical Coordinates:
-    - 5000.0
-    - 3800.0
-    Polarization: TE
-    RoutineCheck: true
-    Routines:
-    - Wavelength Sweep:Default
-    Type: calib
-    Wavelength: '1550'
-  caliboffset1=4nm:
-    DeviceID: caliboffset1=4nm
-    Electrical Coordinates: []
-    Optical Coordinates:
-    - 5000.0
-    - 4000.0
-    Polarization: TE
-    RoutineCheck: true
-    Routines:
-    - Wavelength Sweep:Default
-    Type: calib
-    Wavelength: '1550'
-  caliboffset1=6nm:
-    DeviceID: caliboffset1=6nm
-    Electrical Coordinates: []
-    Optical Coordinates:
-    - 5000.0
-    - 4200.0
-    Polarization: TE
-    RoutineCheck: true
-    Routines:
-    - Wavelength Sweep:Default
-    Type: calib
-    Wavelength: '1550'
-  caliboffset1=8nm:
-    DeviceID: caliboffset1=8nm
-    Electrical Coordinates: []
-    Optical Coordinates:
-    - 5000.0
-    - 4400.0
-    Polarization: TE
-    RoutineCheck: true
-    Routines:
-    - Wavelength Sweep:Default
-    Type: calib
-    Wavelength: '1550'
-  ringangleangle=36deg:
-    DeviceID: ringangleangle=36deg
+  InvFWMboth1_0:
+    DeviceID: InvFWMboth1_0
     Electrical Coordinates: []
     Optical Coordinates:
     - 0.0
-    - 3200.0
+    - -850.0
     Polarization: TE
     RoutineCheck: false
     Routines: []
-    Type: ringangle
+    Type: InvFWMboth
     Wavelength: '1550'
-  ringangleangle=38deg:
-    DeviceID: ringangleangle=38deg
+  InvFWMboth1_1:
+    DeviceID: InvFWMboth1_1
+    Electrical Coordinates: []
+    Optical Coordinates:
+    - 580.0
+    - -850.0
+    Polarization: TE
+    RoutineCheck: false
+    Routines: []
+    Type: InvFWMboth
+    Wavelength: '1550'
+  InvFWMboth1_2:
+    DeviceID: InvFWMboth1_2
+    Electrical Coordinates: []
+    Optical Coordinates:
+    - 1160.0
+    - -850.0
+    Polarization: TE
+    RoutineCheck: false
+    Routines: []
+    Type: InvFWMboth
+    Wavelength: '1550'
+  InvFWMboth1_3:
+    DeviceID: InvFWMboth1_3
+    Electrical Coordinates: []
+    Optical Coordinates:
+    - 1740.0
+    - -850.0
+    Polarization: TE
+    RoutineCheck: false
+    Routines: []
+    Type: InvFWMboth
+    Wavelength: '1550'
+  InvFWMboth1_4:
+    DeviceID: InvFWMboth1_4
+    Electrical Coordinates: []
+    Optical Coordinates:
+    - 2320.0
+    - -850.0
+    Polarization: TE
+    RoutineCheck: false
+    Routines: []
+    Type: InvFWMboth
+    Wavelength: '1550'
+  InvFWMboth1_5:
+    DeviceID: InvFWMboth1_5
+    Electrical Coordinates: []
+    Optical Coordinates:
+    - 2900.0
+    - -850.0
+    Polarization: TE
+    RoutineCheck: false
+    Routines: []
+    Type: InvFWMboth
+    Wavelength: '1550'
+  InvFWMboth1_6:
+    DeviceID: InvFWMboth1_6
+    Electrical Coordinates: []
+    Optical Coordinates:
+    - 3480.0
+    - -850.0
+    Polarization: TE
+    RoutineCheck: false
+    Routines: []
+    Type: InvFWMboth
+    Wavelength: '1550'
+  InvFWMboth1_7:
+    DeviceID: InvFWMboth1_7
+    Electrical Coordinates: []
+    Optical Coordinates:
+    - 4060.0
+    - -850.0
+    Polarization: TE
+    RoutineCheck: false
+    Routines: []
+    Type: InvFWMboth
+    Wavelength: '1550'
+  InvFWMboth1_8:
+    DeviceID: InvFWMboth1_8
+    Electrical Coordinates: []
+    Optical Coordinates:
+    - 4640.0
+    - -850.0
+    Polarization: TE
+    RoutineCheck: false
+    Routines: []
+    Type: InvFWMboth
+    Wavelength: '1550'
+  InvFWMboth2_0:
+    DeviceID: InvFWMboth2_0
     Electrical Coordinates: []
     Optical Coordinates:
     - 0.0
-    - 3000.0
+    - -650.0
     Polarization: TE
     RoutineCheck: false
     Routines: []
-    Type: ringangle
+    Type: InvFWMboth
     Wavelength: '1550'
-  ringangleangle=40deg:
-    DeviceID: ringangleangle=40deg
+  InvFWMboth2_1:
+    DeviceID: InvFWMboth2_1
+    Electrical Coordinates: []
+    Optical Coordinates:
+    - 580.0
+    - -650.0
+    Polarization: TE
+    RoutineCheck: false
+    Routines: []
+    Type: InvFWMboth
+    Wavelength: '1550'
+  InvFWMboth2_2:
+    DeviceID: InvFWMboth2_2
+    Electrical Coordinates: []
+    Optical Coordinates:
+    - 1160.0
+    - -650.0
+    Polarization: TE
+    RoutineCheck: false
+    Routines: []
+    Type: InvFWMboth
+    Wavelength: '1550'
+  InvFWMboth2_3:
+    DeviceID: InvFWMboth2_3
+    Electrical Coordinates: []
+    Optical Coordinates:
+    - 1740.0
+    - -650.0
+    Polarization: TE
+    RoutineCheck: false
+    Routines: []
+    Type: InvFWMboth
+    Wavelength: '1550'
+  InvFWMboth2_4:
+    DeviceID: InvFWMboth2_4
+    Electrical Coordinates: []
+    Optical Coordinates:
+    - 2320.0
+    - -650.0
+    Polarization: TE
+    RoutineCheck: false
+    Routines: []
+    Type: InvFWMboth
+    Wavelength: '1550'
+  InvFWMboth2_5:
+    DeviceID: InvFWMboth2_5
+    Electrical Coordinates: []
+    Optical Coordinates:
+    - 2900.0
+    - -650.0
+    Polarization: TE
+    RoutineCheck: false
+    Routines: []
+    Type: InvFWMboth
+    Wavelength: '1550'
+  InvFWMboth2_6:
+    DeviceID: InvFWMboth2_6
+    Electrical Coordinates: []
+    Optical Coordinates:
+    - 3480.0
+    - -650.0
+    Polarization: TE
+    RoutineCheck: false
+    Routines: []
+    Type: InvFWMboth
+    Wavelength: '1550'
+  InvFWMboth2_7:
+    DeviceID: InvFWMboth2_7
+    Electrical Coordinates: []
+    Optical Coordinates:
+    - 4060.0
+    - -650.0
+    Polarization: TE
+    RoutineCheck: false
+    Routines: []
+    Type: InvFWMboth
+    Wavelength: '1550'
+  InvFWMboth2_8:
+    DeviceID: InvFWMboth2_8
+    Electrical Coordinates: []
+    Optical Coordinates:
+    - 4640.0
+    - -650.0
+    Polarization: TE
+    RoutineCheck: false
+    Routines: []
+    Type: InvFWMboth
+    Wavelength: '1550'
+  InvFWMboth3_0:
+    DeviceID: InvFWMboth3_0
     Electrical Coordinates: []
     Optical Coordinates:
     - 0.0
-    - 3400.0
+    - -450.0
     Polarization: TE
     RoutineCheck: false
     Routines: []
-    Type: ringangle
+    Type: InvFWMboth
     Wavelength: '1550'
-  ringangleangle=42deg:
-    DeviceID: ringangleangle=42deg
+  InvFWMboth3_1:
+    DeviceID: InvFWMboth3_1
+    Electrical Coordinates: []
+    Optical Coordinates:
+    - 580.0
+    - -450.0
+    Polarization: TE
+    RoutineCheck: false
+    Routines: []
+    Type: InvFWMboth
+    Wavelength: '1550'
+  InvFWMboth3_2:
+    DeviceID: InvFWMboth3_2
+    Electrical Coordinates: []
+    Optical Coordinates:
+    - 1160.0
+    - -450.0
+    Polarization: TE
+    RoutineCheck: false
+    Routines: []
+    Type: InvFWMboth
+    Wavelength: '1550'
+  InvFWMboth3_3:
+    DeviceID: InvFWMboth3_3
+    Electrical Coordinates: []
+    Optical Coordinates:
+    - 1740.0
+    - -450.0
+    Polarization: TE
+    RoutineCheck: false
+    Routines: []
+    Type: InvFWMboth
+    Wavelength: '1550'
+  InvFWMboth3_4:
+    DeviceID: InvFWMboth3_4
+    Electrical Coordinates: []
+    Optical Coordinates:
+    - 2320.0
+    - -450.0
+    Polarization: TE
+    RoutineCheck: false
+    Routines: []
+    Type: InvFWMboth
+    Wavelength: '1550'
+  InvFWMboth3_5:
+    DeviceID: InvFWMboth3_5
+    Electrical Coordinates: []
+    Optical Coordinates:
+    - 2900.0
+    - -450.0
+    Polarization: TE
+    RoutineCheck: false
+    Routines: []
+    Type: InvFWMboth
+    Wavelength: '1550'
+  InvFWMboth3_6:
+    DeviceID: InvFWMboth3_6
+    Electrical Coordinates: []
+    Optical Coordinates:
+    - 3480.0
+    - -450.0
+    Polarization: TE
+    RoutineCheck: false
+    Routines: []
+    Type: InvFWMboth
+    Wavelength: '1550'
+  InvFWMboth3_7:
+    DeviceID: InvFWMboth3_7
+    Electrical Coordinates: []
+    Optical Coordinates:
+    - 4060.0
+    - -450.0
+    Polarization: TE
+    RoutineCheck: false
+    Routines: []
+    Type: InvFWMboth
+    Wavelength: '1550'
+  InvFWMboth3_8:
+    DeviceID: InvFWMboth3_8
+    Electrical Coordinates: []
+    Optical Coordinates:
+    - 4640.0
+    - -450.0
+    Polarization: TE
+    RoutineCheck: false
+    Routines: []
+    Type: InvFWMboth
+    Wavelength: '1550'
+  InvFWMboth4_0:
+    DeviceID: InvFWMboth4_0
     Electrical Coordinates: []
     Optical Coordinates:
     - 0.0
-    - 3600.0
+    - -250.0
     Polarization: TE
     RoutineCheck: false
     Routines: []
-    Type: ringangle
+    Type: InvFWMboth
     Wavelength: '1550'
-  ringangleangle=46deg:
-    DeviceID: ringangleangle=46deg
+  InvFWMboth4_1:
+    DeviceID: InvFWMboth4_1
+    Electrical Coordinates: []
+    Optical Coordinates:
+    - 580.0
+    - -250.0
+    Polarization: TE
+    RoutineCheck: false
+    Routines: []
+    Type: InvFWMboth
+    Wavelength: '1550'
+  InvFWMboth4_2:
+    DeviceID: InvFWMboth4_2
+    Electrical Coordinates: []
+    Optical Coordinates:
+    - 1160.0
+    - -250.0
+    Polarization: TE
+    RoutineCheck: false
+    Routines: []
+    Type: InvFWMboth
+    Wavelength: '1550'
+  InvFWMboth4_3:
+    DeviceID: InvFWMboth4_3
+    Electrical Coordinates: []
+    Optical Coordinates:
+    - 1740.0
+    - -250.0
+    Polarization: TE
+    RoutineCheck: false
+    Routines: []
+    Type: InvFWMboth
+    Wavelength: '1550'
+  InvFWMboth4_4:
+    DeviceID: InvFWMboth4_4
+    Electrical Coordinates: []
+    Optical Coordinates:
+    - 2320.0
+    - -250.0
+    Polarization: TE
+    RoutineCheck: false
+    Routines: []
+    Type: InvFWMboth
+    Wavelength: '1550'
+  InvFWMboth4_5:
+    DeviceID: InvFWMboth4_5
+    Electrical Coordinates: []
+    Optical Coordinates:
+    - 2900.0
+    - -250.0
+    Polarization: TE
+    RoutineCheck: false
+    Routines: []
+    Type: InvFWMboth
+    Wavelength: '1550'
+  InvFWMboth4_6:
+    DeviceID: InvFWMboth4_6
+    Electrical Coordinates: []
+    Optical Coordinates:
+    - 3480.0
+    - -250.0
+    Polarization: TE
+    RoutineCheck: false
+    Routines: []
+    Type: InvFWMboth
+    Wavelength: '1550'
+  InvFWMboth4_7:
+    DeviceID: InvFWMboth4_7
+    Electrical Coordinates: []
+    Optical Coordinates:
+    - 4060.0
+    - -250.0
+    Polarization: TE
+    RoutineCheck: false
+    Routines: []
+    Type: InvFWMboth
+    Wavelength: '1550'
+  InvFWMboth4_8:
+    DeviceID: InvFWMboth4_8
+    Electrical Coordinates: []
+    Optical Coordinates:
+    - 4640.0
+    - -250.0
+    Polarization: TE
+    RoutineCheck: false
+    Routines: []
+    Type: InvFWMboth
+    Wavelength: '1550'
+  InvFWMprd0_0:
+    DeviceID: InvFWMprd0_0
     Electrical Coordinates: []
     Optical Coordinates:
     - 0.0
-    - 3800.0
+    - -1300.0
     Polarization: TE
     RoutineCheck: false
     Routines: []
-    Type: ringangle
+    Type: InvFWMprd
     Wavelength: '1550'
-  ringangleangle=48deg:
-    DeviceID: ringangleangle=48deg
+  InvFWMprd0_1:
+    DeviceID: InvFWMprd0_1
+    Electrical Coordinates: []
+    Optical Coordinates:
+    - 580.0
+    - -1300.0
+    Polarization: TE
+    RoutineCheck: false
+    Routines: []
+    Type: InvFWMprd
+    Wavelength: '1550'
+  InvFWMprd0_2:
+    DeviceID: InvFWMprd0_2
+    Electrical Coordinates: []
+    Optical Coordinates:
+    - 1160.0
+    - -1300.0
+    Polarization: TE
+    RoutineCheck: false
+    Routines: []
+    Type: InvFWMprd
+    Wavelength: '1550'
+  InvFWMprd0_3:
+    DeviceID: InvFWMprd0_3
+    Electrical Coordinates: []
+    Optical Coordinates:
+    - 1740.0
+    - -1300.0
+    Polarization: TE
+    RoutineCheck: false
+    Routines: []
+    Type: InvFWMprd
+    Wavelength: '1550'
+  InvFWMprd0_4:
+    DeviceID: InvFWMprd0_4
+    Electrical Coordinates: []
+    Optical Coordinates:
+    - 2320.0
+    - -1300.0
+    Polarization: TE
+    RoutineCheck: false
+    Routines: []
+    Type: InvFWMprd
+    Wavelength: '1550'
+  InvFWMprd0_5:
+    DeviceID: InvFWMprd0_5
+    Electrical Coordinates: []
+    Optical Coordinates:
+    - 2900.0
+    - -1300.0
+    Polarization: TE
+    RoutineCheck: false
+    Routines: []
+    Type: InvFWMprd
+    Wavelength: '1550'
+  InvFWMprd0_6:
+    DeviceID: InvFWMprd0_6
+    Electrical Coordinates: []
+    Optical Coordinates:
+    - 3480.0
+    - -1300.0
+    Polarization: TE
+    RoutineCheck: false
+    Routines: []
+    Type: InvFWMprd
+    Wavelength: '1550'
+  InvFWMprd0_7:
+    DeviceID: InvFWMprd0_7
+    Electrical Coordinates: []
+    Optical Coordinates:
+    - 4060.0
+    - -1300.0
+    Polarization: TE
+    RoutineCheck: false
+    Routines: []
+    Type: InvFWMprd
+    Wavelength: '1550'
+  InvFWMprd0_8:
+    DeviceID: InvFWMprd0_8
+    Electrical Coordinates: []
+    Optical Coordinates:
+    - 4640.0
+    - -1300.0
+    Polarization: TE
+    RoutineCheck: false
+    Routines: []
+    Type: InvFWMprd
+    Wavelength: '1550'
+  InvFWMprd1_0:
+    DeviceID: InvFWMprd1_0
     Electrical Coordinates: []
     Optical Coordinates:
     - 0.0
-    - 4000.0
+    - -1500.0
     Polarization: TE
     RoutineCheck: false
     Routines: []
-    Type: ringangle
+    Type: InvFWMprd
     Wavelength: '1550'
-  ringangleangle=50deg:
-    DeviceID: ringangleangle=50deg
+  InvFWMprd1_1:
+    DeviceID: InvFWMprd1_1
+    Electrical Coordinates: []
+    Optical Coordinates:
+    - 580.0
+    - -1500.0
+    Polarization: TE
+    RoutineCheck: false
+    Routines: []
+    Type: InvFWMprd
+    Wavelength: '1550'
+  InvFWMprd1_2:
+    DeviceID: InvFWMprd1_2
+    Electrical Coordinates: []
+    Optical Coordinates:
+    - 1160.0
+    - -1500.0
+    Polarization: TE
+    RoutineCheck: false
+    Routines: []
+    Type: InvFWMprd
+    Wavelength: '1550'
+  InvFWMprd1_3:
+    DeviceID: InvFWMprd1_3
+    Electrical Coordinates: []
+    Optical Coordinates:
+    - 1740.0
+    - -1500.0
+    Polarization: TE
+    RoutineCheck: false
+    Routines: []
+    Type: InvFWMprd
+    Wavelength: '1550'
+  InvFWMprd1_4:
+    DeviceID: InvFWMprd1_4
+    Electrical Coordinates: []
+    Optical Coordinates:
+    - 2320.0
+    - -1500.0
+    Polarization: TE
+    RoutineCheck: false
+    Routines: []
+    Type: InvFWMprd
+    Wavelength: '1550'
+  InvFWMprd1_5:
+    DeviceID: InvFWMprd1_5
+    Electrical Coordinates: []
+    Optical Coordinates:
+    - 2900.0
+    - -1500.0
+    Polarization: TE
+    RoutineCheck: false
+    Routines: []
+    Type: InvFWMprd
+    Wavelength: '1550'
+  InvFWMprd1_6:
+    DeviceID: InvFWMprd1_6
+    Electrical Coordinates: []
+    Optical Coordinates:
+    - 3480.0
+    - -1500.0
+    Polarization: TE
+    RoutineCheck: false
+    Routines: []
+    Type: InvFWMprd
+    Wavelength: '1550'
+  InvFWMprd1_7:
+    DeviceID: InvFWMprd1_7
+    Electrical Coordinates: []
+    Optical Coordinates:
+    - 4060.0
+    - -1500.0
+    Polarization: TE
+    RoutineCheck: false
+    Routines: []
+    Type: InvFWMprd
+    Wavelength: '1550'
+  InvFWMprd1_8:
+    DeviceID: InvFWMprd1_8
+    Electrical Coordinates: []
+    Optical Coordinates:
+    - 4640.0
+    - -1500.0
+    Polarization: TE
+    RoutineCheck: false
+    Routines: []
+    Type: InvFWMprd
+    Wavelength: '1550'
+  caliboffset0_-12:
+    DeviceID: caliboffset0_-12
     Electrical Coordinates: []
     Optical Coordinates:
     - 0.0
-    - 4200.0
+    - -1700.0
     Polarization: TE
     RoutineCheck: false
     Routines: []
-    Type: ringangle
+    Type: calib
     Wavelength: '1550'
-  ringangleangle=52deg:
-    DeviceID: ringangleangle=52deg
+  caliboffset0_-2:
+    DeviceID: caliboffset0_-2
+    Electrical Coordinates: []
+    Optical Coordinates:
+    - 1740.0
+    - -1700.0
+    Polarization: TE
+    RoutineCheck: false
+    Routines: []
+    Type: calib
+    Wavelength: '1550'
+  caliboffset0_-4:
+    DeviceID: caliboffset0_-4
+    Electrical Coordinates: []
+    Optical Coordinates:
+    - 1160.0
+    - -1700.0
+    Polarization: TE
+    RoutineCheck: false
+    Routines: []
+    Type: calib
+    Wavelength: '1550'
+  caliboffset0_-8:
+    DeviceID: caliboffset0_-8
+    Electrical Coordinates: []
+    Optical Coordinates:
+    - 580.0
+    - -1700.0
+    Polarization: TE
+    RoutineCheck: false
+    Routines: []
+    Type: calib
+    Wavelength: '1550'
+  caliboffset0_0:
+    DeviceID: caliboffset0_0
+    Electrical Coordinates: []
+    Optical Coordinates:
+    - 2320.0
+    - -1700.0
+    Polarization: TE
+    RoutineCheck: false
+    Routines: []
+    Type: calib
+    Wavelength: '1550'
+  caliboffset0_12:
+    DeviceID: caliboffset0_12
+    Electrical Coordinates: []
+    Optical Coordinates:
+    - 4640.0
+    - -1700.0
+    Polarization: TE
+    RoutineCheck: false
+    Routines: []
+    Type: calib
+    Wavelength: '1550'
+  caliboffset0_2:
+    DeviceID: caliboffset0_2
+    Electrical Coordinates: []
+    Optical Coordinates:
+    - 2900.0
+    - -1700.0
+    Polarization: TE
+    RoutineCheck: false
+    Routines: []
+    Type: calib
+    Wavelength: '1550'
+  caliboffset0_4:
+    DeviceID: caliboffset0_4
+    Electrical Coordinates: []
+    Optical Coordinates:
+    - 3480.0
+    - -1700.0
+    Polarization: TE
+    RoutineCheck: false
+    Routines: []
+    Type: calib
+    Wavelength: '1550'
+  caliboffset0_8:
+    DeviceID: caliboffset0_8
+    Electrical Coordinates: []
+    Optical Coordinates:
+    - 4060.0
+    - -1700.0
+    Polarization: TE
+    RoutineCheck: false
+    Routines: []
+    Type: calib
+    Wavelength: '1550'
+  caliboffset1_-12:
+    DeviceID: caliboffset1_-12
     Electrical Coordinates: []
     Optical Coordinates:
     - 0.0
-    - 4400.0
+    - -1900.0
     Polarization: TE
     RoutineCheck: false
     Routines: []
-    Type: ringangle
+    Type: calib
     Wavelength: '1550'
-  ringoffsetoffset=-12:
-    DeviceID: ringoffsetoffset=-12
+  caliboffset1_-2:
+    DeviceID: caliboffset1_-2
     Electrical Coordinates: []
     Optical Coordinates:
-    - 500.0
-    - 3000.0
+    - 1740.0
+    - -1900.0
     Polarization: TE
     RoutineCheck: false
     Routines: []
-    Type: ringoffset
+    Type: calib
     Wavelength: '1550'
-  ringoffsetoffset=-4:
-    DeviceID: ringoffsetoffset=-4
+  caliboffset1_-4:
+    DeviceID: caliboffset1_-4
     Electrical Coordinates: []
     Optical Coordinates:
-    - 500.0
-    - 3400.0
+    - 1160.0
+    - -1900.0
     Polarization: TE
     RoutineCheck: false
     Routines: []
-    Type: ringoffset
+    Type: calib
     Wavelength: '1550'
-  ringoffsetoffset=-8:
-    DeviceID: ringoffsetoffset=-8
+  caliboffset1_-8:
+    DeviceID: caliboffset1_-8
     Electrical Coordinates: []
     Optical Coordinates:
-    - 500.0
-    - 3200.0
+    - 580.0
+    - -1900.0
     Polarization: TE
     RoutineCheck: false
     Routines: []
-    Type: ringoffset
+    Type: calib
     Wavelength: '1550'
-  ringoffsetoffset=0:
-    DeviceID: ringoffsetoffset=0
+  caliboffset1_0:
+    DeviceID: caliboffset1_0
     Electrical Coordinates: []
     Optical Coordinates:
-    - 500.0
-    - 3600.0
+    - 2320.0
+    - -1900.0
     Polarization: TE
     RoutineCheck: false
     Routines: []
-    Type: ringoffset
+    Type: calib
     Wavelength: '1550'
-  ringoffsetoffset=12:
-    DeviceID: ringoffsetoffset=12
+  caliboffset1_12:
+    DeviceID: caliboffset1_12
     Electrical Coordinates: []
     Optical Coordinates:
-    - 500.0
-    - 4200.0
+    - 4640.0
+    - -1900.0
     Polarization: TE
     RoutineCheck: false
     Routines: []
-    Type: ringoffset
+    Type: calib
     Wavelength: '1550'
-  ringoffsetoffset=4:
-    DeviceID: ringoffsetoffset=4
+  caliboffset1_2:
+    DeviceID: caliboffset1_2
     Electrical Coordinates: []
     Optical Coordinates:
-    - 500.0
-    - 3800.0
+    - 2900.0
+    - -1900.0
     Polarization: TE
     RoutineCheck: false
     Routines: []
-    Type: ringoffset
+    Type: calib
     Wavelength: '1550'
-  ringoffsetoffset=8:
-    DeviceID: ringoffsetoffset=8
+  caliboffset1_4:
+    DeviceID: caliboffset1_4
     Electrical Coordinates: []
     Optical Coordinates:
-    - 500.0
-    - 4000.0
+    - 3480.0
+    - -1900.0
     Polarization: TE
     RoutineCheck: false
     Routines: []
-    Type: ringoffset
+    Type: calib
+    Wavelength: '1550'
+  caliboffset1_8:
+    DeviceID: caliboffset1_8
+    Electrical Coordinates: []
+    Optical Coordinates:
+    - 4060.0
+    - -1900.0
+    Polarization: TE
+    RoutineCheck: false
+    Routines: []
+    Type: calib
+    Wavelength: '1550'
+  caliboffset2_-12:
+    DeviceID: caliboffset2_-12
+    Electrical Coordinates: []
+    Optical Coordinates:
+    - 0.0
+    - 1800.0
+    Polarization: TE
+    RoutineCheck: false
+    Routines: []
+    Type: calib
+    Wavelength: '1550'
+  caliboffset2_-2:
+    DeviceID: caliboffset2_-2
+    Electrical Coordinates: []
+    Optical Coordinates:
+    - 1740.0
+    - 1800.0
+    Polarization: TE
+    RoutineCheck: false
+    Routines: []
+    Type: calib
+    Wavelength: '1550'
+  caliboffset2_-4:
+    DeviceID: caliboffset2_-4
+    Electrical Coordinates: []
+    Optical Coordinates:
+    - 1160.0
+    - 1800.0
+    Polarization: TE
+    RoutineCheck: false
+    Routines: []
+    Type: calib
+    Wavelength: '1550'
+  caliboffset2_-8:
+    DeviceID: caliboffset2_-8
+    Electrical Coordinates: []
+    Optical Coordinates:
+    - 580.0
+    - 1800.0
+    Polarization: TE
+    RoutineCheck: false
+    Routines: []
+    Type: calib
+    Wavelength: '1550'
+  caliboffset2_0:
+    DeviceID: caliboffset2_0
+    Electrical Coordinates: []
+    Optical Coordinates:
+    - 2320.0
+    - 1800.0
+    Polarization: TE
+    RoutineCheck: false
+    Routines: []
+    Type: calib
+    Wavelength: '1550'
+  caliboffset2_12:
+    DeviceID: caliboffset2_12
+    Electrical Coordinates: []
+    Optical Coordinates:
+    - 4640.0
+    - 1800.0
+    Polarization: TE
+    RoutineCheck: false
+    Routines: []
+    Type: calib
+    Wavelength: '1550'
+  caliboffset2_2:
+    DeviceID: caliboffset2_2
+    Electrical Coordinates: []
+    Optical Coordinates:
+    - 2900.0
+    - 1800.0
+    Polarization: TE
+    RoutineCheck: false
+    Routines: []
+    Type: calib
+    Wavelength: '1550'
+  caliboffset2_4:
+    DeviceID: caliboffset2_4
+    Electrical Coordinates: []
+    Optical Coordinates:
+    - 3480.0
+    - 1800.0
+    Polarization: TE
+    RoutineCheck: false
+    Routines: []
+    Type: calib
+    Wavelength: '1550'
+  caliboffset2_8:
+    DeviceID: caliboffset2_8
+    Electrical Coordinates: []
+    Optical Coordinates:
+    - 4060.0
+    - 1800.0
+    Polarization: TE
+    RoutineCheck: false
+    Routines: []
+    Type: calib
     Wavelength: '1550'
 Routines:
   Current Sweep:
