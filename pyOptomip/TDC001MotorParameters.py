@@ -18,7 +18,7 @@ class TDC001MotorParameters(wx.Panel):
         super(TDC001MotorParameters, self).__init__(parent)
         self.connectPanel = connectPanel
         self.instList = ("None",) + kwargs['visaAddrLst']
-        self.num_axis = 4
+        self.num_axis = 3
         self.InitUI()
 
     def InitUI(self):
@@ -31,11 +31,14 @@ class TDC001MotorParameters(wx.Panel):
 
         self.paras = []
         self.para_tcs = []
+        self.default_port = [f"ASRL{i}::INSTR" for i in [4,5,6]]
         for i in range(self.num_axis):
             para = wx.BoxSizer(wx.HORIZONTAL)
             para_name = wx.StaticText(self, label=f'Serial Port {int(i+1)}')
             para_tc = wx.ComboBox(self, choices=self.instList)
-            para_tc.SetValue("None")
+            para_tc_default = self.default_port[i] \
+                if self.default_port[i] in self.instList else "None"
+            para_tc.SetValue(para_tc_default)
             para.AddMany([(para_name, 1, wx.EXPAND), (para_tc, 1, wx.EXPAND)])
             self.paras.append((para, para_tc))
 

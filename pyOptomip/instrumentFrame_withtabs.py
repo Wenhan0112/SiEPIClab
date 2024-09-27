@@ -217,6 +217,7 @@ class instrumentFrame_withtabs(wx.Frame):
             if opticalStage:
                 opticalStagePanel = opticalStage.panelClass(self, opticalStage)
                 homeVbox.Add(opticalStagePanel, proportion=0, border=0, flag=wx.EXPAND)
+                print('laserwithdetector:'+str(laserWithDetector))
                 if laserWithDetector:
                     self.fineAlign = fineAlign(laserWithDetector, opticalStage)
                     try:
@@ -358,7 +359,7 @@ class instrumentFrame_withtabs(wx.Frame):
 
         def __init__(self):
             threading.Thread.__init__(self)
-            self.camID = 1
+            self.camID = 0
 
         def run(self, *args, **kwargs):
             self.cap = cv2.VideoCapture(self.camID)

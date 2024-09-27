@@ -391,7 +391,7 @@ class autoMeasure(object):
         self.hasRoutines = True
 
 
-    def beginMeasure(self, devices, checkList, activeDetectors, camera, data, abortFunction=None, updateFunction=None,
+    def beginMeasure(self, devices, checkList, activeDetectors, camera, data, abortFunction=True, updateFunction=None,
                      updateGraph=True):
         """ Runs an automated measurement. For each device, wedge probe is moved out of the way, chip stage is moved
         so laser in aligned, wedge probe is moved to position. Various tests are performed depending on the contents
@@ -428,13 +428,12 @@ class autoMeasure(object):
         # For each checked device
 
         for i, device in enumerate(devices):
-
             motorCoordOpt = self.motorOpt.getPosition()
-            self.devFolder = os.path.join(self.saveFolder, device.getDeviceID())
-            if not os.path.exists(self.devFolder):
-                os.makedirs(self.devFolder)
+            # self.devFolder = os.path.join(self.saveFolder, device.getDeviceID())
+            # if not os.path.exists(self.devFolder):
+            #     os.makedirs(self.devFolder)
 
-            camera.startrecord(path=self.devFolder)
+            camera.startrecord(path=self.saveFolder)
 
             # Move to device
             self.moveToDevice(device.getDeviceID())
@@ -614,11 +613,14 @@ class autoMeasure(object):
                             self.drawGraph(CurB, PowB, self.graphPanel, 'Current (mA)', 'Power (W)')
 
             if device.getWavelengthSweepRoutines() and self.laser:
-                for routine in device.getWavelengthSweepRoutines():
+                for routine in [device.getWavelengthSweepRoutines()[0]]: #[zhetao] temp solution to remove dup scan
+                    # print(routine)
+                    # print(device.getWavelengthSweepRoutines())
+
                     ii = self.wavelengthSweeps['RoutineName'].index(routine)
                     timeStart = time.strftime("%d_%b_%Y_%H_%M_%S", time.localtime())
                     routineName = self.wavelengthSweeps['RoutineName'][ii]
-                    print("Performing Optical Test {}".format(routineName))
+                    print("Performing (laser only) Optical Test {}".format(routineName))
                     start = self.wavelengthSweeps['Start'][ii]
                     stop = self.wavelengthSweeps['Stop'][ii]
                     stepsize = self.wavelengthSweeps['Stepsize'][ii]
@@ -635,6 +637,7 @@ class autoMeasure(object):
                     self.graphPanel.canvas.sweepResultDict = {}
                     self.graphPanel.canvas.sweepResultDict['wavelength'] = wav
                     self.graphPanel.canvas.sweepResultDict['power'] = pow
+                    
                     if len(self.activeDetectors) > 1:
                         self.detstringlist = ['Detector Slot ' + str(self.activeDetectors[0] + 1)]
                         for det in self.activeDetectors:
@@ -649,11 +652,13 @@ class autoMeasure(object):
                         legend = 1
 
                     # save all associated files
+                    # self.saveFiles(device, 'Wavelength (nm)', 'Power (dBm)', ii, wav * 1e9, pow,
+                    #                 'Wavelength sweep', motorCoordOpt, timeStart, timeStop, chipTimeStart,
+                    #                self.devFolder, routine, leg=legend)
                     self.saveFiles(device, 'Wavelength (nm)', 'Power (dBm)', ii, wav * 1e9, pow,
                                     'Wavelength sweep', motorCoordOpt, timeStart, timeStop, chipTimeStart,
-                                   self.devFolder, routine, leg=legend)
-
-                    self.drawGraph(wav * 1e9, pow, self.graphPanel, 'Wavelength (nm)', 'Power (dBm)', legend=legend)
+                                    self.saveFolder, device.getDeviceID(), leg=legend)
+                    self.drawGraph(wav, pow, self.graphPanel, 'Wavelength (nm)', 'Power (dBm)', legend=legend)
                     #data.extend([wav * 1e9, pow, self.graphPanel, 'Wavelength (nm)', 'Power (dBm)', legend=0])
 
             if device.getSetWavelengthVoltageSweepRoutines() and self.laser and self.motorElec and self.smu:
@@ -1227,7 +1232,11 @@ class autoMeasure(object):
         """
         # If laser and probe are connected
         print('Moving to device')
+        # print('islaserconnected = ' + self.laser)
+        # print('iselecmotorconnected = ' + self.motorElec)
+
         if self.laser and self.motorElec:
+            print('Both laser and electric motor')
             # lift wedge probe
             self.motorElec.moveRelativeZ(1000)
             time.sleep(2)
@@ -1297,6 +1306,7 @@ class autoMeasure(object):
                     gdsCoordOpt = (device.getOpticalCoordinates()[0], device.getOpticalCoordinates()[1])
                     motorCoordOpt = self.gdsToMotorCoordsOpt(gdsCoordOpt)
                     # Move chip stage
+                    print('Move to device %s at (%2.2f, %2.2f, %2.2f)' %(device.getDeviceID(), motorCoordOpt[0],motorCoordOpt[1],motorCoordOpt[2]))
                     self.motorOpt.moveAbsoluteXYZ(motorCoordOpt[0], motorCoordOpt[1], motorCoordOpt[2])
 
                     # Fine align to device
@@ -1311,7 +1321,7 @@ class autoMeasure(object):
                         for ii in range(self.checkList.GetItemCount()):
                             if self.checkList.GetItemText(ii) == device.getDeviceID():
                                 self.checkList.SetItemTextColour(ii, wx.Colour(0, 255, 0))
-
+                    break
         # if probe is connected but laser isn't
         elif not self.laser and self.motorElec:
             selectedDevice = deviceName
@@ -1566,7 +1576,7 @@ class autoMeasure(object):
     def saveFiles(self, deviceObject, x, y, devNum, xArray, yArray, testType, motorCoord, start, stop, chipStart, saveFolder, routineName, leg = 0):
         self.save_pdf(deviceObject, x, y, xArray, yArray, saveFolder, routineName, legend = leg)
         self.save_mat(deviceObject, devNum, motorCoord, xArray, yArray, x, y, saveFolder, routineName)
-        self.save_csv(deviceObject, testType, xArray, yArray, start, stop, chipStart, motorCoord, devNum, saveFolder, routineName, x, y)
+        # self.save_csv(deviceObject, testType, xArray, yArray, start, stop, chipStart, motorCoord, devNum, saveFolder, routineName, x, y)
 
 
 class CoordinateTransformException(Exception):

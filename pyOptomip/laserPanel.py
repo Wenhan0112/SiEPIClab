@@ -118,7 +118,7 @@ class tlsPanel(wx.Panel):
         st4 = wx.StaticText(self, label='Start (nm)')
 
         self.startWvlTc = wx.TextCtrl(self)
-        self.startWvlTc.SetValue('0')
+        self.startWvlTc.SetValue('1520')
 
         hbox5.AddMany([(st4, 1, wx.EXPAND), (self.startWvlTc, 1, wx.EXPAND)])
         ###
@@ -126,7 +126,7 @@ class tlsPanel(wx.Panel):
         st5 = wx.StaticText(self, label='Stop (nm)')
 
         self.stopWvlTc = wx.TextCtrl(self)
-        self.stopWvlTc.SetValue('0')
+        self.stopWvlTc.SetValue('1600')
 
         hbox6.AddMany([(st5, 1, wx.EXPAND), (self.stopWvlTc, 1, wx.EXPAND)])
         ###
@@ -135,7 +135,7 @@ class tlsPanel(wx.Panel):
         st6 = wx.StaticText(self, label='Step (nm)')
 
         self.stepWvlTc = wx.TextCtrl(self)
-        self.stepWvlTc.SetValue('0')
+        self.stepWvlTc.SetValue('0.2')
 
         hbox7.AddMany([(st6, 1, wx.EXPAND), (self.stepWvlTc, 1, wx.EXPAND)])
         ###
@@ -216,13 +216,16 @@ class tlsPanel(wx.Panel):
         self.laser.sweepInitialRange = float(self.detectorPanel.initialRangeTc.GetValue());
         self.laser.sweepRangeDecrement = float(self.detectorPanel.sweepRangeDecTc.GetValue());
         activeDetectors = self.detectorPanel.getActiveDetectors()
-        if len(activeDetectors) == 0:
-            raise Exception('Cannot perform sweep. No active detectors selected.');
+        # if len(activeDetectors) == 0:
+        #     raise Exception('Cannot perform sweep. No active detectors selected.');
         self.laser.activeSlotIndex = activeDetectors
 
     def drawGraph(self, wavelength, power):
         self.graphPanel.axes.cla()
-        self.graphPanel.axes.plot(wavelength, power)
+        self.graphPanel.axes.plot(wavelength/1e9, power)
+        self.graphPanel.axes.set_xlabel('Wavelength (nm)')
+        self.graphPanel.axes.set_ylabel('Intensity (dBm)')
+        self.graphPanel.axes.grid()
         self.graphPanel.axes.ticklabel_format(useOffset=False)
         self.graphPanel.canvas.draw()
 
@@ -441,7 +444,7 @@ class detectorPanel(wx.Panel):
 
             self.detectorPanelLst = list()
             for ii, slotInfo in zip(self.laser.pwmSlotIndex, self.laser.pwmSlotMap):
-                name = 'Slot %d Det %d' % (slotInfo[0], slotInfo[1] + 1)
+                name = 'Slot %d Det %d' % (slotInfo[0], slotInfo[1])
                 det = individualDetPanel(self, name=name, slot=slotInfo[0], chan=slotInfo[1])
                 self.detectorPanelLst.append(det)
                 vbox.Add(det, proportion=1, flag=wx.LEFT, border=15)

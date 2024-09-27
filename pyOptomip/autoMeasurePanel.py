@@ -546,8 +546,12 @@ class autoMeasurePanel(wx.Panel):
         electricalBox = wx.BoxSizer(wx.HORIZONTAL)
         electricalBox.Add(self.coordMapPanelElec, proportion=1, flag=wx.EXPAND)
 
-        self.startBtn = wx.Button(self, label='Start Measurements', size=(550, 20))
+        self.startBtn = wx.Button(self, label='Start Measurements', size=(275, 20))
         self.startBtn.Bind(wx.EVT_BUTTON, self.OnButton_Start)
+        
+        self.stopBtn = wx.Button(self, label='Stop Measurements', size=(275, 20))
+        self.stopBtn.Bind(wx.EVT_BUTTON, self.OnButton_Stop)
+        
         self.saveBtn = wx.Button(self, label='Save Optical Alignment', size=(200, 20))
         self.saveBtn.Bind(wx.EVT_BUTTON, self.OnButton_Save)
         self.importBtn = wx.Button(self, label='Import Optical Alignment', size=(200, 20))
@@ -564,7 +568,9 @@ class autoMeasurePanel(wx.Panel):
         alignmentBox.AddMany([(self.saveBtn, 0, wx.EXPAND), (self.importBtn, 0, wx.EXPAND)])
 
         startBox = wx.BoxSizer(wx.HORIZONTAL)
-        startBox.AddMany([(self.startBtn, 0, wx.EXPAND)])
+        startBox.AddMany([(self.startBtn, 0, wx.EXPAND), (self.stopBtn, 0, wx.EXPAND)])
+        # stopBox = wx.BoxSizer(wx.HORIZONTAL)
+        # stopBox.AddMany([(self.stopBtn, 0, wx.EXPAND)])
 
         scaletext = wx.StaticBox(self, label='Scale Adjust')
         scalehbox = wx.StaticBoxSizer(scaletext, wx.HORIZONTAL)
@@ -652,10 +658,10 @@ class autoMeasurePanel(wx.Panel):
 
         if self.autoMeasure.laser:
             # Format check boxes for detector selection
-            self.numDetectors = self.autoMeasure.laser.numPWMSlots - 1
+            self.numDetectors = self.autoMeasure.laser.numPWMSlots
             self.detectorList = []
             for ii in range(self.numDetectors):
-                self.sel = wx.CheckBox(self, label='Slot {} Det 1'.format(ii+1), pos=(20, 20))
+                self.sel = wx.CheckBox(self, label='Slot 1 Det {}'.format(ii+1), pos=(20, 20))
                 self.sel.SetValue(False)
                 self.detectorList.append(self.sel)
                 hboxDetectors.AddMany([(self.sel, 1, wx.EXPAND)])
@@ -669,7 +675,7 @@ class autoMeasurePanel(wx.Panel):
                            (startBox, 0, wx.EXPAND)])
         matPlotBox.Add(vboxOuter, flag=wx.LEFT | wx.TOP | wx.ALIGN_LEFT, border=0, proportion=0)
 
-        self.SetSizer(matPlotBox)
+        self.SetSizerAndFit(matPlotBox)
 
     def calibrationcheck(self, event):
         if self.caldone == True:
@@ -871,7 +877,10 @@ class autoMeasurePanel(wx.Panel):
 
         self.checkList.SortItems(checkListSort)  # Make sure items in list are sorted
         self.checkList.Refresh()
-
+        
+    def OnButton_Stop(self, event):
+        return True
+    
     def OnButton_CheckAll(self, event):
         """Selects all items in the devices check list"""
         for ii in range(self.checkList.GetItemCount()):
@@ -1149,6 +1158,7 @@ class autoMeasurePanel(wx.Panel):
             if self.devSelectCb.GetString(self.devSelectCb.GetSelection()) == '':
                 print("Please select a device to move to")
                 return
+            
         print('Moving to device')
         if self.autoMeasure.laser and self.autoMeasure.motorElec and self.calibrationflag == False:
             # Calculate transform matrices
@@ -1174,29 +1184,29 @@ class autoMeasurePanel(wx.Panel):
                     # Move chip stage
                     self.autoMeasure.motorOpt.moveAbsoluteXYZ(motorCoordOpt[0], motorCoordOpt[1], motorCoordOpt[2])
                     # Fine align to device
-                    self.autoMeasure.fineAlign.doFineAlign()
-                    # Find relative probe position
-                    gdsCoordElec = (float(device.getElectricalCoordinates()[0][0]), float(device.getElectricalCoordinates()[0][1]))
-                    motorCoordElec = self.autoMeasure.gdsToMotorCoordsElec(gdsCoordElec)
-                    optPosition = self.autoMeasure.motorOpt.getPosition()
-                    elecPosition = self.autoMeasure.motorElec.getPosition()
-                    adjustment = self.autoMeasure.motorOpt.getPositionforRelativeMovement()
-                    absolutex = motorCoordElec[0] + optPosition[0]*xscalevar
-                    absolutey = motorCoordElec[1] + optPosition[1]*yscalevar
-                    absolutez = motorCoordElec[2]
-                    relativex = absolutex[0] - elecPosition[0]
-                    relativey = absolutey[0] - elecPosition[1]
-                    relativez = absolutez[0] - elecPosition[2] + 15
-                    # Move probe to device
-                    self.autoMeasure.motorElec.moveRelativeX(-relativex)
-                    time.sleep(2)
-                    self.autoMeasure.motorElec.moveRelativeY(-relativey)
-                    time.sleep(2)
-                    self.adjustalignment()
-                    time.sleep(2)
-                    self.autoMeasure.motorElec.moveRelativeZ(-relativez)
-                    # Fine align to device again
-                    self.autoMeasure.fineAlign.doFineAlign()
+                    # self.autoMeasure.fineAlign.doFineAlign()
+                    # # Find relative probe position
+                    # gdsCoordElec = (float(device.getElectricalCoordinates()[0][0]), float(device.getElectricalCoordinates()[0][1]))
+                    # motorCoordElec = self.autoMeasure.gdsToMotorCoordsElec(gdsCoordElec)
+                    # optPosition = self.autoMeasure.motorOpt.getPosition()
+                    # elecPosition = self.autoMeasure.motorElec.getPosition()
+                    # adjustment = self.autoMeasure.motorOpt.getPositionforRelativeMovement()
+                    # absolutex = motorCoordElec[0] + optPosition[0]*xscalevar
+                    # absolutey = motorCoordElec[1] + optPosition[1]*yscalevar
+                    # absolutez = motorCoordElec[2]
+                    # relativex = absolutex[0] - elecPosition[0]
+                    # relativey = absolutey[0] - elecPosition[1]
+                    # relativez = absolutez[0] - elecPosition[2] + 15
+                    # # Move probe to device
+                    # self.autoMeasure.motorElec.moveRelativeX(-relativex)
+                    # time.sleep(2)
+                    # self.autoMeasure.motorElec.moveRelativeY(-relativey)
+                    # time.sleep(2)
+                    # self.adjustalignment()
+                    # time.sleep(2)
+                    # self.autoMeasure.motorElec.moveRelativeZ(-relativez)
+                    # # Fine align to device again
+                    # self.autoMeasure.fineAlign.doFineAlign()
 
         # if laser is connected but probe isn't
         elif self.autoMeasure.laser and not self.autoMeasure.motorElec:
@@ -1213,7 +1223,7 @@ class autoMeasurePanel(wx.Panel):
                     self.autoMeasure.motorOpt.moveAbsoluteXYZ(motorCoordOpt[0], motorCoordOpt[1], motorCoordOpt[2])
 
                     # Fine align to device
-                    self.autoMeasure.fineAlign.doFineAlign()
+                    # self.autoMeasure.fineAlign.doFineAlign()
 
         # if probe is connected but laser isn't
         elif (not self.autoMeasure.laser and self.autoMeasure.motorElec) or (self.autoMeasure.motorElec and self.calibrationflag):
@@ -1292,9 +1302,10 @@ class autoMeasurePanel(wx.Panel):
                         return
 
 
-                if self.noElecMatrix is True or self.noOptMatrix is True:
-                    pass
-                else:
+                # if self.noElecMatrix is True or self.noOptMatrix is True:
+                #     pass
+                # else:
+            if True:
                     # Disable detector auto measurement
                     if self.autoMeasure.laser:
                         self.autoMeasure.laser.ctrlPanel.laserPanel.laserPanel.haltDetTimer()
@@ -1330,9 +1341,10 @@ class autoMeasurePanel(wx.Panel):
                     else:
                         q = Queue()
                         data = []
-                        self.autoMeasure.smu.automeasureflag = False
+                        # self.autoMeasure.smu.automeasureflag = False
+                        aborter = Default_Aborter("ABORTION_FILE.txt")
                         p = Thread(target=self.autoMeasure.beginMeasure, args=(
-                        checkedDevicesText, self.checkList, activeDetectors, self.camera, data, None, None, True))
+                        checkedDevicesText, self.checkList, activeDetectors, self.camera, data, aborter, None, True))
                         p.daemon = True
                         p.start()
 
@@ -1586,3 +1598,33 @@ class autoMeasurePanel(wx.Panel):
         self.save_pdf(deviceObject, x, y, xArray, yArray, saveFolder, routineName, legend = leg, )
         self.save_mat(deviceObject, devNum, motorCoord, xArray, yArray, x, y, saveFolder, routineName)
         self.save_csv(deviceObject, testType, xArray, yArray, start, stop, chipStart, motorCoord, devNum, saveFolder, routineName, x, y)
+        
+class Default_Aborter():
+    """
+    Default aborter for automeasurement. Type 'abort' in the beginning of the 
+    corresponding abortion file. 
+    """
+    def __init__(self, fn: str):
+        """
+        Constructor
+        @params fn (str): The abortion file path. 
+        """
+        self.fn = fn
+        assert os.path.exists(fn)
+        self.clear()
+    
+    def clear(self):
+        f = open(self.fn, "w")
+        f.truncate(0)
+        f.close()
+    
+    def __call__(self):
+        """
+        Abort the automeasurement. 
+        """
+        f = open(self.fn, "r")
+        c = f.read(5).lower().startswith("abort")
+        f.close()
+        if c:
+            self.clear()
+        return c

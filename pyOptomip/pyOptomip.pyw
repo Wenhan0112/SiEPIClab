@@ -32,12 +32,15 @@ from QontrolMotorParameters import QontrolMotorParameters
 from dummyCorvusParameters import dummyCorvusParameters
 from BSC203MotorParameters import BSC203MotorParameters
 from TDC001MotorParameters import TDC001MotorParameters
-from dummyLaserParameters import dummyLaserParameters
+from AP2087AParameters import AP2087AParameters
 
+from dummyLaserParameters import dummyLaserParameters
+    
 from SMUParameters import SMUParameters
 from outputlogPanel import outputlogPanel
 from logWriter import logWriter, logWriterError
 import sys
+import time
 import pyvisa as visa
 from instrumentFrame_withtabs import instrumentFrame_withtabs
 from pylablib.devices import Thorlabs
@@ -45,8 +48,9 @@ from pylablib.devices import Thorlabs
 
 softwareVersion = "1.1"
 
-devTypes = [CorvusEcoParameters, hp816x_N77Det_instrParameters, hp816x_instrParameters,
-            SMUParameters, BSC203MotorParameters, TDC001MotorParameters]# N77Det_instrParameters]
+devTypes = [TDC001MotorParameters, AP2087AParameters]
+# N77Det_instrParameters, CorvusEcoParameters, hp816x_N77Det_instrParameters, hp816x_instrParameters, SMUParameters, BSC203MotorParameters, 
+
 
 
 class ConnectCB(wx.Choicebook):
@@ -83,7 +87,7 @@ class pyOptomip(wx.Frame):
                           size=(600, 400))
         self.panel = wx.Panel(self)
         self.panel.instList = []
-        self.notebook = ConnectCB(self.panel, -1, self.panel)
+        self.notebook = ConnectCB(self.panel, -1, self.panel)   
         sizer = wx.BoxSizer(wx.VERTICAL)
         sizer.Add(self.notebook, 2, wx.ALL | wx.EXPAND, 5)
         self.doneButton = wx.Button(self.panel, label='Done', size=(75, 20))

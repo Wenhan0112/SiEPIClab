@@ -223,6 +223,10 @@ class tlsPanel(wx.Panel):
     def drawGraph(self, wavelength, power):
         self.graphPanel.axes.cla()
         self.graphPanel.axes.plot(wavelength, power)
+        self.graphPanel.axes.set_xlabel('Wavelength (nm)')
+        self.graphPanel.axes.set_ylabel('Intensity (dBm)')
+        self.graphPanel.axes.grid()
+
         self.graphPanel.axes.ticklabel_format(useOffset=False)
         self.graphPanel.canvas.draw()
 
@@ -354,7 +358,7 @@ class detectorPanel(wx.Panel):
 
         self.detectorPanelLst = list();
         for ii, slotInfo in zip(self.laser.pwmSlotIndex, self.laser.pwmSlotMap):
-            name = 'Slot %d Det %d' % (slotInfo[0], slotInfo[1] + 1)
+            name = 'Slot %d Det %d' % (slotInfo[0], slotInfo[1])
             det = individualDetPanel(self, name=name, slot=slotInfo[0], chan=slotInfo[1])
             self.detectorPanelLst.append(det)
             vbox.Add(det, proportion=1, flag=wx.LEFT, border=15)
